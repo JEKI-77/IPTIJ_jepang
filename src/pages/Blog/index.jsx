@@ -1,7 +1,7 @@
 
 const Blog = () => {
   return (
-    <p>blog</p>
+    <p>halaman blog</p>
   );
 }
 

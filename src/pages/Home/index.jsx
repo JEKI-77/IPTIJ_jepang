@@ -1,8 +1,12 @@
+import Banner from "../../Components/Atoms/Banner";
 
 const Home = () => {
   return (
-  <p>Home</p>
+    <>
+      <Banner />
+      <p> halaman Home</p>
+    </>
   );
-}
+};
 
 export default Home;

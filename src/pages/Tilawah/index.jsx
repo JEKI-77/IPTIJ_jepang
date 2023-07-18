@@ -2,7 +2,7 @@
 
 const Tilawah = () => {
     return (
-      <p>Tilawah</p>
+      <p> halaman Tilawah</p>
     );
   }
   
