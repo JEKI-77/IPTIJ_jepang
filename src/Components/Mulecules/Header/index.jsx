@@ -1,46 +1,64 @@
 import iptijLogo from "../../../assets/images/logo_iptij.png";
+import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { FiYoutube } from "react-icons/fi";
+import Button from "../../Atoms/Button";
 
 const Header = () => {
   return (
-    <div className="h-24 mt-10">
-      <div className="logo-sosmed flex justify-between w-8/12 mx-auto">
-        <div className="">
-          <img className="h-40 w-40" src={iptijLogo} alt="" srcSet="" />
-        </div>
-        <div className="sosmed">
-          <ul className="flex gap-4">
-            <li>ig</li>
-            <li>fb</li>
-            <li>yt</li>
-            <li>twt</li>
-          </ul>
-        </div>
+    <div className="bg-[#f4f8fb] w-full flex h-24 ">
+      {/* logo */}
+      <div className="mx-8">
+        <img
+          className="h-20 w-20 object-cover"
+          src={iptijLogo}
+          alt=""
+          srcSet=""
+        />
       </div>
 
-      <div className="bg-cyan-500 h-20 w-full ">
-        <div className=" flex justify-between items-center m-4  w-8/12 mx-auto ">
-          <div className="">
-            <ul className="flex gap-4 justify-center items-center h-20  ">
-              <li>
-                <a href="home">Home</a>
-              </li>
-              <li>
-                <a href="shop">Shop</a>
-              </li>
-              <li>
-                <a href="blog">Blog</a>
-              </li>
-              <li>
-                <a href="tilawah">Tilawah</a>
-              </li>
-              <li>
-                <a href="webinar">Webinar</a>
-              </li>
+      {/* navbar */}
+      <div className=" flex items-center justify-end m-4 w-full gap-20 ">
+        <nav>
+          <ul className="flex gap-4">
+            <li className="">
+              <a className="hover" href="home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a className="hover" href="blog">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a className="hover" href="tilawah">
+                Tilawah
+              </a>
+            </li>
+            <li>
+              <a className="hover" href="webinar">
+                Webinar
+              </a>
+            </li>
+            <li>
+              <a className="hover" href="shop">
+                Shop
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          {/* sosmed */}
+          <div className=" text-xl flex">
+            <ul className="flex gap-4 items-center">
+              <li>{<FaInstagram />}</li>
+              <li>{<FaFacebookF />}</li>
+              <li>{<FiYoutube />}</li>
+              <li>{<FaWhatsapp />}</li>
             </ul>
-          </div>
-          <div>
-            <span className="mr-4">search</span>
-            <span>button</span>
+            <div className="ml-8">
+              <Button title="Sign in" />
+            </div>
           </div>
         </div>
       </div>
