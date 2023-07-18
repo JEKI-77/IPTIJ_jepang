@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 .hover {
-  @apply hover:bg-cyan-600 hover:text-white px-3 py-2 rounded-xl ;
+  @apply hover:bg-cyan-600 hover:text-white px-3 py-2 rounded-xl;
+}
+.imgStyle {
+  @apply cursor-pointer hover:scale-125 duration-300 h-full w-auto object-cover;
+}
+
+.box {
+  @apply overflow-hidden  ease-out;
 }
 
 body {
-  width: 80%;
-  margin:auto;
+  width: 100%;
+  margin: auto;
 }

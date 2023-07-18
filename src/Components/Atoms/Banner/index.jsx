@@ -12,13 +12,13 @@ import "swiper/css/autoplay";
 
 const Banner = () => {
   return (
-    <div>
+    <div className="w-[80%] m-auto">
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
-        autoplay={{delay:4000}}
+        autoplay={{ delay: 4000 }}
         navigation
         pagination={{ clickable: true }}
         onSwiper={(swiper) => console.log(swiper)}
@@ -26,7 +26,7 @@ const Banner = () => {
       >
         <SwiperSlide>
           <img
-            className="w-full h-[350px] object-cover "
+            className=" w-full h-[400px] object-cover "
             src={bannerbg}
             alt="bannerBg"
           />
@@ -34,7 +34,7 @@ const Banner = () => {
         <SwiperSlide>
           {" "}
           <img
-            className="w-full h-[350px] object-cover"
+            className="w-full h-[400px]  object-cover"
             src={img2}
             alt="bannerBg"
           />
@@ -42,7 +42,7 @@ const Banner = () => {
         <SwiperSlide>
           {" "}
           <img
-            className="w-full h-[350px] object-cover"
+            className="w-full h-[400px]  object-cover"
             src={bannerbg}
             alt="bannerBg"
           />
@@ -50,13 +50,12 @@ const Banner = () => {
         <SwiperSlide>
           {" "}
           <img
-            className="w-full h-[350px] object-cover"
+            className="w-full h-[400px]  object-cover"
             src={img2}
             alt="bannerBg"
           />
         </SwiperSlide>
       </Swiper>
-  
     </div>
   );
 };

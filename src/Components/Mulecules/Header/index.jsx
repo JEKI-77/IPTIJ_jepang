@@ -1,13 +1,12 @@
 import iptijLogo from "../../../assets/images/logo_iptij.png";
 import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { FiYoutube } from "react-icons/fi";
-import Button from "../../Atoms/Button";
 
 const Header = () => {
   return (
-    <div className="bg-[#f4f8fb] w-full flex h-24 ">
+    <div className="bg-[rgb(20,53,89)] text-gray-200 font-semibold w-full flex h-24 mb-4 ">
       {/* logo */}
-      <div className="mx-8">
+      <div className="mx-20">
         <img
           className="h-20 w-20 object-cover"
           src={iptijLogo}
@@ -17,7 +16,7 @@ const Header = () => {
       </div>
 
       {/* navbar */}
-      <div className=" flex items-center justify-end m-4 w-full gap-20 ">
+      <div className=" flex items-center justify-end m-4 w-full gap-20 mr-20 ">
         <nav>
           <ul className="flex gap-4">
             <li className="">
@@ -26,23 +25,23 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a className="hover" href="blog">
-                Blog
+              <a className="hover" href="gallery">
+                Gallery
               </a>
             </li>
             <li>
               <a className="hover" href="tilawah">
-                Tilawah
-              </a>
-            </li>
-            <li>
-              <a className="hover" href="webinar">
-                Webinar
+                Update
               </a>
             </li>
             <li>
               <a className="hover" href="shop">
                 Shop
+              </a>
+            </li>
+            <li>
+              <a className="hover" href="contact">
+                Contact
               </a>
             </li>
           </ul>
@@ -56,9 +55,6 @@ const Header = () => {
               <li>{<FiYoutube />}</li>
               <li>{<FaWhatsapp />}</li>
             </ul>
-            <div className="ml-8">
-              <Button title="Sign in" />
-            </div>
           </div>
         </div>
       </div>

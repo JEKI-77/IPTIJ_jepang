@@ -3,18 +3,18 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Blog from "../../pages/Blog";
 import Home from "../../pages/Home";
 import Shop from "../../pages/Shop";
-import Tilawah from "../../pages/Tilawah";
-import WebinarDoc from "../../pages/WebinarDoc";
+import Contact from "../../pages/Contact";
+import Upadate from "../../pages/Upadate";
 
 const RouterApp = () => {
   return (
     <Router>
       <Routes>
         <Route path="home" element={<Home />} />
-        <Route path="blog" element={<Blog />} />
+        <Route path="gallery" element={<Blog />} />
         <Route path="shop" element={<Shop />} />
-        <Route path="tilawah" element={<Tilawah />} />
-        <Route path="webinar" element={<WebinarDoc />} />
+        <Route path="update" element={<Upadate />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
     </Router>
   );

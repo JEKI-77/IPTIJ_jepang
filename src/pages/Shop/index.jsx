@@ -23,7 +23,7 @@ const Shop = () => {
   }, []);
 
   return (
-    <div className="mt-2 bg-slate-200 ">
+    <div className="mt-2 bg-slate-200 w-[80%] m-auto ">
       <h1 className="text-center py-8 ">Belanja </h1>
       <div className="flex mt-10">
         <div className="text-center -mt-6">
