@@ -21,8 +21,8 @@ const Banner = () => {
         autoplay={{ delay: 4000 }}
         navigation
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("")}
       >
         <SwiperSlide>
           <img

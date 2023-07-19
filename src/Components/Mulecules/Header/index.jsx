@@ -3,6 +3,11 @@ import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { FiYoutube } from "react-icons/fi";
 
 const Header = () => {
+  // const update = (e) => {
+  //   e.preventDefault();
+  //   const value = e.target.value;
+  //   console.log(value);
+  // };
   return (
     <div className="bg-[rgb(20,53,89)] text-gray-200 font-semibold w-full flex h-24 mb-4 ">
       {/* logo */}
@@ -30,18 +35,20 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a className="hover" href="tilawah">
-                Update
+              {/* <select className="bg-[rgb(20,53,89)]" name="" id=""> */}
+
+              <a className="hover" href="update">
+                Berita
+              </a>
+            </li>
+            <li>
+              <a className="hover" href="contact">
+                Team
               </a>
             </li>
             <li>
               <a className="hover" href="shop">
                 Shop
-              </a>
-            </li>
-            <li>
-              <a className="hover" href="contact">
-                Contact
               </a>
             </li>
           </ul>

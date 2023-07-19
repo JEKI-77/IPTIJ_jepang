@@ -1,10 +1,13 @@
+import axios from "axios";
+import { useEffect } from "react";
 import blogImg from "../../assets/images/bannerbg.jpg";
 import Banner from "../../Components/Atoms/Banner";
 
 const Blog = () => {
+  
   return (
     <div>
-      <Banner/>
+      <Banner />
       <div className="grid grid-cols-4 mt-8 gap-4 mb-20 ">
         <p className="col-span-4 text-center text-3xl font-semibold">Gallery</p>
         <div className="col-span-2 box">
