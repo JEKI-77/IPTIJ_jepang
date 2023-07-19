@@ -25,7 +25,7 @@ const Header = () => {
         <nav>
           <ul className="flex gap-4">
             <li className="">
-              <a className="hover" href="home">
+              <a className="hover" href="/">
                 Home
               </a>
             </li>
@@ -35,20 +35,18 @@ const Header = () => {
               </a>
             </li>
             <li>
-              {/* <select className="bg-[rgb(20,53,89)]" name="" id=""> */}
-
-              <a className="hover" href="update">
+              <a className="hover" href="news">
                 Berita
               </a>
             </li>
             <li>
-              <a className="hover" href="contact">
-                Team
+              <a className="hover" href="kajian">
+                Kajian Islam
               </a>
             </li>
             <li>
-              <a className="hover" href="shop">
-                Shop
+              <a className="hover" href="team">
+                Team
               </a>
             </li>
           </ul>

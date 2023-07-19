@@ -7,6 +7,7 @@
 }
 .imgStyle {
   @apply cursor-pointer hover:scale-125 duration-300 h-full w-auto object-cover;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .box {

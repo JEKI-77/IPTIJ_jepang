@@ -1,0 +1,91 @@
+/* eslint-disable react/jsx-key */
+import React from "react";
+import Card from "../../Components/Atoms/TeamCard";
+import image from "../../assets/images/bannerbg.jpg";
+import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import TeamIT from "../../assets/images/TeamIT.jpg";
+
+const Team = () => {
+  const sosmedIcon = [[<FaInstagram />, <FaFacebookF />, <FaWhatsapp />]];
+
+  const Profile = [
+    {
+      id: "1",
+      name: "Deki Saputra",
+      jabatan: "Team IT",
+      image: TeamIT,
+      sosmed: sosmedIcon,
+    },
+    {
+      id: "2",
+      name: "Ahmad Putra",
+      jabatan: "Ketua Umum",
+      image: image,
+      sosmed: sosmedIcon,
+    },
+    {
+      id: "3",
+      name: "Budiyuno",
+      jabatan: "Wakil Ketua",
+      image: image,
+      sosmed: sosmedIcon,
+    },
+    {
+      id: "4",
+      name: "Angel Putri",
+      jabatan: "Sekretaris",
+      image: image,
+      sosmed: sosmedIcon,
+    },
+    {
+      id: "5",
+      name: "Angel Putri",
+      jabatan: "Bandahara",
+      image: image,
+      sosmed: sosmedIcon,
+    },
+    {
+      id: "6",
+      name: "Angel Putri",
+      jabatan: "Ketua Umum",
+      image: image,
+      sosmed: sosmedIcon,
+    },
+    {
+      id: "7",
+      name: "Angel Putri",
+      jabatan: "Ketua Umum",
+      image: image,
+      sosmed: sosmedIcon,
+    },
+    {
+      id: "8",
+      name: "Angel Putri",
+      jabatan: "Ketua Umum",
+      image: image,
+      sosmed: sosmedIcon,
+    },
+  ];
+
+  return (
+    <div className="mt-16 w-[90%] m-auto ">
+      <p className="text-3xl  ">STRUKTUR</p>
+      <p className="mt-4 text-lg">IPTIJ PERIODE 2022 - 2023</p>
+      <hr className="w-40  border-yellow-600 mb-20 " />
+      <ul className=" grid grid-cols-4 justify-center ">
+        {Profile.map((data) => (
+          <li key={data.id}>
+            <Card
+              img={data.image}
+              title={data.name}
+              jabatan={data.jabatan}
+              sosmed={data.sosmed}
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default Team;
