@@ -68,11 +68,13 @@ const Team = () => {
   ];
 
   return (
-    <div className="mt-16 w-[90%] m-auto ">
-      <p className="text-3xl  ">STRUKTUR</p>
-      <p className="mt-4 text-lg">IPTIJ PERIODE 2022 - 2023</p>
-      <hr className="w-40  border-yellow-600 mb-20 " />
-      <ul className=" grid grid-cols-4 justify-center ">
+    <div className="mt-8 md:w-[90%] m-auto ">
+      <div className="ml-5 ">
+        <p className="text-3xl ">STRUKTUR</p>
+        <p className="mt-4 text-lg">IPTIJ PERIODE 2022 - 2023</p>
+      </div>
+
+      <ul className=" grid md:grid-cols-4 grid-cols-2 mt-8 ">
         {Profile.map((data) => (
           <li key={data.id}>
             <Card

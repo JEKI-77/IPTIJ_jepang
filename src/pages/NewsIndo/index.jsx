@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
 import CardBerita from "../../Components/Atoms/NewsCard/Card1";
-import image from "../../assets/images/bannerbg.jpg";
+// import image from "../../assets/images/bannerbg.jpg";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useNavigate } from "react-router-dom";
 
 // Import Swiper styles
 import "swiper/css";
@@ -15,38 +16,64 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import Card2 from "../../Components/Atoms/NewsCard/Card2";
 
-const News = () => {
+const NewsIndo = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=id&apiKey=f6c324aba071454d97bae6374e58c4ba"
+        "https://news-eosin-one.vercel.app/jpnn/terbaru/"
+        // "https://newsapi.org/v2/top-headlines?country=id&apiKey=f6c324aba071454d97bae6374e58c4ba"
       )
       .then((res) => {
-        const responseApi = res.data.articles;
-        console.log("data", responseApi);
+        const responseApi = res.data.data.posts;
+        console.log("indoData", responseApi);
         setData(responseApi);
       })
       .catch((err) => {
         console.log("error", err);
       });
   }, []);
+
+  const handleNavigate = () => {
+    navigateTo("/newsjpn");
+  };
+  const handleNavigateIndo = (e) => {
+    navigateTo("/newsindo");
+    console.log(e);
+  };
+
+  const navigateTo = useNavigate();
+
   return (
-    <div className="w-[80%] m-auto justify-center items-center flex flex-col">
+    <div className="md:w-[80%] w-[90%] m-auto justify-center items-center flex flex-col">
       <div className="text-center">
-        <p className="text-4xl mb-12 font-semibold">Kenshusei News</p>
+        <p className="text-4xl mb-12 font-semibold ">IPTIJ News</p>
+      </div>
+      <div className="flex text-2xl mb-8 gap-4 w-full ">
+        <p
+          className="cursor-pointer hover:text-cyan-600 bg-cyan-900 text-white px-4 rounded-xl text-[16px]"
+          onClick={handleNavigateIndo}
+        >
+          Berita Indonesia
+        </p>
+        <p
+          className="cursor-pointer hover:text-cyan-600 bg-cyan-900 text-white px-4 rounded-xl text-[16px] "
+          onClick={handleNavigate}
+        >
+          Berita Jepang
+        </p>
       </div>
       <h2 className="text-xl font-semibold mb-4">Berita Terbaru</h2>
 
       {/* berita terbaru */}
-      <div className="w-full h-[400px] mb-52">
+      <div className="w-full h-[400px] mb-5">
         {/* Atur tinggi sesuai kebutuhan */}
         <Swiper
           modules={[Navigation, Pagination, A11y, Autoplay]}
           spaceBetween={20}
           breakpoints={{
             0: {
-              slidesPerView: 2,
+              slidesPerView: 1,
             },
             567: {
               slidesPerView: 2,
@@ -66,11 +93,12 @@ const News = () => {
           <div className="w-full text-start"></div>
           {Array.isArray(data) && data.length > 0 ? (
             data.map((info) => (
-              <SwiperSlide key={info.id}>
+              <SwiperSlide key={info}>
                 <CardBerita
-                  image={image}
+                  image={info.thumbnail}
                   judul={info.title}
-                  tanggal={info.publishedAt}
+                  //  description={info.description}
+                  tanggal={info.pubDate}
                 />
               </SwiperSlide>
             ))
@@ -81,17 +109,18 @@ const News = () => {
       </div>
 
       {/* last news */}
-      <div className="w-full text-start ">
-        <h2 className="text-xl m-4 ">Last News</h2>
+      <div className="w-full text-start  ">
+        <h2 className="text-xl m-4 ">Berita Indonesia Hari Ini</h2>
       </div>
       <ul className="">
         {Array.isArray(data) && data.length > 0 ? (
           data.map((info) => (
-            <li key={info.source.id}>
+            <li key={info}>
               <Card2
-                image={image}
+                image={info.thumbnail}
                 judul={info.title}
-                tanggal={info.publishedAt}
+                // description={info.description}
+                tanggal={info.pubDate}
               />
             </li>
           ))
@@ -103,4 +132,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default NewsIndo;

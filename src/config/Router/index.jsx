@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../../pages/Home";
 
 import Gallery from "../../pages/Gallery";
-import News from "../../pages/News";
 import KajianIslam from "../../pages/KajianIslam";
 import Team from "../../pages/Team";
+import NewsIndo from "../../pages/NewsIndo";
+import Newsjpn from "../../pages/NewsJpn/Index";
 
 const RouterApp = () => {
   return (
@@ -14,8 +15,9 @@ const RouterApp = () => {
         <Route path="/" element={<Home />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="kajian" element={<KajianIslam />} />
-        <Route path="news" element={<News />} />
+        <Route path="newsindo" element={<NewsIndo />} />
         <Route path="Team" element={<Team />} />
+        <Route path="newsjpn" element={<Newsjpn />} />
       </Routes>
     </Router>
   );

@@ -10,10 +10,10 @@ import SearchBar from "../../Atoms/Search";
 
 const Footer = () => {
   return (
-    <div className="bg-[rgb(20,53,89)] ">
-      <div className=" text-gray-400 h-60 flex justify-evenly ">
+    <div className="bg-[rgb(20,53,89)] flex flex-col  ">
+      <div className=" text-gray-400 md:flex md:justify-evenly justify-between m-4 bg-gray-500 w-full grid grid-cols-4 ">
         <div className="flex flex-col gap-2 mt-8">
-          <h2 className="text-xl text-gray-300 mb-4">Alamat</h2>
+          <h2 className="text-xl text-gray-300 mb-4">Kontak</h2>
           <p>Tokyoto, Meguro, nichome 2-3</p>
           <p>No Hp: 08383833</p>
           <p>Email: iptij@gmail.com</p>
@@ -23,23 +23,24 @@ const Footer = () => {
           <p>Tentang kami</p>
           <p>Tentang kami</p>
         </div>
-        <div className="flex flex-col mt-8 gap-4 items-center">
+
+        <div className="md:flex flex-col mt-8 gap-4  bg-slate-100    ">
           <h2 className="text-xl text-gray-300 mb-4">Sosial Media</h2>
-          <ul className="flex gap-y gap-4 text-xl">
+          <ul className="flex  gap-4 text-xl ">
             <li>{<FaInstagram />}</li>
             <li>{<FaFacebookF />}</li>
             <li>{<FiYoutube />}</li>
             <li>{<FaWhatsapp />}</li>
           </ul>
         </div>
-        <div className="mt-8 flex flex-col gap-4 ">
+        <div className="mt-8 md:flex md:flex-col gap-4 col-span-2 ">
           <h2 className="text-center text-xl text-gray-300">Our Newlatter</h2>
           <p>Dapatkan Informasi Terbaru Kami</p>
           <SearchBar title="Kirim" placeholder="pertanyaan" />
         </div>
       </div>
-
-      <div className=" flex justify-center  bg-[rgb(20,53,89)] text-gray-300 text-[14px] h-14">
+      {/* copyright */}
+      <div className=" md:flex mt-20 md:justify-center  bg-[rgb(20,53,89)] text-gray-300 text-[14px] h-14 bg-slate-600 ">
         <div>
           <span className="flex items-center justify-center ">
             <span className="mr-1">
@@ -47,7 +48,7 @@ const Footer = () => {
             </span>
             Copyright IPTIJ 2023{" "}
           </span>
-          <span className="flex text-center">
+          <span className="flex text-center ">
             Devloper by <span className="text-cyan-500 mx-1">Deki Saputra</span>
             | 1.1 version{" "}
           </span>
