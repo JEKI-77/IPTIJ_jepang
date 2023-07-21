@@ -5,7 +5,7 @@ import React from "react";
 import { IoEyeSharp } from "react-icons/io5";
 
 const Card2 = ({ image, tanggal, judul, description }) => (
-  <div className="bg-slate-100 rounded-xl flex  items-center shadow-md   ">
+  <div className="bg-slate-100 rounded-xl flex  items-center shadow-md animate__animated animate__fadeIn ">
     <img
       className="md:h-52 md:w-40 w-28 h-32   object-cover rounded-xl"
       src={image}

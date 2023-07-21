@@ -26,7 +26,9 @@ const Header = () => {
       {/* navbar mobile */}
       <nav
         className={`${
-          open ? "right-0  " : "right-[-100%] hidden"
+          open
+            ? "right-0 animate__animated animate__fadeInRight "
+            : "right-[-100%] duration-500"
         }   bg-[rgb(20,53,89)] min-h-screen md:hidden flex items-center justify-center absolute w-full z-[999] `}
       >
         <ul
@@ -63,7 +65,7 @@ const Header = () => {
       </nav>
       {/* navbar togle */}
       <div
-        className="text-3xl absolute w-[90%] ml-5 m-auto mt-4 md:hidden flex justify-end items-end cursor-pointer z-[999]"
+        className="text-3xl absolute w-[90%] ml-5 m-auto mt-4 md:hidden flex justify-end items-end cursor-pointer z-[999] "
         onClick={() => setOpen(!open)}
       >
         <HiMiniBars3 />

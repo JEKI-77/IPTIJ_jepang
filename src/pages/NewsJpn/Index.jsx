@@ -5,6 +5,8 @@ import { useEffect } from "react";
 // import image from "../../assets/images/bannerbg.jpg";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css/animate.min.css";
 
 // Import Swiper styles
 import "swiper/css";
@@ -36,13 +38,12 @@ const Newsjpn = () => {
       });
   }, []);
 
-
   return (
     <div className="w-[90%] md:w-[80%] m-auto justify-center items-center flex flex-col mb-8">
       <Filter />
       <h2 className="text-xl font-semibold mb-4">Berita Terbaru</h2>
       {/* berita terbaru */}
-      <div className="w-full h-[400px] mb-52">
+      <div className="w-full h-[400px] mb-52 animate__animated  animate__fadeInDown">
         {/* Atur tinggi sesuai kebutuhan */}
         <Swiper
           modules={[Navigation, Pagination, A11y, Autoplay]}
@@ -66,7 +67,7 @@ const Newsjpn = () => {
           navigation
           direction="horizontal"
         >
-          <div className="w-full text-start"></div>
+          <div className="w-full text-start   "></div>
           {Array.isArray(datajpn) && datajpn.length > 0 ? (
             datajpn.map((info) => (
               <SwiperSlide key={info.id}>

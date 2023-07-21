@@ -4,7 +4,7 @@ import React from "react";
 
 const TeamCard = ({ title, img, sosmed, jabatan }) => {
   return (
-    <div className="m-[0.5em] text-center  bg-slate-200 shadow-xl rounded-xl">
+    <div className="m-[0.5em] text-center  bg-slate-200 shadow-xl rounded-xl animate__animated animate__fadeIn">
       <div>
         <img
           className=" h-52 w-full  object-cover rounded-t-xl"
