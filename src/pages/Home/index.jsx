@@ -6,6 +6,9 @@ const Home = () => {
   return (
     <>
       <Banner />
+      {/* <ScrollAnimation animateIn = 'fadeIn'>
+      
+      </ScrollAnimation> */}
       <div className="w-[80%] m-auto" id="gallery">
         <div className="text-center  mt-8 opacity-70">
           <div>
