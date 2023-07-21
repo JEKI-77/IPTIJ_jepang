@@ -17,6 +17,7 @@ import "swiper/css/effect-coverflow";
 import Card2 from "../../Components/Atoms/NewsCard/Card2";
 import Card1 from "../../Components/Atoms/NewsCard/Card1";
 import Filter from "../../Components/Atoms/Filter";
+import Loading from "react-loading";
 
 const Newsjpn = () => {
   const [datajpn, setDatajpn] = useState([]);
@@ -79,7 +80,7 @@ const Newsjpn = () => {
               </SwiperSlide>
             ))
           ) : (
-            <p>loading....</p>
+            <Loading />
           )}
         </Swiper>
       </div>
@@ -101,7 +102,7 @@ const Newsjpn = () => {
             </li>
           ))
         ) : (
-          <p> Loading .... </p>
+          <Loading />
         )}
       </ul>
     </div>

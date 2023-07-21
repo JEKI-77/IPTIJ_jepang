@@ -16,30 +16,34 @@ const Home = () => {
           <div>
             <div className="">
               <div className="mt-16 flex flex-col text-justify gap-4 ">
-                <div className="grid md:grid-flow-col gap-20">
-                  <div>
-                    <img className="md:flex hidden" src={agenda} alt="" />
+                <div className="grid md:grid-flow-col gap-20 md:gap-2  ">
+                  <div className="  items-center flex justify-center">
+                    <img
+                      className="md:flex hidden w-[50%] shadow-lg"
+                      src={agenda}
+                      alt=""
+                    />
                   </div>
 
                   {/* decription */}
 
-                  <div className="flex flex-col items-center justify-center animate__animated animate__backInRight shadow-lg w-[90%] m-auto p-4  rounded-lg ">
+                  <div className="flex flex-col items-center justify-center animate__animated animate__backInRight shadow-lg w-[90%] md:w-[90%] m-auto p-4  rounded-lg ">
                     <p
                       className="text-lg text-center text-gray-900
-                      font-semibold mb-4"
+                      font-semibold mb-4 md:text-2xl"
                     >
                       Ikatan Persaudaran Trainee Indonesia di Jepang
-                      <span className="text-sm"> (IPTIJ)</span>
+                      <span className="text-sm md:text-lg"> (IPTIJ)</span>
                     </p>
-                    <p className="text-[16px] ">
+                    <p className="text-[16px]  md:flex hidden  ">
                       Ikatan Persaudaraan Trainee Indonesia di Jepang merupakan
                       sebuah
                     </p>
-                    <h2 className="mt-8 text-lg font-semibold mb-2 items-start flex">
+                    <h2 className="mt-8 text-lg font-semibold mb-2 items-start  md:flex hidden">
                       Tujuan IPTIJ
                     </h2>
-                    <p className="text-[16px]">
-                      Organisasi yang dibentuk untuk memfasilitasi dan
+                    <p className="text-[16px] flex text-justify indent-4">
+                      Organisasi IPTIJ dibentuk untuk memfasilitasi dan
                       memperkuat hubungan antara trainee atau peserta program
                       pelatihan dari Indonesia yang tinggal dan bekerja di
                       Jepang.
@@ -87,7 +91,7 @@ const Home = () => {
                 </AnimationOnScroll>
                 {/* Quote */}
                 <AnimationOnScroll animateIn="animate__backInUp animate__slow">
-                  <div className=" bg-[#d2e8ef]  h-52 flex justify-center items-center m-4 rounded-xl">
+                  <div className=" bg-[#d2e8ef] shadow-lg  h-52 flex justify-center items-center m-4 rounded-xl  ">
                     <p className="text-gray-900 md:text-lg text-md text-center  m-2 font-semibold ">
                       <i className="text-md">
                         "Jangan pernah menyerah, karena kemenangan selalu berada
