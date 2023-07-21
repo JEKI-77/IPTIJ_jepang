@@ -2,6 +2,7 @@
 import React from "react";
 import Card from "../../Components/Atoms/TeamCard";
 import image from "../../assets/images/bannerbg.jpg";
+import ketua from "../../assets/images/ketua.jpg";
 import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import TeamIT from "../../assets/images/TeamIT.jpg";
 
@@ -20,7 +21,7 @@ const Team = () => {
       id: "2",
       name: "Ahmad Putra",
       jabatan: "Ketua Umum",
-      image: image,
+      image: ketua,
       sosmed: sosmedIcon,
     },
     {

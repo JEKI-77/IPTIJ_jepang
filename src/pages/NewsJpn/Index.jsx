@@ -15,6 +15,7 @@ import "swiper/css/effect-coverflow";
 import Card2 from "../../Components/Atoms/NewsCard/Card2";
 import Card1 from "../../Components/Atoms/NewsCard/Card1";
 import { useNavigate } from "react-router-dom";
+import Filter from "../../Components/Atoms/Filter";
 
 const Newsjpn = () => {
   const [datajpn, setDatajpn] = useState([]);
@@ -35,34 +36,10 @@ const Newsjpn = () => {
       });
   }, []);
 
-  const handleNavigate = () => {
-    navigateTo("/newsjpn");
-  };
-  const handleNavigateIndo = (e) => {
-    navigateTo("/newsindo");
-    console.log(e);
-  };
 
-  const navigateTo = useNavigate();
   return (
-    <div className="w-[90%] md:w-[80%] m-auto justify-center items-center flex flex-col">
-      <div className="text-center">
-        <p className="text-4xl mb-12 font-semibold ">IPTIJ News</p>
-      </div>
-      <div className="flex text-2xl mb-8 gap-4 w-full ">
-        <p
-          className="cursor-pointer hover:text-cyan-600 bg-cyan-900 text-white px-4 rounded-xl text-[16px]"
-          onClick={handleNavigateIndo}
-        >
-          Berita Indonesia
-        </p>
-        <p
-          className="cursor-pointer hover:text-cyan-600 bg-cyan-900 text-white px-4 rounded-xl text-[16px] "
-          onClick={handleNavigate}
-        >
-          Berita Jepang
-        </p>
-      </div>
+    <div className="w-[90%] md:w-[80%] m-auto justify-center items-center flex flex-col mb-8">
+      <Filter />
       <h2 className="text-xl font-semibold mb-4">Berita Terbaru</h2>
       {/* berita terbaru */}
       <div className="w-full h-[400px] mb-52">
@@ -107,11 +84,11 @@ const Newsjpn = () => {
         </Swiper>
       </div>
 
-      {/* last news */}
+      {/* news*/}
       <div className="w-full text-start ">
         <h2 className="text-xl ">Berita Jepang Hari Ini</h2>
       </div>
-      <ul className="">
+      <ul className=" grid md:grid-cols-3 gap-4">
         {Array.isArray(datajpn) && datajpn.length > 0 ? (
           datajpn.map((info) => (
             <li key={info}>

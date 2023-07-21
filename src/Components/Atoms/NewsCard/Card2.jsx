@@ -5,9 +5,9 @@ import React from "react";
 import { IoEyeSharp } from "react-icons/io5";
 
 const Card2 = ({ image, tanggal, judul, description }) => (
-  <div className="bg-slate-100 rounded-xl mt-4  mb-4 flex  items-center shadow-md   ">
+  <div className="bg-slate-100 rounded-xl flex  items-center shadow-md   ">
     <img
-      className="md:h-72 md:w-40 w-28 h-32   object-cover rounded-xl"
+      className="md:h-52 md:w-40 w-28 h-32   object-cover rounded-xl"
       src={image}
       alt="Gambar Berita"
     />

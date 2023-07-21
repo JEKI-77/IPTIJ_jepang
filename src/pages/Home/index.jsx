@@ -11,9 +11,9 @@ const Home = () => {
           <div>
             <div className="">
               <div className="mt-16 flex flex-col text-justify gap-4 ">
-                <div className="grid grid-flow-col gap-20">
+                <div className="grid md:grid-flow-col gap-20">
                   <div>
-                    <img src={agenda} alt="" />
+                    <img className="md:flex hidden" src={agenda} alt="" />
                   </div>
 
                   {/* decription */}
@@ -42,36 +42,37 @@ const Home = () => {
                 </div>
 
                 {/* Agenda */}
-                <div className="grid grid-cols-3 gap-4 place-items-center mt-20 ">
-                  <h2 className="grid col-span-3 text-center text-2xl font-semibold text-gray-900 ">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center mt-20 ">
+                  <h2 className="col-span-2 md:col-span-3 text-center text-2xl font-semibold text-gray-900 ">
                     Agenda kegiatan
                   </h2>
-                  <div className="bg-cyan-300 w-60 text-center">
+
+                  <div className="bg-cyan-300  text-center">
                     <img src={agenda} alt="" srcSet="" />
                     <p>Keagaman</p>
                   </div>
 
-                  <div className="bg-cyan-300 w-60 text-center">
+                  <div className="bg-cyan-300  text-center">
                     <img src={agenda} alt="" srcSet="" />
                     <p>Pertemuan dan Diskusi</p>
                   </div>
 
-                  <div className="bg-cyan-300 w-60 text-center">
+                  <div className="bg-cyan-300  text-center">
                     <img src={agenda} alt="" srcSet="" />
                     <p>Bimbingan dan Konsultasi</p>
                   </div>
 
-                  <div className="bg-cyan-300 w-60 text-center">
+                  <div className="bg-cyan-300  text-center">
                     <img src={agenda} alt="" srcSet="" />
                     <p>Kegiatan Sosial dan Budaya</p>
                   </div>
 
-                  <div className="bg-cyan-300 w-60 text-center">
+                  <div className="bg-cyan-300  text-center">
                     <img src={agenda} alt="" srcSet="" />
                     <p>Pelatihan dan Workshop</p>
                   </div>
 
-                  <div className="bg-cyan-300 w-60 text-center">
+                  <div className="bg-cyan-300  text-center">
                     <img src={agenda} alt="" srcSet="" />
                     <p>Pelatihan dan Workshop</p>
                   </div>
@@ -90,20 +91,26 @@ const Home = () => {
                   </p>
                 </div>
                 {/* partner */}
-                <div className="flex flex-col justify-center items-center gap-2 -mt-1 m-8 h-40 ">
-                  <div className="">
+                <div className="flex bg-slate-200 flex-col justify-center items-center gap-2 -mt-1 m-8 h-40 ">
+                  <div className=" flex text-2xl">
                     <h2>Partner</h2>
                   </div>
-                  <div className="flex">
-                    <img className="w-20" src={agenda} />
-                    <img className="w-20" src={agenda} />
-                    <img className="w-20" src={agenda} />
-                    <img className="w-20" src={agenda} />
-                    <img className="w-20" src={agenda} />
-                    <img className="w-20" src={agenda} />
-                    <img className="w-20" src={agenda} />
-                    <img className="w-20" src={agenda} />
-                    <img className="w-20" src={agenda} />
+                  <div className="flex  ">
+                    <span>
+                      <img className="w-40" src={agenda} />
+                    </span>
+                    <span>
+                      <img className="w-40" src={agenda} />
+                    </span>
+                    <span>
+                      <img className="w-40" src={agenda} />
+                    </span>
+                    <span>
+                      <img className="w-40" src={agenda} />
+                    </span>
+                    <span>
+                      <img className="w-40" src={agenda} />
+                    </span>
                   </div>
                 </div>
               </div>

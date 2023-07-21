@@ -1,7 +1,7 @@
 // eslint-disable-next-line react/prop-types
 const SearchBar = ({ title, placeholder }) => {
   return (
-    <div className="mr-4 flex">
+    <div className="mr-4 flex w-[100%]">
       <input
         className=" py-1 px-20 w-full text-start border border-gray-300"
         type="text"

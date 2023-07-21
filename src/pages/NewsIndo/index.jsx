@@ -15,6 +15,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import Card2 from "../../Components/Atoms/NewsCard/Card2";
+import Filter from "../../Components/Atoms/Filter";
 
 const NewsIndo = () => {
   const [data, setData] = useState([]);
@@ -34,35 +35,9 @@ const NewsIndo = () => {
       });
   }, []);
 
-  const handleNavigate = () => {
-    navigateTo("/newsjpn");
-  };
-  const handleNavigateIndo = (e) => {
-    navigateTo("/newsindo");
-    console.log(e);
-  };
-
-  const navigateTo = useNavigate();
-
   return (
-    <div className="md:w-[80%] w-[90%] m-auto justify-center items-center flex flex-col">
-      <div className="text-center">
-        <p className="text-4xl mb-12 font-semibold ">IPTIJ News</p>
-      </div>
-      <div className="flex text-2xl mb-8 gap-4 w-full ">
-        <p
-          className="cursor-pointer hover:text-cyan-600 bg-cyan-900 text-white px-4 rounded-xl text-[16px]"
-          onClick={handleNavigateIndo}
-        >
-          Berita Indonesia
-        </p>
-        <p
-          className="cursor-pointer hover:text-cyan-600 bg-cyan-900 text-white px-4 rounded-xl text-[16px] "
-          onClick={handleNavigate}
-        >
-          Berita Jepang
-        </p>
-      </div>
+    <div className="md:w-[80%] w-[90%] m-auto justify-center items-center flex flex-col mb-8">
+      <Filter />
       <h2 className="text-xl font-semibold mb-4">Berita Terbaru</h2>
 
       {/* berita terbaru */}
@@ -93,7 +68,7 @@ const NewsIndo = () => {
           <div className="w-full text-start"></div>
           {Array.isArray(data) && data.length > 0 ? (
             data.map((info) => (
-              <SwiperSlide key={info}>
+              <SwiperSlide key={info.title}>
                 <CardBerita
                   image={info.thumbnail}
                   judul={info.title}
@@ -112,10 +87,10 @@ const NewsIndo = () => {
       <div className="w-full text-start  ">
         <h2 className="text-xl m-4 ">Berita Indonesia Hari Ini</h2>
       </div>
-      <ul className="">
+      <ul className=" grid md:grid-cols-3 gap-4">
         {Array.isArray(data) && data.length > 0 ? (
           data.map((info) => (
-            <li key={info}>
+            <li key={info.title}>
               <Card2
                 image={info.thumbnail}
                 judul={info.title}

@@ -13,7 +13,7 @@ const Header = () => {
   //   console.log(value);
   // };
   return (
-    <div className="bg-[rgb(20,53,89)]   text-gray-200 font-semibold w-full  flex h-24 mb-4 ">
+    <div className="bg-[rgb(20,53,89)] text-gray-200 font-semibold  flex h-24 mb-4 ">
       {/* logo */}
       <div className="mx-4 md:mx-20 w-full items-center flex   ">
         <img
@@ -26,10 +26,8 @@ const Header = () => {
       {/* navbar mobile */}
       <nav
         className={`${
-          open
-            ? "right-0 duration-150 ease-in"
-            : "right-[-100%] duration-150 ease-out"
-        }  bg-[rgb(20,53,89)] min-h-screen md:hidden flex items-center justify-center absolute w-full z-[999] `}
+          open ? "right-0  " : "right-[-100%] hidden"
+        }   bg-[rgb(20,53,89)] min-h-screen md:hidden flex items-center justify-center absolute w-full z-[999] `}
       >
         <ul
           onClick={() => setOpen(false)}
@@ -45,14 +43,14 @@ const Header = () => {
               Gallery
             </a>
           </li>
-          <li>
-            <a className="hover" href="kajian">
+          {/* <li>
+            <a className="hover " href="kajian">
               Kajian Islam
             </a>
-          </li>
+          </li> */}
           <li>
-            <a className="hover" href="newsjpn">
-              Berita
+            <a className="hover" href="kajian">
+              Berita Islam
             </a>
           </li>
 
@@ -72,9 +70,9 @@ const Header = () => {
       </div>
 
       {/* navbar desktop */}
-      <div className=" flex items-center justify-end md:m-4 w-full gap-20 md:mr-20  ">
-        <nav>
-          <ul className="md:flex gap-4 hidden">
+      <div className=" md:flex hidden items-center justify-end md:m-4 w-full gap-20 md:mr-20  ">
+        <nav className="flex justify-center items-center">
+          <ul className="md:flex gap-3 ">
             <li className="">
               <a className="hover" href="/">
                 Home
@@ -90,14 +88,14 @@ const Header = () => {
                 Gallery
               </a>
             </li>
-            <li>
-              <a className="hover" href="kajian">
+            {/* <li className="w-[8em] text-center ">
+              <a className=" " href="kajian">
                 Kajian Islam
               </a>
-            </li>
-            <li>
+            </li> */}
+            <li className="w-[8em] text-center ">
               <a className="hover" href="newsindo">
-                Berita
+                Berita Islam
               </a>
             </li>
 
