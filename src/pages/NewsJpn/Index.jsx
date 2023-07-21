@@ -16,7 +16,6 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import Card2 from "../../Components/Atoms/NewsCard/Card2";
 import Card1 from "../../Components/Atoms/NewsCard/Card1";
-import { useNavigate } from "react-router-dom";
 import Filter from "../../Components/Atoms/Filter";
 
 const Newsjpn = () => {

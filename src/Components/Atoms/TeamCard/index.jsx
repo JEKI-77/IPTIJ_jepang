@@ -16,7 +16,7 @@ const TeamCard = ({ title, img, sosmed, jabatan }) => {
         <span className="w-40 bg-gray-100 font-semibold rounded-full mt-2">
           {title}
         </span>
-        <div className="bg-blue-300 w-full h-12 mt-3 rounded-b-lg ">
+        <div className="bg- w-full h-12 mt-3 rounded-b-lg ">
           <span className="w-40  ">{jabatan}</span>
           <span className="flex gap-2 justify-center">{sosmed}</span>
         </div>

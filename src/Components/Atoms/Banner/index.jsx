@@ -4,7 +4,7 @@ import banner1 from "../../../assets/images/banner1.jpg";
 import banner2 from "../../../assets/images/banner2.jpg";
 import banner3 from "../../../assets/images/banner3.jpg";
 // import Swiper core and required modules
-import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
+import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -18,18 +18,17 @@ const Banner = () => {
     <div className="w-[95%]  m-auto">
       <Swiper
         // install Swiper modules
-        modules={[Navigation, Pagination, A11y, Autoplay]}
+        modules={[Pagination, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         autoplay={{ delay: 4000 }}
-        navigation
         pagination={{ clickable: true }}
         // onSwiper={(swiper) => console.log(swiper)}
         // onSlideChange={() => console.log("")}
       >
         <SwiperSlide>
           <img
-            className=" w-full h-[200px] md:h-[400px]  object-cover "
+            className=" w-full h-[300px] md:h-[400px] object-cover "
             src={bannerbg}
             alt="bannerBg"
           />
@@ -37,7 +36,7 @@ const Banner = () => {
         <SwiperSlide>
           {" "}
           <img
-            className="w-full h-[200px] md:h-[400px] object-cover  object-center"
+            className="w-full h-[300px] md:h-[400px] object-cover  object-center"
             src={banner1}
             alt="bannerBg"
           />
@@ -45,7 +44,7 @@ const Banner = () => {
         <SwiperSlide>
           {" "}
           <img
-            className="w-full h-[200px] md:h-[400px]  object-cover object-left"
+            className="w-full h-[300px] md:h-[400px]  object-cover object-left"
             src={banner2}
             alt="bannerBg"
           />
@@ -53,7 +52,7 @@ const Banner = () => {
         <SwiperSlide>
           {" "}
           <img
-            className="w-full h-[200px] md:h-[400px]  object-cover"
+            className="w-full h-[300px] md:h-[400px]  object-cover"
             src={banner3}
             alt="bannerBg"
           />

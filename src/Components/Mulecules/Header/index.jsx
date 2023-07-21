@@ -13,11 +13,11 @@ const Header = () => {
   //   console.log(value);
   // };
   return (
-    <div className="bg-[rgb(20,53,89)] text-gray-200 font-semibold  flex h-24 mb-4 ">
+    <div className="bg-[rgb(20,53,89)] text-gray-200 font-semibold box-border flex ">
       {/* logo */}
       <div className="mx-4 md:mx-20 w-full items-center flex   ">
         <img
-          className="h-20 w-20 object-cover"
+          className="h-14 md:h-20 md:w-20 m-2 w-14 z-[999] object-cover"
           src={iptijLogo}
           alt=""
           srcSet=""
@@ -29,11 +29,11 @@ const Header = () => {
           open
             ? "right-0 animate__animated animate__fadeInRight "
             : "right-[-100%] duration-500"
-        }   bg-[rgb(20,53,89)] min-h-screen md:hidden flex items-center justify-center absolute w-full z-[999] `}
+        }   bg-[rgb(20,53,89)] md:hidden flex items-center justify-center absolute w-full z-[999] h-screen   mt-[4.4em]`}
       >
         <ul
           onClick={() => setOpen(false)}
-          className="gap-20 flex flex-col justify-center items-center  -mt-44 "
+          className="gap-16 flex flex-col justify-center items-center -mt-52 "
         >
           <li>
             <a className="hover" href="/">
@@ -63,9 +63,17 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <div className=" text-xl md:hidden flex mr-20 items-center justify-center ">
+        <ul className="flex gap-4 items-center">
+          <li>{<FaInstagram />}</li>
+          <li>{<FaFacebookF />}</li>
+          <li>{<FiYoutube />}</li>
+          <li>{<FaWhatsapp />}</li>
+        </ul>
+      </div>
       {/* navbar togle */}
       <div
-        className="text-3xl absolute w-[90%] ml-5 m-auto mt-4 md:hidden flex justify-end items-end cursor-pointer z-[999] "
+        className="text-3xl absolute  ml-[85%] m-auto   md:hidden flex justify-end mt-5 cursor-pointer z-[999] text-white "
         onClick={() => setOpen(!open)}
       >
         <HiMiniBars3 />
@@ -110,7 +118,7 @@ const Header = () => {
         </nav>
         <div>
           {/* sosmed */}
-          <div className=" text-xl md:flex hidden ">
+          <div className=" text-xl md:flex ">
             <ul className="flex gap-4 items-center">
               <li>{<FaInstagram />}</li>
               <li>{<FaFacebookF />}</li>

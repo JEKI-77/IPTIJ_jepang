@@ -4,10 +4,13 @@ import Card from "../../Components/Atoms/TeamCard";
 import image from "../../assets/images/bannerbg.jpg";
 import ketua from "../../assets/images/ketua.jpg";
 import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { SlSocialTwitter } from "react-icons/sl";
 import TeamIT from "../../assets/images/TeamIT.jpg";
 
 const Team = () => {
-  const sosmedIcon = [[<FaInstagram />, <FaFacebookF />, <FaWhatsapp />]];
+  const sosmedIcon = [
+    [<FaInstagram />, <FaFacebookF />, <FaWhatsapp />, <SlSocialTwitter />],
+  ];
 
   const Profile = [
     {

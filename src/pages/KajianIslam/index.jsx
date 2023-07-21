@@ -29,11 +29,7 @@ const Kajina = () => {
   return (
     <div className=" md:w-[80%] w-[90%] mx-auto mb-8  ">
       <Filter />
-      <div className="flex ">
-        <div className="ml-10 ">
-          <SearchBar title="cari" placeholder="Search...." />
-        </div>
-      </div>
+      <div className="flex "></div>
       <h1 className="text-center py-8 text-2xl">Berita Islam Terbaru</h1>
       <div className=" mb-8 mx-">
         {loading ? (

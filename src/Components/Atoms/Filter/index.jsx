@@ -16,10 +16,7 @@ const Filter = () => {
   const navigateTo = useNavigate();
   return (
     <>
-      <div className="text-center">
-        <p className="text-4xl md:mb-12 font-semibold mb-8 ">IPTIJ News</p>
-      </div>
-      <div className="flex text-2xl mb-8 gap-4 w-full ">
+      <div className="flex text-2xl mb-8 gap-4 w-full mt-8 ">
         <p
           className="cursor-pointer hover:bg-cyan-600 bg-cyan-800 text-white  px-4 py-1  rounded-xl text-[16px] text-center justify-center items-center flex leading-6 md:leading-none"
           onClick={handleNavigateIndo}
