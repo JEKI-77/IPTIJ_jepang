@@ -15,7 +15,7 @@ import "swiper/css/autoplay";
 
 const Banner = () => {
   return (
-    <div className="w-[95%]  m-auto">
+    <div className="w-[95%]  m-auto mt-2">
       <Swiper
         // install Swiper modules
         modules={[Pagination, A11y, Autoplay]}
@@ -28,7 +28,7 @@ const Banner = () => {
       >
         <SwiperSlide>
           <img
-            className=" w-full h-[300px] md:h-[400px] object-cover "
+            className=" w-full h-[300px] md:h-[400px] object-cover rounded-xl "
             src={bannerbg}
             alt="bannerBg"
           />
@@ -36,7 +36,7 @@ const Banner = () => {
         <SwiperSlide>
           {" "}
           <img
-            className="w-full h-[300px] md:h-[400px] object-cover  object-center"
+            className="w-full h-[300px] md:h-[400px] object-cover  object-center rounded-xl"
             src={banner1}
             alt="bannerBg"
           />
@@ -44,7 +44,7 @@ const Banner = () => {
         <SwiperSlide>
           {" "}
           <img
-            className="w-full h-[300px] md:h-[400px]  object-cover object-left"
+            className="w-full h-[300px] md:h-[400px]  object-cover object-left rounded-xl"
             src={banner2}
             alt="bannerBg"
           />
@@ -52,7 +52,7 @@ const Banner = () => {
         <SwiperSlide>
           {" "}
           <img
-            className="w-full h-[300px] md:h-[400px]  object-cover"
+            className="w-full h-[300px] md:h-[400px]  object-cover rounded-xl"
             src={banner3}
             alt="bannerBg"
           />

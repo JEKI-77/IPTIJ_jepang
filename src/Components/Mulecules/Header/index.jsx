@@ -51,6 +51,11 @@ const Header = () => {
             </a>
           </li> */}
           <li>
+            <a className="hover" href="jadwalsholat">
+              Jadwal Sholat
+            </a>
+          </li>
+          <li>
             <a className="hover" href="kajian">
               Berita Islam
             </a>

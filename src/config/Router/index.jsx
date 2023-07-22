@@ -7,6 +7,7 @@ import KajianIslam from "../../pages/KajianIslam";
 import Team from "../../pages/Team";
 import NewsIndo from "../../pages/NewsIndo";
 import Newsjpn from "../../pages/NewsJpn/Index";
+import JadwalSholat from "../../pages/JadwalSholat";
 
 const RouterApp = () => {
   return (
@@ -18,6 +19,7 @@ const RouterApp = () => {
         <Route path="newsindo" element={<NewsIndo />} />
         <Route path="Team" element={<Team />} />
         <Route path="newsjpn" element={<Newsjpn />} />
+        <Route path="jadwalsholat" element={<JadwalSholat />} />
       </Routes>
     </Router>
   );
