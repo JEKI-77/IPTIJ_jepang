@@ -24,7 +24,7 @@ const Header = () => {
         className={`${
           open
             ? "right-0 animate__animated animate__fadeInRight "
-            : "right-[-100%] duration-500"
+            : "right-[-100%] hidden duration-500"
         }   bg-[rgb(20,53,89)] md:hidden flex items-center justify-center absolute w-full z-[999] h-screen   mt-[4.4em]`}
       >
         <ul
