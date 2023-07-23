@@ -3,15 +3,11 @@ import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { FiYoutube } from "react-icons/fi";
 import { useState } from "react";
+import Sosmed from "../../Atoms/Sosmed";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
 
-  // const NavbarHandler = (e) => {
-  //   e.preventDefault();
-  //   const value = e.target.value;
-  //   console.log(value);
-  // };
   return (
     <div className="bg-[rgb(20,53,89)] text-gray-200 font-semibold box-border flex ">
       {/* logo */}
@@ -57,7 +53,7 @@ const Header = () => {
           </li>
           <li>
             <a className="hover" href="kajian">
-              Berita Islam
+              News
             </a>
           </li>
 
@@ -68,14 +64,10 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div className=" text-xl md:hidden flex mr-20 items-center justify-center ">
-        <ul className="flex gap-4 items-center">
-          <li>{<FaInstagram />}</li>
-          <li>{<FaFacebookF />}</li>
-          <li>{<FiYoutube />}</li>
-          <li>{<FaWhatsapp />}</li>
-        </ul>
+      <div className="flex md:hidden ">
+        <Sosmed />
       </div>
+
       {/* navbar togle */}
       <div
         className="text-3xl absolute  ml-[85%] m-auto   md:hidden flex justify-end mt-5 cursor-pointer z-[999] text-white "
@@ -93,24 +85,16 @@ const Header = () => {
                 Home
               </a>
             </li>
-            {/* <li>
-              <a className="hover" href="newjpn">
-                newjpn
-              </a>
-            </li> */}
+
             <li>
               <a className="hover" href="gallery">
                 Gallery
               </a>
             </li>
-            {/* <li className="w-[8em] text-center ">
-              <a className=" " href="kajian">
-                Kajian Islam
-              </a>
-            </li> */}
-            <li className="w-[8em] text-center ">
+
+            <li>
               <a className="hover" href="newsindo">
-                Berita Islam
+                News
               </a>
             </li>
 
@@ -119,19 +103,11 @@ const Header = () => {
                 Team
               </a>
             </li>
+            <div className="md:flex hidden ">
+              <Sosmed />
+            </div>
           </ul>
         </nav>
-        <div>
-          {/* sosmed */}
-          <div className=" text-xl md:flex ">
-            <ul className="flex gap-4 items-center">
-              <li>{<FaInstagram />}</li>
-              <li>{<FaFacebookF />}</li>
-              <li>{<FiYoutube />}</li>
-              <li>{<FaWhatsapp />}</li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
   );

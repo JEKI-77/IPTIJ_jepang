@@ -41,19 +41,40 @@ const JadwalSholat = () => {
   };
 
   return (
-    <div className="w-[80%] m-auto h-screen mt-8">
-      <h2>JadwalSholat</h2>
+    <div className="w-[80%] m-auto mb-8 mt-8">
+      <h2 className="text-3xl font-semibold text-gray-700  text-center ">
+        Jadwal Sholat Jepang
+      </h2>
+      <div className=" text-gray-600 mb-8 text-sm  gap-4 flex justify-center items-center">
+        <span>M {date.date}</span>
+        <span>H {hijriah.date}</span>
+      </div>
+
       <SearchBar onChange={cityHandler} onClick={onClickHandler} title="Cari" />
-      <div>
-        <h1 className="text-xl"> {city}</h1>
-        <div>{date.date}</div>
-        <div>{hijriah.date}</div>
-        <div>Subuh:{data.Fajr}</div>
-        <div>Fajar:{data.Sunrise}</div>
-        <div>Dzuhur:{data.Dhuhr}</div>
-        <div>Ashar:{data.Asr}</div>
-        <div>Magrib:{data.Maghrib}</div>
-        <div>Isya:{data.Isha}</div>
+      <div className="flex gap-3 flex-col">
+        <div className=" mt-4 text-center">
+          <h1 className="text-xl">
+            <span className="font-semibold"> Kota</span> : {city || "Tokyo"}
+          </h1>
+        </div>
+        <div className="bg-slate-100  rounded-full px-4 py-3 shadow-md  ">
+          <span className=" font-semibold">Subuh </span> {data.Fajr}
+        </div>
+        <div className="bg-slate-100  rounded-full px-4 py-3 shadow-md  ">
+          <span className=" font-semibold">Fajar </span> {data.Sunrise}
+        </div>
+        <div className="bg-slate-100  rounded-full px-4 py-3 shadow-md  ">
+          <span className=" font-semibold"> Dzuhur</span> {data.Dhuhr}
+        </div>
+        <div className="bg-slate-100  rounded-full px-4 py-3 shadow-md  ">
+          <span className=" font-semibold">Ashar</span> {data.Asr}
+        </div>
+        <div className="bg-slate-100  rounded-full px-4 py-3 shadow-md  ">
+          <span className=" font-semibold">Magrib</span> {data.Maghrib}
+        </div>
+        <div className="bg-slate-100  rounded-full px-4 py-3 shadow-md  ">
+          <span className=" font-semibold">Isya</span> {data.Isha}
+        </div>
       </div>
     </div>
   );

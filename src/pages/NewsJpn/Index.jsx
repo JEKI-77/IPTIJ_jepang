@@ -39,11 +39,12 @@ const Newsjpn = () => {
   }, []);
 
   return (
-    <div className="w-[90%] md:w-[80%] m-auto justify-center items-center flex flex-col mb-8">
+    <div className="md:w-[80%] w-[90%] m-auto justify-center items-center flex flex-col mb-8">
       <Filter />
       <h2 className="text-xl font-semibold mb-4">Berita Terbaru</h2>
+
       {/* berita terbaru */}
-      <div className="w-full h-[400px] mb-52 animate__animated  animate__fadeInDown">
+      <div className="w-full h-[400px] md:mb-5">
         {/* Atur tinggi sesuai kebutuhan */}
         <Swiper
           modules={[Navigation, Pagination, A11y, Autoplay]}
@@ -67,32 +68,32 @@ const Newsjpn = () => {
           navigation
           direction="horizontal"
         >
-          <div className="w-full text-start   "></div>
+          <div className="w-full text-start"></div>
           {Array.isArray(datajpn) && datajpn.length > 0 ? (
             datajpn.map((info) => (
-              <SwiperSlide key={info.id}>
+              <SwiperSlide key={info.title}>
                 <Card1
                   image={info.urlToImage}
                   judul={info.title}
                   //  description={info.description}
-                  tanggal={info.publishedAt}
+                  tanggal={info.pubDate}
                 />
               </SwiperSlide>
             ))
           ) : (
-            <Loading />
+            <p>loading....</p>
           )}
         </Swiper>
       </div>
 
-      {/* news*/}
-      <div className="w-full text-start ">
-        <h2 className="text-xl ">Berita Jepang Hari Ini</h2>
+      {/* last news */}
+      <div className="w-full text-start   ">
+        <h2 className="text-xl m-4 ">Berita Indonesia Hari Ini</h2>
       </div>
       <ul className=" grid md:grid-cols-3 gap-4">
         {Array.isArray(datajpn) && datajpn.length > 0 ? (
           datajpn.map((info) => (
-            <li key={info}>
+            <li key={info.title}>
               <Card2
                 image={info.urlToImage}
                 judul={info.title}
@@ -102,7 +103,7 @@ const Newsjpn = () => {
             </li>
           ))
         ) : (
-          <Loading />
+          <p> Loading .... </p>
         )}
       </ul>
     </div>

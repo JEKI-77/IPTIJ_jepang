@@ -3,6 +3,9 @@ import Banner from "../../Components/Atoms/Banner";
 import agenda from "../../assets/images/logo_iptij.png";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import Link from "../../Components/Atoms/Link";
+import { LiaDonateSolid } from "react-icons/lia";
+import { MdAppRegistration } from "react-icons/md";
 
 const Home = () => {
   return (
@@ -51,9 +54,33 @@ const Home = () => {
                   </div>
                 </div>
 
+                <div className="flex  flex-col gap-2 mt-4 m-auto">
+                  <a href="https://api.whatsapp.com/send?phone=817016675994">
+                    <Link
+                      icon={<LiaDonateSolid />}
+                      backgroundColor="#ffa700"
+                      title="Donasi Untuk Dakwah IPTIJ"
+                    />
+                  </a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSPvjh8Z2A4szaH5ZSUzPe-MQG2xjNAqWAj6u1MPnUq8G41A/viewform">
+                    <Link
+                      icon={<MdAppRegistration />}
+                      backgroundColor="#d62d20"
+                      title="Daftar menjadi pengurus"
+                    />
+                  </a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScFI8vy-jE82vp1m5vjH-UbLsUL_OaCFs3BsZk_QftN-XhpJw/viewform">
+                    <Link
+                      icon={<MdAppRegistration />}
+                      backgroundColor="#0057e7"
+                      title="Registrasi Tahsin"
+                    />
+                  </a>
+                </div>
+
                 {/* Agenda */}
                 <AnimationOnScroll animateIn="animate__backInUp">
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center mt-20 w-[90%] m-auto ">
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center mt-16 w-[90%] m-auto ">
                     <h2 className="col-span-2 md:col-span-3 text-center text-lg font-semibold ">
                       Agenda Kegiatan
                     </h2>

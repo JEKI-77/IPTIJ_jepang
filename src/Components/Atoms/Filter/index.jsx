@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import "react-dropdown/style.css";
+import { useState } from "react";
 
 const Filter = () => {
   const handleNavigate = () => {
@@ -14,29 +16,79 @@ const Filter = () => {
   };
 
   const navigateTo = useNavigate();
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
-    <>
-      <div className="flex text-2xl mb-8 gap-4 w-full mt-8 ">
-        <p
-          className="cursor-pointer hover:bg-cyan-600 bg-cyan-800 text-white  px-4 py-1  rounded-xl text-[16px] text-center justify-center items-center flex leading-6 md:leading-none"
-          onClick={handleNavigateIndo}
+    <div className=" mt-8 mb-14 -ml-52">
+      <div className="relative ">
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdown"
+          className="text-white w-42 px-2 font-semibold  hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-whitefont-medium rounded-xl text-md py-2 text-center items-center flex bg-cyan-600  "
+          type="button"
+          onClick={toggleDropdown}
         >
-          Berita Indonesia
-        </p>
-        <p
-          className="cursor-pointer hover:bg-cyan-600 bg-cyan-800 text-white px-4 py-1 rounded-xl text-[16px] text-center justify-center items-center flex leading-6 md:leading-none "
-          onClick={handleNavigate}
-        >
-          Berita Jepang
-        </p>
-        <p
-          className="cursor-pointer hover:bg-cyan-600 bg-cyan-800 text-white px-4 py-1 rounded-xl text-[16px] text-center justify-center items-center flex leading-6 md:leading-none "
-          onClick={BeritaIslamNavigate}
-        >
-          Berita Islam
-        </p>
+          Pilih Kategori
+          <svg
+            className="w-2.5 h-2.5 ml-2.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        </button>
+
+        {isDropdownOpen && (
+          <div
+            id="dropdown"
+            className="z-10 w-full bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-white absolute right-0 mt-2"
+          >
+            <ul className="py-2 text-md text-gray-700">
+              <li>
+                <a
+                  href="#"
+                  onClick={BeritaIslamNavigate}
+                  className="block px-4 py-2 hover:bg-gray-100 text-md  "
+                >
+                Islam News
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  onClick={handleNavigate}
+                  className="block px-4 py-2 hover:bg-gray-100 text-md  "
+                >
+                  Japang
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  onClick={handleNavigateIndo}
+                  className="block px-4 py-2 hover:bg-gray-100 text-md  "
+                >
+                  Indonesia
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
-    </>
+    </div>
   );
 };
 

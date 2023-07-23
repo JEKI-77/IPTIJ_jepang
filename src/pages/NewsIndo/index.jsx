@@ -39,9 +39,8 @@ const NewsIndo = () => {
     <div className="md:w-[80%] w-[90%] m-auto justify-center items-center flex flex-col mb-8">
       <Filter />
       <h2 className="text-xl font-semibold mb-4">Berita Terbaru</h2>
-
       {/* berita terbaru */}
-      <div className="w-full h-[400px] mb-5">
+      <div className="w-full h-[400px] md:mb-5">
         {/* Atur tinggi sesuai kebutuhan */}
         <Swiper
           modules={[Navigation, Pagination, A11y, Autoplay]}
@@ -84,7 +83,7 @@ const NewsIndo = () => {
       </div>
 
       {/* last news */}
-      <div className="w-full text-start  ">
+      <div className="w-full text-start   ">
         <h2 className="text-xl m-4 ">Berita Indonesia Hari Ini</h2>
       </div>
       <ul className=" grid md:grid-cols-3 gap-4">

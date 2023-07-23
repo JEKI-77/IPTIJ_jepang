@@ -4,13 +4,13 @@ import {
   FaWhatsapp,
   FaLinkedin,
 } from "react-icons/fa";
-import { FiYoutube } from "react-icons/fi";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 import SearchBar from "../../Atoms/Search";
+import Sosmed from "../../Atoms/Sosmed";
 
 const Footer = () => {
   return (
-    <div className="bg-[rgb(20,53,89)]  grid grid-cols-4 md:grid-cols-8 justify-center ">
+    <div className="bg-[rgb(20,53,89)]  grid grid-cols-4 md:grid-cols-8 justify-center  ">
       <div className=" gap-2 mt-8 col-span-2 m-auto ml-14 ">
         <h2 className="md:text-xl text-lg text-gray-300  mb-4">Kontak</h2>
         <div className="text-gray-400 text-sm md:text-md ">
@@ -30,20 +30,19 @@ const Footer = () => {
 
       <div className="mt-8 gap-4  col-span-4 md:col-span-2 m-auto ">
         <h2 className="text-xl text-center text-gray-300 mb-4">Sosial Media</h2>
-        <ul className="flex  gap-4 text-xl  text-gray-400 ">
-          <li>{<FaInstagram />}</li>
-          <li>{<FaFacebookF />}</li>
-          <li>{<FiYoutube />}</li>
-          <li>{<FaWhatsapp />}</li>
-        </ul>
+        <div className=" text-gray-300 text-center ml-20">
+          <Sosmed />
+        </div>
       </div>
 
       <div className="md:mt-8 mt-4 gap-4 col-span-4 md:col-span-2 w-[90%] m-auto ">
-        <h2 className="text-center text-xl text-gray-300 m-4 ">Our Newlatter</h2>
+        <h2 className="text-center text-xl text-gray-300 m-4 ">
+          Our Newlatter
+        </h2>
         <p className="text-gray-400 text-center m-2 text-sm md:text-md">
           Dapatkan Informasi Terbaru Kami
         </p>
-        <SearchBar title="Kirim" placeholder="pertanyaan" />
+        <SearchBar title="Kirim" placeholder="Masukan Email ... " />
       </div>
 
       {/* copyright */}
