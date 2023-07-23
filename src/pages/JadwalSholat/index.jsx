@@ -43,7 +43,7 @@ const JadwalSholat = () => {
   return (
     <div className="w-[80%] md:w-[30%] m-auto mb-8 mt-8">
       <h2 className="text-2xl font-semibold text-gray-700  text-center ">
-        Jadwal Sholat Jepang
+        Jadwal sholat
       </h2>
       <div className=" text-gray-600 font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
         <span>M {date.date}</span>
