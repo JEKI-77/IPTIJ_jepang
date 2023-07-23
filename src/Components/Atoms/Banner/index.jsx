@@ -1,8 +1,5 @@
-import bannerbg from "../../../assets/images/bannerbg.jpg";
-import img2 from "../../../assets/images/image2.png";
-import banner1 from "../../../assets/images/banner1.jpg";
-import banner2 from "../../../assets/images/banner2.jpg";
-import banner3 from "../../../assets/images/banner3.jpg";
+import bannerUpdate from "../../../assets/images/bannerUpdt.jpg";
+import bannerUpdate2 from "../../../assets/images/bannerUpdt2.jpg";
 // import Swiper core and required modules
 import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,35 +24,40 @@ const Banner = () => {
         // onSlideChange={() => console.log("")}
       >
         <SwiperSlide>
-          <img
-            className=" w-full h-[300px] md:h-[400px] object-cover rounded-xl "
-            src={bannerbg}
-            alt="bannerBg"
-          />
+          <div className="flex m-auto justify-center ">
+            <img
+              className="w-full h-[18em] md:w-[80%] md:h-[400px] object-cover md:object-fill   rounded-xl"
+              src={bannerUpdate}
+              alt="bannerBg"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
-          <img
-            className="w-full h-[300px] md:h-[400px] object-cover  object-center rounded-xl"
-            src={banner1}
-            alt="bannerBg"
-          />
+          <div className="flex m-auto justify-center ">
+            <img
+              className="w-full h-[18em] md:w-[80%]  md:h-[400px]  object-cover  md:object-fill    rounded-xl"
+              src={bannerUpdate2}
+              alt="bannerBg"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
-          <img
-            className="w-full h-[300px] md:h-[400px]  object-cover object-left rounded-xl"
-            src={banner2}
-            alt="bannerBg"
-          />
+          <div className="flex m-auto justify-center ">
+            <img
+              className="w-full h-[18em] md:w-[80%] md:h-[400px] object-cover md:object-fill   rounded-xl"
+              src={bannerUpdate}
+              alt="bannerBg"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
-          <img
-            className="w-full h-[300px] md:h-[400px]  object-cover rounded-xl"
-            src={banner3}
-            alt="bannerBg"
-          />
+          <div className="flex m-auto justify-center ">
+            <img
+              className="w-full h-[18em] md:w-[80%]  md:h-[400px]  object-cover  md:object-fill    rounded-xl"
+              src={bannerUpdate2}
+              alt="bannerBg"
+            />
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>

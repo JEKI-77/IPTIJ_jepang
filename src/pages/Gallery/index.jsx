@@ -14,7 +14,7 @@ import imgGallery12 from "../../assets/imagesIptij/img12.jpg";
 
 const Gallery = () => {
   return (
-    <div className="md:grid md:grid-cols-6 flex flex-col  gap-2 w-[90%] m-auto mb-4  ">
+    <div className="md:grid md:grid-cols-6 flex flex-col  gap-2 w-[95%] m-auto mb-4  ">
       <div className="col-span-6">
         <Banner />
       </div>

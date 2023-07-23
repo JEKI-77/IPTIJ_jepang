@@ -1,6 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import Banner from "../../Components/Atoms/Banner";
-import agenda from "../../assets/images/logo_iptij.png";
+import workshop from "../../assets/images/Agenda/Workshop.jpg";
+import olahraga from "../../assets/images/Agenda/olahraga.jpg";
+import Rekreasi from "../../assets/images/bannerbg.jpg";
+import imgGallery6 from "../../assets/imagesIptij/img6.jpg";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Link from "../../Components/Atoms/Link";
@@ -22,8 +25,8 @@ const Home = () => {
                 <div className="grid md:grid-flow-col gap-20 md:gap-2  ">
                   <div className="  items-center flex justify-center">
                     <img
-                      className="md:flex hidden w-[50%] shadow-lg"
-                      src={agenda}
+                      className=" hidden w-[50%] shadow-lg"
+                      src={""}
                       alt=""
                     />
                   </div>
@@ -38,14 +41,11 @@ const Home = () => {
                       Ikatan Persaudaran Trainee Indonesia di Jepang
                       <span className="text-sm md:text-lg"> (IPTIJ)</span>
                     </p>
-                    <p className="text-[16px]  md:flex hidden  ">
-                      Ikatan Persaudaraan Trainee Indonesia di Jepang merupakan
-                      sebuah
-                    </p>
                     <h2 className="mt-8 text-lg font-semibold mb-2 items-start  md:flex hidden">
                       Tujuan IPTIJ
                     </h2>
-                    <p className="text-[16px] flex text-justify indent-4">
+
+                    <p className="text-sm md:text-lg  flex text-justify indent-4">
                       Organisasi IPTIJ dibentuk untuk memfasilitasi dan
                       memperkuat hubungan antara trainee atau peserta program
                       pelatihan dari Indonesia yang tinggal dan bekerja di
@@ -80,39 +80,49 @@ const Home = () => {
 
                 {/* Agenda */}
                 <AnimationOnScroll animateIn="animate__backInUp">
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center mt-16 w-[90%] m-auto ">
+                  <div className="grid grid-cols-2 md:grid-cols-3  gap-4 place-items-center mt-16 w-[90%] m-auto ">
                     <h2 className="col-span-2 md:col-span-3 text-center text-lg font-semibold ">
                       Agenda Kegiatan
                     </h2>
 
-                    <div className="shadow-lg text-center">
-                      <img className=" " src={agenda} alt="" srcSet="" />
-                      <p>Keagaman</p>
+                    <div className="shadow-lg text-center rounded-b-xl">
+                      <img
+                        className=" w-full md:h-60  h-40 rounded-t-xl  "
+                        src={imgGallery6}
+                        alt=""
+                        srcSet=""
+                      />
+                      <p>Kajian Islam</p>
                     </div>
 
-                    <div className="shadow-lg text-center">
-                      <img src={agenda} alt="" srcSet="" />
-                      <p>Pertemuan dan Diskusi</p>
+                    <div className="shadow-lg text-center rounded-b-xl">
+                      <img
+                        className=" w-full md:h-60  h-40 rounded-t-xl"
+                        src={workshop}
+                        alt=""
+                        srcSet=""
+                      />
+                      <p>Workshop</p>
                     </div>
 
-                    <div className="shadow-lg text-center">
-                      <img src={agenda} alt="" srcSet="" />
-                      <p>Bimbingan dan Konsultasi</p>
+                    <div className="shadow-lg text-center rounded-b-xl">
+                      <img
+                        className=" w-full md:h-60  h-40 rounded-t-xl"
+                        src={Rekreasi}
+                        alt=""
+                        srcSet=""
+                      />
+                      <p>Rekreasi</p>
                     </div>
 
-                    <div className="shadow-lg text-center">
-                      <img src={agenda} alt="" srcSet="" />
-                      <p>Kegiatan Sosial dan Budaya</p>
-                    </div>
-
-                    <div className="shadow-lg text-center">
-                      <img src={agenda} alt="" srcSet="" />
-                      <p>Pelatihan dan Workshop</p>
-                    </div>
-
-                    <div className="shadow-lg text-center">
-                      <img src={agenda} alt="" srcSet="" />
-                      <p>Pelatihan dan Workshop</p>
+                    <div className="shadow-lg text-center md:col-span-3 rounded-b-xl">
+                      <img
+                        className=" w-full  h-40 md:h-60 rounded-t-xl"
+                        src={olahraga}
+                        alt=""
+                        srcSet=""
+                      />
+                      <p>Olahraga</p>
                     </div>
                   </div>
                 </AnimationOnScroll>
@@ -120,19 +130,22 @@ const Home = () => {
                 <AnimationOnScroll animateIn="animate__backInUp animate__slow">
                   <div className=" bg-[#d2e8ef] shadow-lg  h-52 flex justify-center items-center m-4 rounded-xl  ">
                     <p className="text-gray-900 md:text-lg text-md text-center  m-2 font-semibold ">
+                      <div className="text-start mb-4">
+                        <span className=""> Quotes -</span>
+                      </div>
                       <i className="text-md">
                         "Jangan pernah menyerah, karena kemenangan selalu berada
                         di ujung perjuangan"
                       </i>
-                      <div className="text-end mt-4 ">
-                        <span className=""> - Soekarno</span>
-                      </div>
+                      {/* <div className="text-end mt-4">
+                        <span className=""> Quotes -</span>
+                      </div> */}
                     </p>
                   </div>
                 </AnimationOnScroll>
 
                 {/* partner */}
-                <AnimationOnScroll animateIn="animate__backInUp">
+                {/* <AnimationOnScroll animateIn="animate__backInUp">
                   <div className="flex  flex-col justify-center items-center gap-2 -mt-1 m-8 h-40 ">
                     <div className=" flex text--lg">
                       <h2>Partner</h2>
@@ -155,7 +168,7 @@ const Home = () => {
                       </span>
                     </div>
                   </div>
-                </AnimationOnScroll>
+                </AnimationOnScroll> */}
               </div>
             </div>
           </div>

@@ -41,7 +41,7 @@ const JadwalSholat = () => {
   };
 
   return (
-    <div className="w-[80%] m-auto mb-8 mt-8">
+    <div className="w-[80%] md:w-[30%] m-auto mb-8 mt-8">
       <h2 className="text-2xl font-semibold text-gray-700  text-center ">
         Jadwal Sholat Jepang
       </h2>
@@ -51,6 +51,7 @@ const JadwalSholat = () => {
       </div>
 
       <SearchBar onChange={cityHandler} onClick={onClickHandler} title="Cari" />
+
       <div className="flex gap-3 flex-col">
         <div className=" mt-4 text-center">
           <h1 className="text-xl">

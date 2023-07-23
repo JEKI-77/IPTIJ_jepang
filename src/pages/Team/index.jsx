@@ -63,7 +63,10 @@ const Team = () => {
         <p className="mt-4 text-lg">IPTIJ PERIODE 2022 - 2023</p>
       </div>
 
-      <ul className=" grid md:grid-cols-4 grid-cols-2 mt-8 ">
+      <div className="flex justify-center items-center h-screen">
+        <p>Halaman dalam pengembangan</p>
+      </div>
+      {/* <ul className=" grid md:grid-cols-4 grid-cols-2 mt-8 ">
         {Profile.map((data) => (
           <li key={data.id}>
             <Card
@@ -74,7 +77,7 @@ const Team = () => {
             />
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 };
