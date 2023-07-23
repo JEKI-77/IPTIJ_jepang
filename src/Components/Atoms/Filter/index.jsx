@@ -29,7 +29,7 @@ const Filter = () => {
         <button
           id="dropdownDefaultButton"
           data-dropdown-toggle="dropdown"
-          className="text-white w-42 px-2 font-semibold  hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-whitefont-medium rounded-xl text-md py-2 text-center items-center flex bg-cyan-600  "
+          className="text-white w-42 px-3 font-semibold  hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-whitefont-medium rounded-xl text-md py-[0.2em] text-center items-center flex bg-cyan-600  "
           type="button"
           onClick={toggleDropdown}
         >
@@ -63,7 +63,7 @@ const Filter = () => {
                   onClick={BeritaIslamNavigate}
                   className="block px-4 py-2 hover:bg-gray-100 text-md  "
                 >
-                Islam News
+                  Islam News
                 </a>
               </li>
               <li>

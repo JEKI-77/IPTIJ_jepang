@@ -1,72 +1,57 @@
 /* eslint-disable react/jsx-key */
-import React from "react";
 import Card from "../../Components/Atoms/TeamCard";
-import image from "../../assets/images/bannerbg.jpg";
-import ketua from "../../assets/images/ketua.jpg";
 import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { SlSocialTwitter } from "react-icons/sl";
-import TeamIT from "../../assets/images/TeamIT.jpg";
+import { CgProfile } from "react-icons/cg";
 
 const Team = () => {
   const sosmedIcon = [
     [<FaInstagram />, <FaFacebookF />, <FaWhatsapp />, <SlSocialTwitter />],
   ];
 
+  const iconProfile = [<CgProfile />];
+
   const Profile = [
     {
       id: "1",
-      name: "Deki Saputra",
-      jabatan: "Team IT",
-      image: TeamIT,
+      name: "Anonim",
+      jabatan: "Ketua ",
+      profile: iconProfile,
       sosmed: sosmedIcon,
     },
     {
       id: "2",
-      name: "Ahmad Putra",
-      jabatan: "Ketua Umum",
-      image: ketua,
+      name: "Anonim",
+      jabatan: "Ketua ",
+      profile: iconProfile,
       sosmed: sosmedIcon,
     },
     {
       id: "3",
-      name: "Budiyuno",
+      name: "Anonim",
       jabatan: "Wakil Ketua",
-      image: image,
+      profile: iconProfile,
       sosmed: sosmedIcon,
     },
     {
       id: "4",
-      name: "Angel Putri",
+      name: "Anonim",
       jabatan: "Sekretaris",
-      image: image,
+      profile: iconProfile,
       sosmed: sosmedIcon,
     },
     {
       id: "5",
-      name: "Angel Putri",
+      name: "Anonim",
       jabatan: "Bandahara",
-      image: image,
+      profile: iconProfile,
       sosmed: sosmedIcon,
     },
     {
       id: "6",
-      name: "Angel Putri",
-      jabatan: "Ketua Umum",
-      image: image,
-      sosmed: sosmedIcon,
-    },
-    {
-      id: "7",
-      name: "Angel Putri",
-      jabatan: "Ketua Umum",
-      image: image,
-      sosmed: sosmedIcon,
-    },
-    {
-      id: "8",
-      name: "Angel Putri",
-      jabatan: "Ketua Umum",
-      image: image,
+      name: "Anonim",
+      jabatan: "Ketua ",
+      profile: iconProfile,
       sosmed: sosmedIcon,
     },
   ];
@@ -82,7 +67,7 @@ const Team = () => {
         {Profile.map((data) => (
           <li key={data.id}>
             <Card
-              img={data.image}
+              img={data.profile}
               title={data.name}
               jabatan={data.jabatan}
               sosmed={data.sosmed}

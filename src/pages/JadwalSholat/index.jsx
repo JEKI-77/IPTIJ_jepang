@@ -1,5 +1,5 @@
+/* eslint-disable no-unused-vars */
 import axios from "axios";
-import dayjs from "dayjs";
 import React, { useEffect, useState } from "react";
 import SearchBar from "../../Components/Atoms/Search";
 
@@ -42,7 +42,7 @@ const JadwalSholat = () => {
 
   return (
     <div className="w-[80%] m-auto mb-8 mt-8">
-      <h2 className="text-3xl font-semibold text-gray-700  text-center ">
+      <h2 className="text-2xl font-semibold text-gray-700  text-center ">
         Jadwal Sholat Jepang
       </h2>
       <div className=" text-gray-600 font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">

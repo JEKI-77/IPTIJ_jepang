@@ -7,7 +7,6 @@ import imgGallery4 from "../../assets/imagesIptij/img4.jpg";
 import imgGallery5 from "../../assets/imagesIptij/img5.jpg";
 import imgGallery6 from "../../assets/imagesIptij/img6.jpg";
 import imgGallery7 from "../../assets/imagesIptij/img7.jpg";
-import imgGallery8 from "../../assets/imagesIptij/img8.jpg";
 import imgGallery9 from "../../assets/imagesIptij/img9.jpg";
 import imgGallery10 from "../../assets/imagesIptij/img10.jpg";
 import imgGallery11 from "../../assets/imagesIptij/img11.jpg";
