@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
 // import image from "../../assets/images/bannerbg.jpg";
-import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+// import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 
 // Import Swiper styles
@@ -15,9 +15,9 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import Card2 from "../../Components/Atoms/NewsCard/Card2";
-import Card1 from "../../Components/Atoms/NewsCard/Card1";
+// import Card1 from "../../Components/Atoms/NewsCard/Card1";
 import Filter from "../../Components/Atoms/Filter";
-import Loading from "react-loading";
+// import Loading from "react-loading";
 
 const Newsjpn = () => {
   const [datajpn, setDatajpn] = useState([]);
@@ -38,55 +38,16 @@ const Newsjpn = () => {
       });
   }, []);
 
+  const handleLinkClick = (event) => {
+    const postLink = event.currentTarget;
+    const url = postLink.dataset.url
+    console.log("Url", url);
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="md:w-[80%] w-[90%] m-auto justify-center items-center flex flex-col mb-8">
       <Filter />
-      {/* <h2 className="text-xl font-semibold mb-4">Berita Terbaru</h2> */}
-
-      {/* berita terbaru */}
-      {/* <div className="w-full h-[400px] md:mb-5"> */}
-      {/* Atur tinggi sesuai kebutuhan */}
-      {/* <Swiper
-          modules={[Navigation, Pagination, A11y, Autoplay]}
-          spaceBetween={20}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-            },
-            567: {
-              slidesPerView: 2,
-            },
-            728: {
-              slidesPerView: 3,
-            },
-            1024: {
-              slidesPerView: 4,
-            },
-          }}
-          slidesPerView={4}
-          autoplay={{ delay: 4000 }}
-          navigation
-          direction="horizontal"
-        >
-          <div className="w-full text-start"></div>
-          {Array.isArray(datajpn) && datajpn.length > 0 ? (
-            datajpn.map((info) => (
-              <SwiperSlide key={info.title}>
-                <Card1
-                  image={info.urlToImage}
-                  judul={info.title}
-                  //  description={info.description}
-                  tanggal={info.pubDate}
-                />
-              </SwiperSlide>
-            ))
-          ) : (
-            <p>loading....</p>
-          )}
-        </Swiper> */}
-      {/* </div> */}
-
-      {/* last news */}
       <div className="w-full text-start   ">
         <h2 className="text-xl m-4 ">Berita Jepang Hari Ini</h2>
       </div>
@@ -95,6 +56,8 @@ const Newsjpn = () => {
           datajpn.map((info) => (
             <li key={info.title}>
               <Card2
+                onClick={handleLinkClick}
+                data_url={info.url}
                 image={info.urlToImage}
                 judul={info.title}
                 // description={info.description}

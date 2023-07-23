@@ -88,7 +88,7 @@ const Header = () => {
               </a>
             </li>
 
-            <li>
+            <li className="md:w-[8.1em] text-center">
               <a className="hover" href="jadwalsholat">
                 Jadwal Sholat
               </a>

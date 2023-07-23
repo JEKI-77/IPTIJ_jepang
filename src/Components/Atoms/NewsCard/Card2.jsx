@@ -4,9 +4,20 @@ import dayjs from "dayjs";
 import React from "react";
 import { IoEyeSharp } from "react-icons/io5";
 
-const Card2 = ({ image, tanggal, judul, description, title, onClick }) => (
+const Card2 = ({
+  image,
+  tanggal,
+  judul,
+  description,
+  data_link,
+  data_url,
+  title,
+  onClick,
+}) => (
   <div
-    onClick={() => onClick}
+    onClick={onClick}
+    data-link={data_link}
+    data-url={data_url}
     className="bg-slate-100 rounded-xl flex items-center shadow-md animate__animated animate__fadeIn "
   >
     <img

@@ -23,7 +23,7 @@ const Gallery = () => {
         <hr className="mb-4 border-orange-400 col-span-4 w-[50%] m-auto" />
       </div>
       {/* grid image */}
-      <div className="box md:col-span-3   ">
+      <div className="box md:col-span-3  ">
         <img className="md:imgStyle  " src={imgGallery1} alt="" />
       </div>
       <div className=" box md:row-span-2 md:col-span-2 ">
