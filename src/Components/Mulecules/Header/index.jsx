@@ -41,11 +41,7 @@ const Header = () => {
               Gallery
             </a>
           </li>
-          {/* <li>
-            <a className="hover " href="kajian">
-              Kajian Islam
-            </a>
-          </li> */}
+
           <li>
             <a className="hover" href="jadwalsholat">
               Jadwal Sholat
@@ -89,6 +85,12 @@ const Header = () => {
             <li>
               <a className="hover" href="gallery">
                 Gallery
+              </a>
+            </li>
+
+            <li>
+              <a className="hover" href="jadwalsholat">
+                Jadwal Sholat
               </a>
             </li>
 

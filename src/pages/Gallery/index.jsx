@@ -1,6 +1,17 @@
-import blogImg from "../../assets/images/bannerbg.jpg";
 import Banner from "../../Components/Atoms/Banner";
 import "animate.css/animate.min.css";
+import imgGallery1 from "../../assets/imagesIptij/img1.jpg";
+import imgGallery2 from "../../assets/imagesIptij/img2.jpg";
+import imgGallery3 from "../../assets/imagesIptij/img3.jpg";
+import imgGallery4 from "../../assets/imagesIptij/img4.jpg";
+import imgGallery5 from "../../assets/imagesIptij/img5.jpg";
+import imgGallery6 from "../../assets/imagesIptij/img6.jpg";
+import imgGallery7 from "../../assets/imagesIptij/img7.jpg";
+import imgGallery8 from "../../assets/imagesIptij/img8.jpg";
+import imgGallery9 from "../../assets/imagesIptij/img9.jpg";
+import imgGallery10 from "../../assets/imagesIptij/img10.jpg";
+import imgGallery11 from "../../assets/imagesIptij/img11.jpg";
+import imgGallery12 from "../../assets/imagesIptij/img12.jpg";
 
 const Gallery = () => {
   return (
@@ -14,35 +25,38 @@ const Gallery = () => {
       </div>
       {/* grid image */}
       <div className="box md:col-span-3   ">
-        <img className="md:imgStyle  " src={blogImg} alt="" />
+        <img className="md:imgStyle  " src={imgGallery1} alt="" />
       </div>
       <div className=" box md:row-span-2 md:col-span-2 ">
-        <img className="imgStyle" src={blogImg} alt="" />
+        <img className="imgStyle" src={imgGallery4} alt="" />
       </div>
       <div className="box  ">
-        <img className="imgStyle" src={blogImg} alt="" />
+        <img className="imgStyle" src={imgGallery7} alt="" />
       </div>
       <div className=" box md:col-span-2 ">
-        <img className="imgStyle" src={blogImg} alt="" />
+        <img className="imgStyle" src={imgGallery2} alt="" />
       </div>
       <div className="box ">
-        <img className="imgStyle" src={blogImg} alt="" />
+        <img className="imgStyle" src={imgGallery10} alt="" />
       </div>
       <div className="box  ">
-        <img className="imgStyle" src={blogImg} alt="" />
+        <img className="imgStyle" src={imgGallery12} alt="" />
       </div>
-      <div className="box ">
-        <img className="imgStyle" src={blogImg} alt="" />
+      <div className="box col-span-3 ">
+        <img className="imgStyle" src={imgGallery3} alt="" />
       </div>
-      <div className="box ">
-        <img className="imgStyle" src={blogImg} alt="" />
+      <div className="box col-span-3 ">
+        <img className="imgStyle" src={imgGallery9} alt="" />
       </div>
-      <div className="box md:col-span-3  ">
-        <img className="imgStyle" src={blogImg} alt="" />
+      <div className="box md:col-span-2">
+        <img className="imgStyle" src={imgGallery5} alt="" />
       </div>
-      <div className="box md:col-span-1">
-        <img className="imgStyle" src={blogImg} alt="" />
-      </div>{" "}
+      <div className="box md:col-span-2">
+        <img className="imgStyle" src={imgGallery11} alt="" />
+      </div>
+      <div className="box md:col-span-2">
+        <img className="imgStyle" src={imgGallery6} alt="" />
+      </div>
     </div>
   );
 };

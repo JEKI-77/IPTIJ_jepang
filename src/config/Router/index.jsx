@@ -8,6 +8,7 @@ import Team from "../../pages/Team";
 import NewsIndo from "../../pages/NewsIndo";
 import Newsjpn from "../../pages/NewsJpn/Index";
 import JadwalSholat from "../../pages/JadwalSholat";
+import Page404 from "../../pages/Page404";
 
 const RouterApp = () => {
   return (
@@ -20,6 +21,7 @@ const RouterApp = () => {
         <Route path="Team" element={<Team />} />
         <Route path="newsjpn" element={<Newsjpn />} />
         <Route path="jadwalsholat" element={<JadwalSholat />} />
+        <Route path="/*" element={<Page404 />} />
       </Routes>
     </Router>
   );

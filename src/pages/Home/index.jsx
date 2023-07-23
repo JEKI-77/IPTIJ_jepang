@@ -58,7 +58,7 @@ const Home = () => {
                   <a href="https://api.whatsapp.com/send?phone=817016675994">
                     <Link
                       icon={<LiaDonateSolid />}
-                      backgroundColor="#ffa700"
+                      backgroundColor="#0057e7"
                       title="Donasi Untuk Dakwah IPTIJ"
                     />
                   </a>
@@ -72,7 +72,7 @@ const Home = () => {
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLScFI8vy-jE82vp1m5vjH-UbLsUL_OaCFs3BsZk_QftN-XhpJw/viewform">
                     <Link
                       icon={<MdAppRegistration />}
-                      backgroundColor="#0057e7"
+                      backgroundColor="#ffa700"
                       title="Registrasi Tahsin"
                     />
                   </a>
