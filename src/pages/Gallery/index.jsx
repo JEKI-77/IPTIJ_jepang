@@ -24,7 +24,7 @@ const Gallery = () => {
       </div>
       {/* grid image */}
       <div className="box md:col-span-6 col-span-6     ">
-        <img className="md:imgStyle h-full  " src={imgGallery1} alt="" />
+        <img className="md:imgStyle " src={imgGallery1} alt="" />
       </div>
       <div className=" box md:col-span-4 col-span-6   ">
         <img className="imgStyle" src={imgGallery4} alt="" />
