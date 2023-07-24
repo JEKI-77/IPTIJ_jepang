@@ -13,7 +13,7 @@ const JadwalSholat = () => {
   useEffect(() => {
     axios
       .get(
-        ` http://api.aladhan.com/v1/timingsByCity?city=${city}&country=japan&method=8`
+        ` https://api.aladhan.com/v1/timingsByCity?city=${city}&country=japan&method=8`
       )
       .then((res) => {
         const responseApi = res.data.data.timings;
