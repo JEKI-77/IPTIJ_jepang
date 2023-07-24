@@ -33,22 +33,30 @@ const Gallery = () => {
           alt=""
         />
       </div>
-      <div className="box  lg:col-span-2 col-span-4 ">
+
+      {/* hidden */}
+      <div className="box  lg:col-span-2 col-span-4 hidden md:block ">
         <img className="imgStyle   lg:h-full" src={imgGallery7} alt="" />
       </div>
-      <div className=" box lg:col-span-4 col-span-6 ">
+
+
+      <div className=" box lg:col-span-4 col-span-8 ">
         <img className="imgStyle  lg:h-full" src={imgGallery2} alt="" />
       </div>
       <div className="box lg:col-span-4  col-span-4 ">
         <img className="imgStyle  lg:h-full" src={imgGallery10} alt="" />
       </div>
+
+      {/* hidden */}
       <div className="box hidden lg:block lg:col-span-4  bg-red-100 ">
         <img className="imgStyle lg:h-full" src={imgGallery12} alt="" />
       </div>
-      <div className="box lg:col-span-6  col-span-4 ">
+
+
+      <div className="box lg:col-span-6  col-span-6 ">
         <img className="imgStyle  lg:h-full" src={imgGallery3} alt="" />
       </div>
-      <div className="box lg:col-span-6 col-span-4  bg-red-100 ">
+      <div className="box lg:col-span-6 col-span-6  bg-red-100 ">
         <img className="imgStyle h-full  " src={imgGallery6} alt="" />
       </div>
       <div className="box lg:col-span-4  col-span-12  ">
