@@ -12,16 +12,17 @@ import MainApp from "../../pages/mainApp";
 const RouterApp = () => {
   return (
     <Router>
-      
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/kajian" element={<KajianIslam />} />
-        <Route path="/newsindo" element={<NewsIndo />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/newsjpn" element={<Newsjpn />} />
-        <Route path="/jadwalsholat" element={<JadwalSholat />} />
-        <Route path="/*" element={<Page404 />} />
+        <Route path="/" element={<MainApp />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/kajian" element={<KajianIslam />} />
+          <Route path="/newsindo" element={<NewsIndo />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/newsjpn" element={<Newsjpn />} />
+          <Route path="/jadwalsholat" element={<JadwalSholat />} />
+          <Route path="/*" element={<Page404 />} />
+        </Route>
       </Routes>
     </Router>
   );

@@ -1,7 +1,8 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import Footer from "../../Components/Mulecules/Footer";
 import Header from "../../Components/Mulecules/Header";
-import RouterApp from "../../config/Router";
+// import RouterApp from "../../config/Router";
 // Import statement dan komponen lainnya tetap sama
 
 const MainApp = () => {
@@ -9,7 +10,7 @@ const MainApp = () => {
     <div className="flex flex-col h-screen">
       <Header />
       <div className="flex-1">
-        <RouterApp />
+        <Outlet />
       </div>
       <div>
         <Footer />
