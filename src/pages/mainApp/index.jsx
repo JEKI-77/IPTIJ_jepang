@@ -1,12 +1,14 @@
+import React from "react";
 import Footer from "../../Components/Mulecules/Footer";
 import Header from "../../Components/Mulecules/Header";
 import RouterApp from "../../config/Router";
+// Import statement dan komponen lainnya tetap sama
 
-const AppHome = () => {
+const MainApp = () => {
   return (
     <div className="flex flex-col h-screen">
       <Header />
-      <div className="flex-1 ">
+      <div className="flex-1">
         <RouterApp />
       </div>
       <div>
@@ -16,4 +18,4 @@ const AppHome = () => {
   );
 };
 
-export default AppHome;
+export default MainApp;

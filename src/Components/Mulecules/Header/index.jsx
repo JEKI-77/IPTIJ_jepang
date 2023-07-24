@@ -32,31 +32,19 @@ const Header = () => {
           className="gap-16 flex flex-col justify-center items-center -mt-52 "
         >
           <li>
-            <a className="hover" href="/">
-              Home
-            </a>
+            <a className="hover" href="/">Home</a>
           </li>
           <li>
-            <a className="hover" href="gallery">
-              Gallery
-            </a>
-          </li>
-
-          <li>
-            <a className="hover" href="jadwalsholat">
-              Jadwal Sholat
-            </a>
+            <a className="hover" href="/gallery">Gallery</a>
           </li>
           <li>
-            <a className="hover" href="kajian">
-              News
-            </a>
+            <a className="hover" href="/jadwalsholat">Jadwal Sholat</a>
           </li>
-
           <li>
-            <a className="hover" href="team">
-              Team
-            </a>
+            <a className="hover" href="/kajian">News</a>
+          </li>
+          <li>
+            <a className="hover" href="/team">Team</a>
           </li>
         </ul>
       </nav>
@@ -64,9 +52,9 @@ const Header = () => {
         <Sosmed />
       </div>
 
-      {/* navbar togle */}
+      {/* navbar toggle */}
       <div
-        className="text-3xl absolute  ml-[85%] m-auto   md:hidden flex justify-end mt-5 cursor-pointer z-[999] text-white "
+        className="text-3xl absolute ml-[85%] m-auto md:hidden flex justify-end mt-5 cursor-pointer z-[999] text-white "
         onClick={() => setOpen(!open)}
       >
         <HiMiniBars3 />
@@ -76,40 +64,27 @@ const Header = () => {
       <div className=" md:flex hidden items-center justify-end md:m-4 w-full gap-20 md:mr-20  ">
         <nav className="flex justify-center items-center">
           <ul className="md:flex gap-3 ">
-            <li className="">
-              <a className="hover" href="/">
-                Home
-              </a>
-            </li>
-
             <li>
-              <a className="hover" href="gallery">
-                Gallery
-              </a>
+              <a className="hover" href="/">Home</a>
             </li>
-
-            <li className="md:w-[8.1em] text-center">
-              <a className="hover" href="jadwalsholat">
-                Jadwal Sholat
-              </a>
-            </li>
-
             <li>
-              <a className="hover" href="newsindo">
-                News
-              </a>
+              <a className="hover" href="/gallery">Gallery</a>
             </li>
-
             <li>
-              <a className="hover" href="team">
-                Team
-              </a>
+              <a className="hover" href="/jadwalsholat">Jadwal Sholat</a>
             </li>
-            <div className="md:flex hidden ">
-              <Sosmed />
-            </div>
+            <li>
+              <a className="hover" href="/kajian">News</a>
+            </li>
+            <li>
+              <a className="hover" href="/team">Team</a>
+            </li>
           </ul>
         </nav>
+
+        <div className="md:flex hidden ">
+          <Sosmed />
+        </div>
       </div>
     </div>
   );

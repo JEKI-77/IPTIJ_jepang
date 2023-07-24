@@ -1,8 +1,8 @@
+import MainApp from "./mainApp";
 
-import AppHome from "./AppHome";
 
 function App() {
-  return <AppHome />;
+  return <MainApp />;
 }
 
 export default App;
