@@ -1,10 +1,9 @@
 import iptijLogo from "../../../assets/images/logo_iptij.png";
-import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { HiMiniBars3 } from "react-icons/hi2";
-import { FiYoutube } from "react-icons/fi";
+// import { FiYoutube } from "react-icons/fi";
 import { useState } from "react";
 import Sosmed from "../../Atoms/Sosmed";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const [open, setOpen] = useState(false);
 
@@ -32,19 +31,29 @@ const Header = () => {
           className="gap-16 flex flex-col justify-center items-center -mt-52 "
         >
           <li>
-            <a className="hover" href="/">Home</a>
+            <Link className="hover" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <a className="hover" href="/gallery">Gallery</a>
+            <Link className="hover" to="/gallery">
+              Gallery
+            </Link>
           </li>
           <li>
-            <a className="hover" href="/jadwalsholat">Jadwal Sholat</a>
+            <Link className="hover" to="/jadwalsholat">
+              Jadwal Sholat
+            </Link>
           </li>
           <li>
-            <a className="hover" href="/kajian">News</a>
+            <Link className="hover" to="/kajian">
+              News
+            </Link>
           </li>
           <li>
-            <a className="hover" href="/team">Team</a>
+            <Link className="hover" to="/team">
+              Team
+            </Link>
           </li>
         </ul>
       </nav>
@@ -65,19 +74,29 @@ const Header = () => {
         <nav className="flex justify-center items-center">
           <ul className="md:flex gap-3 ">
             <li>
-              <a className="hover" href="/">Home</a>
+              <Link className="hover" to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <a className="hover" href="/gallery">Gallery</a>
+              <Link className="hover" to="/gallery">
+                Gallery
+              </Link>
             </li>
             <li>
-              <a className="hover" href="/jadwalsholat">Jadwal Sholat</a>
+              <Link className="hover" to="/jadwalsholat">
+                Jadwal Sholat
+              </Link>
             </li>
             <li>
-              <a className="hover" href="/kajian">News</a>
+              <Link className="hover" to="/kajian">
+                News
+              </Link>
             </li>
             <li>
-              <a className="hover" href="/team">Team</a>
+              <Link className="hover" to="/team">
+                Team
+              </Link>
             </li>
           </ul>
         </nav>
