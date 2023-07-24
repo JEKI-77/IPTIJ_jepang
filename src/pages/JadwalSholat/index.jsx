@@ -59,7 +59,8 @@ const JadwalSholat = () => {
           </h1>
         </div>
         <div className="bg-slate-100 gap-9 flex  rounded-full px-4 py-3 shadow-md  ">
-          <span className=" font-semibold">Subuh </span> {data.Fajr}
+          <span className=" font-semibold">Subuh </span>{" "}
+          {data ? data.Fajr : <p>loading...</p>}
         </div>
         <div className="bg-slate-100 gap-12 flex  rounded-full px-4 py-3 shadow-md  ">
           <span className=" font-semibold">Fajar </span> {data.Sunrise}
