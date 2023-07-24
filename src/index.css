@@ -6,7 +6,7 @@
   @apply hover:bg-cyan-600 hover:text-white px-3 py-2 rounded-xl;
 }
 .imgStyle {
-  @apply cursor-pointer hover:scale-125 duration-300 h-full w-auto object-cover;
+  @apply cursor-pointer hover:scale-125 duration-300 w-auto object-cover;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
