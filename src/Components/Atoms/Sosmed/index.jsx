@@ -3,7 +3,7 @@ import { FiYoutube } from "react-icons/fi";
 
 const Sosmed = () => {
   return (
-    <div className=" text-xl flex mr-20 items-center justify-center ">
+    <div className=" text-2xl flex mr-20 items-center justify-center ">
       <ul className="flex gap-4 items-center">
         <a href="https://api.whatsapp.com/send?phone=817016675994">
           <li>{<FaWhatsapp />}</li>

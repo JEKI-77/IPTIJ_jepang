@@ -46,10 +46,11 @@ const Home = () => {
                     </h2>
 
                     <p className="text-sm md:text-lg  flex text-justify indent-4">
-                      Organisasi IPTIJ dibentuk untuk memfasilitasi dan
-                      memperkuat hubungan antara trainee atau peserta program
-                      pelatihan dari Indonesia yang tinggal dan bekerja di
-                      Jepang.
+                      IPTIJ ( Ikatan Persaudaran Trainee Indonesia di Jepang)
+                      dibentuk untuk memfasilitasi dan memperkuat hubungan
+                      antara para trainee atau peserta program pelatihan dari
+                      Indonesia yang tinggal dan bekerja di Jepang. Organisasi
+                      ini telah berdiri selama 18 tahun
                     </p>
                   </div>
                 </div>

@@ -9,7 +9,7 @@ const SearchBar = ({ title, placeholder, onChange, onClick }) => {
         placeholder={placeholder}
       />
 
-      <div className="absolute ml-[17em]   ">
+      <div className="absolute ml-[14em]   ">
         <button
           onClick={onClick}
           className="bg-cyan-600  text-white px-4 py-[0.2em]  rounded-full items-center  "

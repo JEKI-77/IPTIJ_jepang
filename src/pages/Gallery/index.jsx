@@ -24,12 +24,12 @@ const Gallery = () => {
       </div>
       {/* grid image */}
       <div className="box lg:col-span-6 col-span-4  ">
-        <img className="imgStyle  lg:h-full " src={imgGallery1} alt="" />
+        <img className="imgStyle h-full lg:h-full " src={imgGallery1} alt="" />
       </div>
       <div className=" box lg:col-span-4  col-span-4 ">
         <img className="imgStyle   lg:h-full" src={imgGallery4} alt="" />
       </div>
-      <div className="box lg:col-span-2 col-span-4 ">
+      <div className="box md:block hidden lg:col-span-2 col-span-4 ">
         <img className="imgStyle   lg:h-full" src={imgGallery7} alt="" />
       </div>
 
@@ -47,7 +47,7 @@ const Gallery = () => {
         <img className="imgStyle  lg:h-full" src={imgGallery3} alt="" />
       </div>
       <div className="box lg:col-span-6 col-span-4 ">
-        <img className="imgStyle h-full  " src={imgGallery6} alt="" />
+        <img className="imgStyle " src={imgGallery6} alt="" />
       </div>
       <div className="box lg:col-span-4 col-span-4  ">
         <img className="imgStyle lg:h-full" src={imgGallery9} alt="" />
