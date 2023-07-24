@@ -23,20 +23,20 @@ const Gallery = () => {
         <hr className="mb-4 border-orange-400 col-span-12 w-[50%] m-auto" />
       </div>
       {/* grid image */}
-      <div className="box lg:col-span-6 col-span-8 bg-red-200     ">
+      <div className="box lg:col-span-6 col-span-6  ">
         <img className="imgStyle  lg:h-full " src={imgGallery1} alt="" />
       </div>
-      <div className=" box lg:col-span-4 col-span-4 bg-green-300   ">
+      <div className=" box lg:col-span-4 col-span-6 ">
         <img
-          className="imgStyle  h-full   lg:h-full"
+          className="imgStyle   lg:h-full"
           src={imgGallery4}
           alt=""
         />
       </div>
       <div className="box  lg:col-span-2 col-span-4 ">
-        <img className="imgStyle  lg:h-full" src={imgGallery7} alt="" />
+        <img className="imgStyle   lg:h-full" src={imgGallery7} alt="" />
       </div>
-      <div className=" box lg:col-span-4 col-span-8 ">
+      <div className=" box lg:col-span-4 col-span-6 ">
         <img className="imgStyle  lg:h-full" src={imgGallery2} alt="" />
       </div>
       <div className="box lg:col-span-4  col-span-4 ">
