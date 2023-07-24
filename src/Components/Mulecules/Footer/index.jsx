@@ -1,7 +1,4 @@
 import {
-  FaInstagram,
-  FaFacebookF,
-  FaWhatsapp,
   FaLinkedin,
 } from "react-icons/fa";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
@@ -13,7 +10,7 @@ const Footer = () => {
     <div className="bg-[rgb(20,53,89)]  grid grid-cols-4 md:grid-cols-10 justify-center  ">
       <div className=" gap-2 mt-8 col-span-2 m-auto ml-14 ">
         <h2 className="md:text-xl text-lg text-gray-300  mb-4">Kontak</h2>
-        <div className="text-gray-400 text-sm md:text-md ">
+        <div className="text-gray-400 text-md ">
           <p className="text-[0.9em] md:text-[1em]">Alamat: 4 Chome-6-6 Meguro, Meguro City, Tokyo 153-0063, Jepang</p>
           {/* <p>No Hp: 08383833</p> */}
           <p>Email: iptij@gmail.com</p>
@@ -22,7 +19,7 @@ const Footer = () => {
 
       <div className="gap-2 mt-8 col-span-2 md:col-span-2 m-auto ">
         <h2 className="md:text-xl text-lg text-gray-300 mb-4">Tentang kami</h2>
-        <div className="text-gray-400 text-sm md:text-md ">
+        <div className="text-gray-400  text-md ">
           <p>Anggota</p>
           <p>Aktivitas</p>
         
