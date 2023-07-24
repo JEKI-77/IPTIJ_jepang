@@ -20,7 +20,7 @@ const Gallery = () => {
       </div>
       <div className="col-span-12 mt-8  animate__animated  animate__fadeInDown">
         <p className="text-center text-3xl font-semibold">Gallery</p>
-        <hr className="mb-4 border-orange-400 col-span-4 w-[50%] m-auto" />
+        <hr className="mb-4 border-orange-400 col-span-12 w-[50%] m-auto" />
       </div>
       {/* grid image */}
       <div className="box md:col-span-6 col-span-8 bg-red-200     ">
