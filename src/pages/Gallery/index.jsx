@@ -14,7 +14,7 @@ import imgGallery12 from "../../assets/imagesIptij/img12.jpg";
 
 const Gallery = () => {
   return (
-    <div className="md:grid  grid-cols-12 grid  gap-2 w-[95%] m-auto mb-4  ">
+    <div className="grid-cols-12 grid  gap-2 w-[95%] m-auto mb-4  ">
       <div className="col-span-12">
         <Banner />
       </div>
@@ -23,38 +23,38 @@ const Gallery = () => {
         <hr className="mb-4 border-orange-400 col-span-4 w-[50%] m-auto" />
       </div>
       {/* grid image */}
-      <div className="box md:col-span-6 col-span-6     ">
-        <img className="imgStyle h-40 md:h-full " src={imgGallery1} alt="" />
+      <div className="box md:col-span-6 col-span-6 bg-red-200     ">
+        <img className="imgStyle   md:h-full " src={imgGallery1} alt="" />
       </div>
-      <div className=" box md:col-span-4 col-span-6   ">
-        <img className="imgStyle h-40   md:h-full" src={imgGallery4} alt="" />
+      <div className=" box md:col-span-4 col-span-6 bg-green-300   ">
+        <img className="imgStyle    md:h-full" src={imgGallery4} alt="" />
       </div>
-      <div className="box col-span-4 md:col-span-2 ">
-        <img className="imgStyle h-40 md:h-full" src={imgGallery7} alt="" />
+      <div className="box  md:col-span-2 col-span-4 ">
+        <img className="imgStyle  md:h-full" src={imgGallery7} alt="" />
       </div>
       <div className=" box md:col-span-4 col-span-8 ">
-        <img className="imgStyle h-40 md:h-full" src={imgGallery2} alt="" />
+        <img className="imgStyle  md:h-full" src={imgGallery2} alt="" />
       </div>
-      <div className="box col-span-8 md:col-span-4 ">
-        <img className="imgStyle h-40 md:h-full" src={imgGallery10} alt="" />
+      <div className="box md:col-span-4  col-span-6 ">
+        <img className="imgStyle  md:h-full" src={imgGallery10} alt="" />
       </div>
-      <div className="box  col-span-4 md:col-span-4 ">
-        <img className="imgStyle h-40 md:h-full" src={imgGallery12} alt="" />
+      <div className="box hidden md:block md:col-span-4  col-span-4  bg-red-100 ">
+        <img className="imgStyle md:h-full" src={imgGallery12} alt="" />
       </div>
       <div className="box md:col-span-6  col-span-6  row-span-6 ">
-        <img className="imgStyle h-40 md:h-full" src={imgGallery3} alt="" />
+        <img className="imgStyle  md:h-full" src={imgGallery3} alt="" />
       </div>
       <div className="box md:col-span-6 col-span-6 row-span-6 ">
-        <img className="imgStyle h-40 md:h-full " src={imgGallery6} alt="" />
+        <img className="imgStyle   md:h-full " src={imgGallery6} alt="" />
       </div>
-      <div className="box col-span-12 md:col-span-4 ">
-        <img className="imgStyle h-40 md:h-full" src={imgGallery9} alt="" />
+      <div className="box col-span-6 b md:col-span-4 ">
+        <img className="imgStyle  md:h-full" src={imgGallery9} alt="" />
       </div>
-      <div className="box md:col-span-4 col-span-6  ">
-        <img className="imgStyle h-40 md:h-full" src={imgGallery5} alt="" />
+      <div className="box md:col-span-4 col-span-8  ">
+        <img className="imgStyle  md:h-full" src={imgGallery5} alt="" />
       </div>
-      <div className="box md:col-span-4 col-span-6">
-        <img className="imgStyle h-40 md:h-full" src={imgGallery11} alt="" />
+      <div className="box md:col-span-4 col-span-4 ">
+        <img className="imgStyle  md:h-full" src={imgGallery11} alt="" />
       </div>
     </div>
   );
