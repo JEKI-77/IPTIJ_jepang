@@ -26,7 +26,7 @@ const Newsjpn = () => {
     axios
       .get(
         "https://newsapi.org/v2/top-headlines?country=jp&apiKey=f6c324aba071454d97bae6374e58c4ba"
-        // "https://newsapi.org/v2/top-headlines?country=id&apiKey=f6c324aba071454d97bae6374e58c4ba"
+       
       )
       .then((res) => {
         const responseApi = res.data.articles;
