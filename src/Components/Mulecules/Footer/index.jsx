@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
 
       {/* copyright */}
-      <div className=" mt-20 bg-[rgb(20,53,89)] text-gray-300 text-[14px] h-14  col-span-4 md:col-span-8 m-auto  ">
+      <div className=" mt-20 bg-[rgb(20,53,89)] text-gray-300 text-[14px] h-14  col-span-4 md:col-span-12 m-auto  ">
         <div>
           <span className="flex items-center justify-center text-sm ">
             <span className="mr-1">
@@ -58,7 +58,7 @@ const Footer = () => {
           </span>
 
           <span className="text-center flex text-[12px] md:text-sm">
-            Devloper by <p className="text-cyan-500 mx-1"> </p>{" "}
+            Devloper by Deki Saputra <p className="text-cyan-500 mx-1"> </p>{" "}
             <a
               className=" cursor-pointer items-center flex"
               rel="stylesheet"
