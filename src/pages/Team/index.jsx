@@ -45,25 +45,9 @@ const Team = () => {
       sosmed: sosmedIcon,
     },
     {
-      id: "6",
-      name: "Anonim",
-      jabatan: "Anggota ",
+      id: "5",
+      name: "Anggota 240 + ",
       profile: icon,
-      sosmed: sosmedIcon,
-    },
-    {
-      id: "6",
-      name: "Anonim",
-      jabatan: "Anggota ",
-      profile: icon,
-      sosmed: sosmedIcon,
-    },
-    {
-      id: "6",
-      name: "Anonim",
-      jabatan: "Anggota ",
-      profile: icon,
-      sosmed: sosmedIcon,
     },
   ];
 
