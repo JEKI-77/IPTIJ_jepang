@@ -1,21 +1,20 @@
 // eslint-disable-next-line react/prop-types
-const SearchBar = ({ title, placeholder, onChange, onClick }) => {
+
+const SearchBar = ({ title, placeholder, onChange, onClick, icon }) => {
   return (
     <div className="flex w-[100%]  justify-center">
       <input
         onChange={onChange}
-        className=" py-[0.3em] px-[5em] md:px-[5em] relative text-start  rounded-full  border border-gray-300 text-md text-sm"
+        className=" py-[0.3em] px-[3em] md:px-[5em] relative text-start  rounded-full   border border-gray-300 text-xl "
         type="text"
         placeholder={placeholder}
       />
 
-      <div className="absolute ml-[14em]   ">
-        <button
-          onClick={onClick}
-          className="bg-cyan-600  text-white px-4 py-[0.2em]  rounded-full items-center  "
-        >
-          {title}
-        </button>
+      <div
+        onClick={onClick}
+        className="absolute ml-[10em] md:ml-[14em] mt-3 text-2xl text-gray-600 cursor-pointer  "
+      >
+        {icon}
       </div>
     </div>
   );

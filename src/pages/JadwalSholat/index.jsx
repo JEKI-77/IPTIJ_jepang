@@ -2,6 +2,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import SearchBar from "../../Components/Atoms/Search";
+import { FaSearch } from "react-icons/fa";
 
 const JadwalSholat = () => {
   const [data, setData] = useState([]);
@@ -50,7 +51,9 @@ const JadwalSholat = () => {
         <span>H {hijriah.date}</span>
       </div>
 
-      <SearchBar onChange={cityHandler} onClick={onClickHandler} title="Cari" />
+      <SearchBar  
+      icon={<FaSearch />}
+      onChange={cityHandler} onClick={onClickHandler} title="Cari" />
 
       <div className="flex gap-3 flex-col">
         <div className=" mt-4 text-center">
