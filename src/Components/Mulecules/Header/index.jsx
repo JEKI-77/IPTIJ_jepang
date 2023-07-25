@@ -83,8 +83,8 @@ const Header = () => {
                 Gallery
               </Link>
             </li>
-            <li>
-              <Link className="hover" to="/jadwalsholat">
+            <li className="whitespace-nowrap ">
+              <Link className="hover " to="/jadwalsholat">
                 Jadwal Sholat
               </Link>
             </li>

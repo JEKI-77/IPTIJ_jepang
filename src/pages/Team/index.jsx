@@ -2,56 +2,67 @@
 import Card from "../../Components/Atoms/TeamCard";
 import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { SlSocialTwitter } from "react-icons/sl";
-import { CgProfile } from "react-icons/cg";
-
+import icon from "../../assets/icon/personi_icon.png";
 const Team = () => {
   const sosmedIcon = [
     [<FaInstagram />, <FaFacebookF />, <FaWhatsapp />, <SlSocialTwitter />],
   ];
-
-  const iconProfile = [<CgProfile />];
 
   const Profile = [
     {
       id: "1",
       name: "Anonim",
       jabatan: "Ketua ",
-      profile: iconProfile,
+      profile: icon,
       sosmed: sosmedIcon,
     },
     {
       id: "2",
       name: "Anonim",
-      jabatan: "Ketua ",
-      profile: iconProfile,
+      jabatan: "wakil Ketua ",
+      profile: icon,
       sosmed: sosmedIcon,
     },
     {
       id: "3",
       name: "Anonim",
-      jabatan: "Wakil Ketua",
-      profile: iconProfile,
+      jabatan: "Sekretaris",
+      profile: icon,
       sosmed: sosmedIcon,
     },
     {
       id: "4",
       name: "Anonim",
-      jabatan: "Sekretaris",
-      profile: iconProfile,
+      jabatan: "Bandahara",
+      profile: icon,
       sosmed: sosmedIcon,
     },
     {
       id: "5",
       name: "Anonim",
-      jabatan: "Bandahara",
-      profile: iconProfile,
+      jabatan: "Media Informasi",
+      profile: icon,
       sosmed: sosmedIcon,
     },
     {
       id: "6",
       name: "Anonim",
-      jabatan: "Ketua ",
-      profile: iconProfile,
+      jabatan: "Anggota ",
+      profile: icon,
+      sosmed: sosmedIcon,
+    },
+    {
+      id: "6",
+      name: "Anonim",
+      jabatan: "Anggota ",
+      profile: icon,
+      sosmed: sosmedIcon,
+    },
+    {
+      id: "6",
+      name: "Anonim",
+      jabatan: "Anggota ",
+      profile: icon,
       sosmed: sosmedIcon,
     },
   ];
@@ -62,13 +73,12 @@ const Team = () => {
         <p className="text-3xl ">STRUKTUR</p>
         <p className="mt-4 text-lg">IPTIJ PERIODE 2022 - 2023</p>
       </div>
-
-      <div className="flex justify-center items-center h-screen">
+      {/* <div className="flex justify-center items-center h-screen">
         <p>Halaman dalam pengembangan</p>
-      </div>
-      {/* <ul className=" grid md:grid-cols-4 grid-cols-2 mt-8 ">
-        {Profile.map((data) => (
-          <li key={data.id}>
+      </div> */}
+      <ul className=" grid md:grid-cols-4 grid-cols-2 mt-8 ">
+        {Profile.map((data, id) => (
+          <li key={id}>
             <Card
               img={data.profile}
               title={data.name}
@@ -77,7 +87,7 @@ const Team = () => {
             />
           </li>
         ))}
-      </ul> */}
+      </ul>
     </div>
   );
 };
