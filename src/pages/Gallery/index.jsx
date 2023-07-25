@@ -23,39 +23,39 @@ const Gallery = () => {
         <hr className="mb-4 border-orange-400 col-span-12 w-[50%] m-auto" />
       </div>
       {/* grid image */}
-      <div className="box lg:col-span-6 col-span-4  ">
-        <img className="imgStyle h-full lg:h-full " src={imgGallery1} alt="" />
+      <div className="box lg:col-span-6 col-span-4 shadow-md ">
+        <img className="imgStyle lg:h-full " src={imgGallery1} alt="" />
       </div>
-      <div className=" box lg:col-span-4  col-span-4 ">
+      <div className=" box lg:col-span-4  col-span-4 shadow-md">
         <img className="imgStyle   lg:h-full" src={imgGallery4} alt="" />
       </div>
-      <div className="box md:block hidden lg:col-span-2 col-span-4 ">
+      <div className="box md:block hidden lg:col-span-2 col-span-4 shadow-md ">
         <img className="imgStyle   lg:h-full" src={imgGallery7} alt="" />
       </div>
 
-      <div className=" box lg:col-span-4 col-span-4 ">
+      <div className=" box lg:col-span-4 col-span-4 shadow-md ">
         <img className="imgStyle  lg:h-full" src={imgGallery2} alt="" />
       </div>
-      <div className="box lg:col-span-4 col-span-4  ">
+      <div className="box lg:col-span-4 col-span-4 shadow-md  ">
         <img className="imgStyle  lg:h-full" src={imgGallery10} alt="" />
       </div>
-      <div className="box hidden lg:block lg:col-span-4 col-span-4 ">
+      <div className="box hidden lg:block lg:col-span-4 col-span-4 shadow-md ">
         <img className="imgStyle lg:h-full" src={imgGallery12} alt="" />
       </div>
 
-      <div className="box lg:col-span-6 col-span-4  ">
+      <div className="box lg:col-span-6 col-span-4 shadow-md  ">
         <img className="imgStyle  lg:h-full" src={imgGallery3} alt="" />
       </div>
-      <div className="box lg:col-span-6 col-span-4 ">
+      <div className="box lg:col-span-6 col-span-4 shadow-md ">
         <img className="imgStyle " src={imgGallery6} alt="" />
       </div>
-      <div className="box lg:col-span-4 col-span-4  ">
+      <div className="box lg:col-span-4 col-span-4 shadow-md ">
         <img className="imgStyle lg:h-full" src={imgGallery9} alt="" />
       </div>
-      <div className="box lg:col-span-4 col-span-4 ">
+      <div className="box lg:col-span-4 col-span-4 shadow-md ">
         <img className="imgStyle  lg:h-full" src={imgGallery5} alt="" />
       </div>
-      <div className="box lg:col-span-4 col-span-4 ">
+      <div className="box lg:col-span-4 col-span-4 shadow-md ">
         <img className="imgStyle  lg:h-full" src={imgGallery11} alt="" />
       </div>
     </div>
