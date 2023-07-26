@@ -1,5 +1,6 @@
 import bannerUpdate from "../../../assets/images/bannerUpdt.jpg";
 import bannerUpdate2 from "../../../assets/images/bannerUpdt2.jpg";
+import banner12 from "../../../assets/images/baner12.jpg";
 // import Swiper core and required modules
 import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,16 +28,7 @@ const Banner = () => {
           <div className="flex m-auto justify-center ">
             <img
               className="w-full h-[18em] md:w-[80%] md:h-[400px] object-cover md:object-fill   rounded-xl"
-              src={bannerUpdate}
-              alt="bannerBg"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex m-auto justify-center ">
-            <img
-              className="w-full h-[18em] md:w-[80%]  md:h-[400px]  object-cover  md:object-fill    rounded-xl"
-              src={bannerUpdate2}
+              src={banner12}
               alt="bannerBg"
             />
           </div>
