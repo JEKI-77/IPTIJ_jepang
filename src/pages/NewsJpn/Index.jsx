@@ -25,7 +25,7 @@ const Newsjpn = () => {
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=jp&apiKey=f6c324aba071454d97bae6374e58c4ba"
+        "http://newsapi.org/v2/top-headlines?country=jp&apiKey=f6c324aba071454d97bae6374e58c4ba"
        
       )
       .then((res) => {
