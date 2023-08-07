@@ -1,11 +1,20 @@
 import iptijLogo from "../../../assets/images/logo_iptij.png";
 import { HiMiniBars3 } from "react-icons/hi2";
 // import { FiYoutube } from "react-icons/fi";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Sosmed from "../../Atoms/Sosmed";
 import { Link } from "react-router-dom";
+import ReactGa from "react-ga";
+
 const Header = () => {
   const [open, setOpen] = useState(false);
+
+  const TRAKING_ID = "G-JT6Q77YK8E";
+  ReactGa.initialize(TRAKING_ID);
+
+  useEffect(() => {
+    ReactGa.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <div className="bg-[rgb(20,53,89)]  text-gray-200 font-semibold box-border flex ">
