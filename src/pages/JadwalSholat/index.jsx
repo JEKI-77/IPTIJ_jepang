@@ -24,7 +24,6 @@ const JadwalSholat = () => {
         setHijriah(hijriahDate);
         setDate(date);
         setData(responseApi);
-        console.log("tanggal", responseApi);
       })
       .catch((err) => {
         console.log("error", err);
@@ -48,7 +47,7 @@ const JadwalSholat = () => {
         Jadwal sholat
       </h2>
       <div className=" text-gray-600 font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
-        <span>{dayjs(date.date).format("DD MMM  YYYY")}</span>
+        <span>{dayjs(date.date).format("MMM DD YYYY")}</span>
       </div>
 
       <SearchBar
