@@ -1,5 +1,5 @@
 import workshop from "../../../assets/images/Agenda/Workshop.jpg";
-import olahraga from "../../../assets/images/Agenda/Workshop.jpg";
+import olahraga from "../../../assets/images/Agenda/olahraga.jpg";
 import Rekreasi from "../../../assets/images/bannerbg.jpg";
 import imgGallery6 from "../../../assets/imagesIptij/img6.jpg";
 import { AnimationOnScroll } from "react-animation-on-scroll";
