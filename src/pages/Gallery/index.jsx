@@ -19,7 +19,7 @@ const Gallery = () => {
       <Banner />
       <Svg />
 
-      <div className="md:grid-cols-12 grid grid-cols-8 w-[95%]  gap-2 m-auto mb-4  ">
+      <div className="md:grid-cols-12 grid grid-cols-8 w-[95%] md:w-[80%]  gap-2 m-auto mb-4  ">
         <div className="lg:col-span-12 w-full col-span-8"></div>
         <div className="lg:col-span-12 col-span-8 mt-8  animate__animated  animate__fadeInDown">
           <p className="text-center text-3xl font-semibold">Gallery</p>
