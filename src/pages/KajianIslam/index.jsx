@@ -44,7 +44,7 @@ const Kajina = () => {
       <div className="w-full text-start   ">
         <h2 className="text-xl m-4 ">Berita Islam Hari Ini</h2>
       </div>
-      <ul className=" grid md:grid-cols-3 gap-4">
+      <ul className=" grid md:grid-cols-2 gap-4">
         {Array.isArray(data) && data.length > 0 ? (
           data.map((info) => (
             <li key={info.title}>

@@ -26,7 +26,6 @@ const Newsjpn = () => {
     axios
       .get(
         "http://newsapi.org/v2/top-headlines?country=jp&apiKey=f6c324aba071454d97bae6374e58c4ba"
-       
       )
       .then((res) => {
         const responseApi = res.data.articles;
@@ -40,7 +39,7 @@ const Newsjpn = () => {
 
   const handleLinkClick = (event) => {
     const postLink = event.currentTarget;
-    const url = postLink.dataset.url
+    const url = postLink.dataset.url;
     console.log("Url", url);
     window.open(url, "_blank");
   };

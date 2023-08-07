@@ -93,11 +93,11 @@ const Header = () => {
                 News
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link className="hover" to="/team">
                 Team
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
