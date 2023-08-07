@@ -27,7 +27,6 @@ const NewsIndo = () => {
       )
       .then((res) => {
         const responseApi = res.data.data.posts;
-        console.log("indoData", responseApi);
         setData(responseApi);
       })
       .catch((err) => {

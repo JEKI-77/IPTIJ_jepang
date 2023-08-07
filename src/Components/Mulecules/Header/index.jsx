@@ -8,7 +8,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-[rgb(20,53,89)] text-gray-200 font-semibold box-border flex ">
+    <div className="bg-[rgb(20,53,89)]  text-gray-200 font-semibold box-border flex ">
       {/* logo */}
       <div className="mx-4 md:mx-20 w-full items-center flex   ">
         <img
@@ -50,11 +50,11 @@ const Header = () => {
               News
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link className="hover" to="/team">
               Team
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <div className="flex md:hidden ">

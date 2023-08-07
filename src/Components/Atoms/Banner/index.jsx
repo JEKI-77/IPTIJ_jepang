@@ -13,45 +13,47 @@ import "swiper/css/autoplay";
 
 const Banner = () => {
   return (
-    <div className="w-[95%]  m-auto mt-2">
-      <Swiper
-        // install Swiper modules
-        modules={[Pagination, A11y, Autoplay]}
-        spaceBetween={50}
-        slidesPerView={1}
-        autoplay={{ delay: 4000 }}
-        pagination={{ clickable: true }}
-        // onSwiper={(swiper) => console.log(swiper)}
-        // onSlideChange={() => console.log("")}
-      >
-        <SwiperSlide>
-          <div className="flex m-auto justify-center ">
-            <img
-              className="w-full h-[18em] md:w-[80%] md:h-[400px] object-cover md:object-fill   rounded-xl"
-              src={banner12}
-              alt="bannerBg"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex m-auto justify-center ">
-            <img
-              className="w-full h-[18em] md:w-[80%] md:h-[400px] object-cover md:object-fill   rounded-xl"
-              src={bannerUpdate}
-              alt="bannerBg"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex m-auto justify-center ">
-            <img
-              className="w-full h-[18em] md:w-[80%]  md:h-[400px]  object-cover  md:object-fill    rounded-xl"
-              src={bannerUpdate2}
-              alt="bannerBg"
-            />
-          </div>
-        </SwiperSlide>
-      </Swiper>
+    <div className="bg-[#143559] h-[23em] mb-[-1em] mt-[-1px] ">
+      <div className="w-[95%] m-auto animate__animated animate__zoomIn ">
+        <Swiper
+          // install Swiper modules
+          modules={[Pagination, A11y, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={1}
+          autoplay={{ delay: 4000 }}
+          pagination={{ clickable: true }}
+          // onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log("")}
+        >
+          <SwiperSlide>
+            <div className="flex m-auto justify-center   ">
+              <img
+                className="w-full h-[18em] md:w-[80%] md:h-[400px] object-cover md:object-fill   rounded-xl"
+                src={banner12}
+                alt="bannerBg"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex m-auto justify-center ">
+              <img
+                className="w-full h-[18em] md:w-[80%] md:h-[400px] object-cover md:object-fill   rounded-xl"
+                src={bannerUpdate}
+                alt="bannerBg"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex m-auto justify-center ">
+              <img
+                className="w-full h-[18em] md:w-[80%]  md:h-[400px]  object-cover  md:object-fill    rounded-xl"
+                src={bannerUpdate2}
+                alt="bannerBg"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 };

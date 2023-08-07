@@ -63,7 +63,7 @@ const Filter = () => {
                   onClick={BeritaIslamNavigate}
                   className="block px-4 py-2 hover:bg-gray-100 text-md  "
                 >
-                  Islam News
+                  Berita Islami
                 </a>
               </li>
               <li>
