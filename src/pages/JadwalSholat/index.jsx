@@ -47,7 +47,7 @@ const JadwalSholat = () => {
         Jadwal sholat
       </h2>
       <div className=" text-gray-600 font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
-        <span>{dayjs(date.date).format("MMM DD YYYY")}</span>
+        <span>{date.date}</span>
       </div>
 
       <SearchBar
