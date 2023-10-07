@@ -113,7 +113,7 @@ const Header = () => {
         <div className="md:flex hidden ">
           <Sosmed />
         </div>
-      </div>s
+      </div>
     </div>
   );
 };
