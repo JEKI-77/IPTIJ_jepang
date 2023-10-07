@@ -3,9 +3,9 @@ import "react-dropdown/style.css";
 import { useState } from "react";
 
 const Filter = () => {
-  const handleNavigate = () => {
-    navigateTo("/newsjpn");
-  };
+  // const handleNavigate = () => {
+  //   navigateTo("/newsjpn");
+  // };
   const handleNavigateIndo = () => {
     navigateTo("/newsindo");
   };
@@ -64,7 +64,7 @@ const Filter = () => {
                   Berita Islami
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   onClick={handleNavigate}
@@ -72,7 +72,7 @@ const Filter = () => {
                 >
                   Japang
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="#"
