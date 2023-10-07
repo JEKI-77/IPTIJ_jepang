@@ -27,7 +27,6 @@ const Newsjpn = () => {
       .then((res) => {
         const responseApi = res.data.articles;
         setDatajpn(responseApi);
-        console.log("api key", import.meta.env.REACT_APP_JPNEWS);
       })
       .catch((err) => {
         console.log("error", err);
@@ -37,7 +36,6 @@ const Newsjpn = () => {
   const handleLinkClick = (event) => {
     const postLink = event.currentTarget;
     const url = postLink.dataset.url;
-    console.log("Url", url);
     window.open(url, "_blank");
   };
 
