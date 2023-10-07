@@ -20,7 +20,7 @@ const Newsjpn = () => {
   useEffect(() => {
     axios
       .get(
-        `http://newsapi.org/v2/top-headlines?country=jp&apiKey=${
+        `https://newsapi.org/v2/top-headlines?country=jp&apiKey=${
           import.meta.env.VITE_APP_JPNEWS
         }`
       )
