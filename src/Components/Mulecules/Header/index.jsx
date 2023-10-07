@@ -37,7 +37,7 @@ const Header = () => {
       >
         <ul
           onClick={() => setOpen(false)}
-          className="gap-16 flex flex-col justify-center items-center -mt-52 "
+          className="gap-16 flex flex-col justify-center items-center -mt-52  "
         >
           <li>
             <Link className="hover" to="/">

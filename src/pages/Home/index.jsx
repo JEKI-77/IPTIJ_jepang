@@ -26,7 +26,6 @@ const Home = () => {
         <LinkDonasi />
         {/* Agenda */}
         <AgendaCard />
-
         {/* Quote */}
         <Quotes />
       </div>

@@ -6,13 +6,11 @@ const Filter = () => {
   const handleNavigate = () => {
     navigateTo("/newsjpn");
   };
-  const handleNavigateIndo = (e) => {
+  const handleNavigateIndo = () => {
     navigateTo("/newsindo");
-    console.log(e);
   };
-  const BeritaIslamNavigate = (e) => {
+  const BeritaIslamNavigate = () => {
     navigateTo("/kajian");
-    console.log(e);
   };
 
   const navigateTo = useNavigate();

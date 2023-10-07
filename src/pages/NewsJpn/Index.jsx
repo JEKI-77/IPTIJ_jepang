@@ -2,10 +2,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
-// import image from "../../assets/images/bannerbg.jpg";
-// import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 
 // Import Swiper styles
@@ -15,7 +11,6 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import Card2 from "../../Components/Atoms/NewsCard/Card2";
-// import Card1 from "../../Components/Atoms/NewsCard/Card1";
 import Filter from "../../Components/Atoms/Filter";
 // import Loading from "react-loading";
 
@@ -25,12 +20,14 @@ const Newsjpn = () => {
   useEffect(() => {
     axios
       .get(
-        "http://newsapi.org/v2/top-headlines?country=jp&apiKey=f6c324aba071454d97bae6374e58c4ba"
+        `http://newsapi.org/v2/top-headlines?country=jp&apiKey=${
+          import.meta.env.VITE_APP_JPNEWS
+        }`
       )
       .then((res) => {
         const responseApi = res.data.articles;
-        console.log("jpnData", responseApi);
         setDatajpn(responseApi);
+        console.log("api key", import.meta.env.REACT_APP_JPNEWS);
       })
       .catch((err) => {
         console.log("error", err);
