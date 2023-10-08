@@ -51,7 +51,7 @@ const Header = () => {
           </li>
           <li>
             <Link className="hover" to="/jadwalsholat">
-              Jadwal Sholat
+              Waktu Sholat
             </Link>
           </li>
           <li>
@@ -94,7 +94,7 @@ const Header = () => {
             </li>
             <li className="whitespace-nowrap ">
               <Link className="hover " to="/jadwalsholat">
-                Jadwal Sholat
+                Waktu Sholat
               </Link>
             </li>
             <li>

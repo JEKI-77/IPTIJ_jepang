@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card2 from "../../Components/Atoms/NewsCard/Card2";
 import Filter from "../../Components/Atoms/Filter";
+import { Helmet } from "react-helmet";
 
 const Kajina = () => {
   const [data, setData] = useState([]);
@@ -32,6 +33,14 @@ const Kajina = () => {
 
   return (
     <div className="md:w-[80%] w-[90%] m-auto justify-center items-center flex flex-col mb-8">
+      <Helmet>
+        <title>IPTIJ | News</title>
+        <meta
+          name="IPTIJ seputar berita islam dan berita indonesia "
+          content="Halaman News IPTIJ"
+        />
+      </Helmet>
+
       <Filter />
       <div className="w-full text-start   ">
         <h2 className="text-xl m-4 ">Berita Islam Hari Ini</h2>

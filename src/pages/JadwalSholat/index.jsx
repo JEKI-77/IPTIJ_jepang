@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import SearchBar from "../../Components/Atoms/Search";
 import { FaSearch } from "react-icons/fa";
 import dayjs from "dayjs";
+import { Helmet } from "react-helmet";
 
 const JadwalSholat = () => {
   const [data, setData] = useState([]);
@@ -43,6 +44,13 @@ const JadwalSholat = () => {
 
   return (
     <div className="w-[80%] md:w-[30%] m-auto mb-8 mt-8">
+      <Helmet>
+        <title>IPTIJ | Waktu Sholat</title>
+        <meta
+          name="Waktu sholat di jepang dan sekitarnya"
+          content="Halaman waktu sholat jepang"
+        />
+      </Helmet>
       <h2 className="text-2xl font-semibold text-gray-700  text-center ">
         Jadwal sholat
       </h2>

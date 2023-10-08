@@ -14,8 +14,11 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>HOME</title>
-        <meta name="description" content="Halaman Home" />
+        <title>IPTIJ | Home</title>
+        <meta
+          name="description dan tujuan berdirinya iptij organisasi iptij"
+          content="Halaman Home"
+        />
       </Helmet>
       <Banner />
       <Svg />

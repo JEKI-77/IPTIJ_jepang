@@ -12,10 +12,18 @@ import imgGallery10 from "../../assets/imagesIptij/img10.jpg";
 import imgGallery11 from "../../assets/imagesIptij/img11.jpg";
 import imgGallery12 from "../../assets/imagesIptij/img12.jpg";
 import Svg from "../../Components/Atoms/svg";
+import { Helmet } from "react-helmet";
 
 const Gallery = () => {
   return (
     <>
+      <Helmet>
+        <title>IPTIJ | Gallery</title>
+        <meta
+          name=" Foto kegiatan IPTIJ di jepang "
+          content="Halaman Gallery"
+        />
+      </Helmet>
       <Banner />
       <Svg />
 
