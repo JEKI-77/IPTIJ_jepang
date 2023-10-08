@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Banner from "../../Components/Atoms/Banner";
+import { Helmet } from "react-helmet";
 
 import "animate.css/animate.min.css";
 
@@ -12,6 +13,10 @@ import Svg from "../../Components/Atoms/svg";
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>HOME</title>
+        <meta name="description" content="Halaman Home" />
+      </Helmet>
       <Banner />
       <Svg />
 
