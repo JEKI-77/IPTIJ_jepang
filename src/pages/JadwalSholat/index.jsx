@@ -52,7 +52,7 @@ const JadwalSholat = () => {
         />
       </Helmet>
       <h2 className="text-2xl font-semibold text-gray-700  text-center ">
-        Jadwal sholat
+        Waktu sholat
       </h2>
       <div className=" text-gray-600 font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
         <span>{date.date}</span>
