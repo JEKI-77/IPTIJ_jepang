@@ -10,7 +10,7 @@ const Filter = () => {
     navigateTo("/newsindo");
   };
   const BeritaIslamNavigate = () => {
-    navigateTo("/kajian");
+    navigateTo("/news");
   };
 
   const navigateTo = useNavigate();
