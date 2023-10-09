@@ -16,7 +16,7 @@ const RouterApp = () => {
         <Route path="/" element={<MainApp />}>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/kajian" element={<KajianIslam />} />
+          <Route path="/news" element={<KajianIslam />} />
           <Route path="/newsindo" element={<NewsIndo />} />
           {/* <Route path="/team" element={<Team />} /> */}
           <Route path="/newsjpn" element={<Newsjpn />} />

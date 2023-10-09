@@ -55,7 +55,7 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className="hover" to="/kajian">
+            <Link className="hover" to="/news">
               News
             </Link>
           </li>
