@@ -26,6 +26,7 @@
     "react-intersection-observer": "^9.5.2",
     "react-loading": "^2.0.3",
     "react-scroll-motion": "^0.3.2",
+    "sitemap": "^7.1.1",
     "swiper": "^10.0.4"
   },
   "devDependencies": {
