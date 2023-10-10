@@ -18,7 +18,7 @@ const RouterApp = () => {
           <Route path="/news" element={<IslamNews />} />
           <Route path="/newsindo" element={<NewsIndo />} />
           <Route path="/newsjpn" element={<Newsjpn />} />
-          <Route path="/jadwalsholat" element={<JadwalSholat />} />
+          <Route path="/waktuSholatjepang" element={<JadwalSholat />} />
           <Route path="/*" element={<Page404 />} />
         </Route>
       </Routes>
