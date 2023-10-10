@@ -3,7 +3,7 @@ import Home from "../../pages/Home";
 import Gallery from "../../pages/Gallery";
 import NewsIndo from "../../pages/NewsIndo";
 import Newsjpn from "../../pages/NewsJpn/Index";
-import JadwalSholat from "../../pages/JadwalSholat";
+import JadwalSholat from "../../pages/waktuSholat";
 import Page404 from "../../pages/Page404";
 import MainApp from "../../pages/mainApp";
 import IslamNews from "../../pages/islamNews";
