@@ -14,8 +14,8 @@ const Home = () => {
       <Helmet>
         <title>IPTIJ | Home</title>
         <meta
-          name="description dan tujuan berdirinya iptij organisasi iptij"
-          content="Halaman Home"
+          name="iptij organisasi iptij"
+          content="IPTIJ - Kenshusei jepang"
         />
       </Helmet>
       <Banner />
