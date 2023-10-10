@@ -1,9 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Banner from "../../Components/Atoms/Banner";
 import { Helmet } from "react-helmet";
-
 import "animate.css/animate.min.css";
-
 import AgendaCard from "../../Components/Mulecules/AgendaCard";
 import Quotes from "../../Components/Mulecules/Quotes";
 import Description from "../../Components/Mulecules/Description";

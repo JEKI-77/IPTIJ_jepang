@@ -8,6 +8,7 @@ import Newsjpn from "../../pages/NewsJpn/Index";
 import JadwalSholat from "../../pages/JadwalSholat";
 import Page404 from "../../pages/Page404";
 import MainApp from "../../pages/mainApp";
+import SitemapPage from "../../pages/sitemap/sitemap";
 
 const RouterApp = () => {
   return (
@@ -21,6 +22,7 @@ const RouterApp = () => {
           {/* <Route path="/team" element={<Team />} /> */}
           <Route path="/newsjpn" element={<Newsjpn />} />
           <Route path="/jadwalsholat" element={<JadwalSholat />} />
+          <Route path="/sitemap" element={<SitemapPage />} />
           <Route path="/*" element={<Page404 />} />
         </Route>
       </Routes>
