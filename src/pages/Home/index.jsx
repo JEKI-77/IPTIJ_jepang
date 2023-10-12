@@ -12,12 +12,13 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>IPTIJ | Home</title>
+        <title>IPTIJ - Kenshusei Jepang | Organisasi IPTIJ</title>
         <meta
-          name="iptij organisasi iptij"
-          content="IPTIJ - Kenshusei jepang"
+          name="description"
+          content="Selamat datang di IPTIJ - Organisasi Kenshusei Jepang. Kami menyediakan berbagai informasi kenshusei Jepang."
         />
       </Helmet>
+
       <Banner />
       <Svg />
 
