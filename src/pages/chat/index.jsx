@@ -33,13 +33,13 @@ const Chat = () => {
             </div>
           </div>
 
-          <div className=" ml-2 flex flex-col">
-            <span className="text-end text-sm ml-8">putra 13:00</span>
+          <div className=" mr-2 flex flex-col">
+            <span className="text-end text-sm mr-8">putra 13:00</span>
             <div className=" text-end flex justify-end ">
               <span className="bg-gray-700 rounded-l-md rounded-tr-2xl text-white px-4  w-40">
                 hello apa kabar ?
               </span>
-              <span className="text-2xl mr-2">
+              <span className="text-2xl ml-2">
                 <RxAvatar />
               </span>
             </div>
@@ -47,7 +47,7 @@ const Chat = () => {
           <div className=" ml-2 flex flex-col">
             <span className="text-start text-sm ml-8">putra 13:00</span>
             <div className=" text-start flex ">
-              <span className="text-2xl mr-2">
+              <span className="text-2xl m-2">
                 <RxAvatar />
               </span>
               <span className=" bg-gray-700 rounded-r-md rounded-tl-2xl text-white px-4  w-40">
@@ -56,13 +56,13 @@ const Chat = () => {
             </div>
           </div>
 
-          <div className=" ml-2 flex flex-col">
-            <span className="text-end text-sm ml-8">putra 13:00</span>
+          <div className=" mr-2 flex flex-col">
+            <span className="text-end text-sm mr-8">putra 13:00</span>
             <div className=" text-end flex justify-end ">
               <span className="bg-gray-700 rounded-l-md rounded-tr-2xl text-white px-4  w-40">
                 hello apa kabar ?
               </span>
-              <span className="text-2xl mr-2">
+              <span className="text-2xl ml-2">
                 <RxAvatar />
               </span>
             </div>
