@@ -51,10 +51,10 @@ const JadwalSholat = () => {
           content="Halaman waktu sholat jepang"
         />
       </Helmet>
-      <h2 className="text-2xl font-semibold text-gray-700  text-center ">
+      <h2 className="text-2xl font-semibold   text-center ">
         Waktu sholat Jepang
       </h2>
-      <div className=" text-gray-600 font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
+      <div className=" font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
         <span>{date.date}</span>
       </div>
 
@@ -71,23 +71,23 @@ const JadwalSholat = () => {
             <span className="font-semibold"> Kota</span> : {city || "Tokyo"}
           </h1>
         </div>
-        <div className="bg-slate-50 gap-9 flex  rounded-full px-4 py-3 shadow-md  ">
+        <div className="bg-slate-50 gap-9 flex  rounded-full px-4 py-3 shadow-md text-gray-800  ">
           <span className=" font-semibold">Subuh </span>{" "}
           {data ? data.Fajr : <p>loading...</p>}
         </div>
-        <div className="bg-slate-50 gap-12 flex  rounded-full px-4 py-3 shadow-md  ">
+        <div className="bg-slate-50 gap-12 flex  rounded-full px-4 py-3 shadow-md text-gray-800   ">
           <span className=" font-semibold">Fajar </span> {data.Sunrise}
         </div>
-        <div className="bg-slate-50 gap-8 flex  rounded-full px-4 py-3 shadow-md  ">
+        <div className="bg-slate-50 gap-8 flex  rounded-full px-4 py-3 shadow-md text-gray-800    ">
           <span className=" font-semibold"> Dzuhur</span> {data.Dhuhr}
         </div>
-        <div className="bg-slate-50 gap-11 flex  rounded-full px-4 py-3 shadow-md  ">
+        <div className="bg-slate-50 gap-11 flex  rounded-full px-4 py-3 shadow-md text-gray-800    ">
           <span className=" font-semibold">Ashar</span> {data.Asr}
         </div>
-        <div className="bg-slate-50 gap-9 flex  rounded-full px-4 py-3 shadow-md  ">
+        <div className="bg-slate-50 gap-9 flex  rounded-full px-4 py-3 shadow-md  text-gray-800   ">
           <span className=" font-semibold">Magrib</span> {data.Maghrib}
         </div>
-        <div className="bg-slate-50 gap-14 flex  rounded-full px-4 py-3 shadow-md  ">
+        <div className="bg-slate-50 gap-14 flex  rounded-full px-4 py-3 shadow-md text-gray-800   ">
           <span className=" font-semibold">Isya</span> {data.Isha}
         </div>
       </div>
