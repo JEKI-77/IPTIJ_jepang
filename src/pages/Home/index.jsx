@@ -7,7 +7,6 @@ import Quotes from "../../Components/Mulecules/Quotes";
 import Description from "../../Components/Mulecules/Description";
 import LinkDonasi from "../../Components/Mulecules/LinkDonasi";
 import Svg from "../../Components/Atoms/svg";
-import Chat from "../../Components/Mulecules/ChatIcon";
 
 const Home = () => {
   return (
@@ -36,7 +35,6 @@ const Home = () => {
         <AgendaCard />
         {/* Quote */}
         <Quotes />
-        <Chat />
       </div>
     </div>
   );
