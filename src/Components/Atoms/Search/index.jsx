@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line react/prop-types
 
-const SearchBar = ({ title, placeholder, onChange, onClick, icon }) => {
+const SearchBar = ({ placeholder, onChange, onClick, icon }) => {
   return (
     <div className="flex w-[100%]  justify-center">
       <input
