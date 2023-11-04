@@ -25,7 +25,7 @@ const Banner = () => {
           // onSlideChange={() => console.log("")}
         >
           <SwiperSlide>
-            <div className="flex m-auto justify-center   ">
+            <div className="flex m-auto justify-center mt-4  ">
               <img
                 className="w-full h-[20em] md:w-[50%] md:h-[400px] object-fill md:object-fill   rounded-xl"
                 src={update1}
@@ -34,7 +34,7 @@ const Banner = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex m-auto justify-center ">
+            <div className="flex m-auto justify-center mt-4 ">
               <img
                 className="w-full h-[18em] md:w-[50%] md:h-[400px] object-fill md:object-fill   rounded-xl"
                 src={update2}
