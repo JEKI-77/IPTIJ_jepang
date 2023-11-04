@@ -41,7 +41,6 @@ const Header = () => {
           alt=""
           srcSet=""
         />
-        <DarkMode isChecked={isChecked} handleToggle={handleToggle} />
       </div>
       {/* navbar mobile */}
       <nav
@@ -82,7 +81,8 @@ const Header = () => {
           </li> */}
         </ul>
       </nav>
-      <div className="flex md:hidden ">
+      <div className="flex md:hidden items-center justify-center  ">
+        <DarkMode isChecked={isChecked} handleToggle={handleToggle} />
         <Sosmed />
       </div>
 
@@ -98,6 +98,9 @@ const Header = () => {
       <div className=" md:flex hidden items-center justify-end md:m-4 w-full gap-20 md:mr-20  ">
         <nav className="flex justify-center items-center">
           <ul className="md:flex gap-3 ">
+            <li>
+              <DarkMode isChecked={isChecked} handleToggle={handleToggle} />
+            </li>
             <li>
               <Link className="hover" to="/">
                 Home
@@ -118,6 +121,7 @@ const Header = () => {
                 News
               </Link>
             </li>
+
             {/* <li>
               <Link className="hover" to="/team">
                 Team

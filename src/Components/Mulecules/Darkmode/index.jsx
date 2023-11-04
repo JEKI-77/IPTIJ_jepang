@@ -4,7 +4,7 @@ const DarkMode = ({isChecked, handleToggle}) => {
   return (
     <div>
       {/* darkmode */}
-      <label className="flex ml-4 items-center space-x-2 cursor-pointer mr-8 ">
+      <label className="flex flex-1 items-center space-x-2 cursor-pointer mr-4  ">
         <div className="relative">
           <input
             type="checkbox"
