@@ -10,7 +10,7 @@ import Svg from "../../Components/Atoms/svg";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Helmet>
         <title>IPTIJ - Kenshusei Jepang | Organisasi IPTIJ</title>
         <meta
@@ -36,6 +36,7 @@ const Home = () => {
         {/* Quote */}
         <Quotes />
       </div>
+      
     </div>
   );
 };
