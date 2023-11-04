@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Sosmed from "../../Atoms/Sosmed";
 import { Link } from "react-router-dom";
 import ReactGa from "react-ga";
+import DarkMode from "../Darkmode";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -40,29 +41,8 @@ const Header = () => {
           alt=""
           srcSet=""
         />
+        <DarkMode isChecked={isChecked} handleToggle={handleToggle} />
       </div>
-      {/* darkmode */}
-      <label className="flex items-center space-x-2 cursor-pointer mr-8">
-        <div className="relative">
-          <input
-            type="checkbox"
-            className="sr-only"
-            checked={isChecked}
-            onChange={handleToggle}
-          />
-          <div
-            className={`w-10 h-5 rounded-full shadow-inner ${
-              isChecked ? " bg-black " : "bg-gray-400"
-            }`}
-          >
-            <div
-              className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform ${
-                isChecked ? "translate-x-6" : "translate-x-0 "
-              }`}
-            />
-          </div>
-        </div>
-      </label>
       {/* navbar mobile */}
       <nav
         className={`${
