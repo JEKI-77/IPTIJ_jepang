@@ -8,6 +8,16 @@ import ReactGa from "react-ga";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleToggle = () => {
+    setIsChecked(!isChecked);
+
+    // darkmode
+    isChecked
+      ? document.documentElement.classList.remove("dark")
+      : document.documentElement.classList.add("dark");
+  };
 
   const TRAKING_ID = "G-JT6Q77YK8E";
   ReactGa.initialize(TRAKING_ID);
@@ -17,7 +27,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="bg-[rgb(20,53,89)]  text-gray-200 font-semibold box-border flex ">
+    <div className="bg-[rgb(20,53,89)]  text-gray-200 font-semibold box-border flex dark:dark ">
       {/* logo */}
       <div className="mx-4 md:mx-20 w-full items-center flex   ">
         <img
@@ -27,6 +37,28 @@ const Header = () => {
           srcSet=""
         />
       </div>
+      {/* darkmode */}
+      <label className="flex items-center space-x-2 cursor-pointer mr-8">
+        <div className="relative">
+          <input
+            type="checkbox"
+            className="sr-only"
+            checked={isChecked}
+            onChange={handleToggle}
+          />
+          <div
+            className={`w-10 h-5 rounded-full shadow-inner ${
+              isChecked ? " bg-black " : "bg-gray-400"
+            }`}
+          >
+            <div
+              className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform ${
+                isChecked ? "translate-x-6" : "translate-x-0 "
+              }`}
+            />
+          </div>
+        </div>
+      </label>
       {/* navbar mobile */}
       <nav
         className={`${

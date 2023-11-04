@@ -20,6 +20,10 @@
   @apply overflow-hidden  ease-out;
 }
 
+.dark {
+  @apply bg-gray-900 text-white;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;

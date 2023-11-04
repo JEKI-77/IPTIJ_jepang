@@ -1,4 +1,3 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "../../Components/Mulecules/Footer";
 import Header from "../../Components/Mulecules/Header";
@@ -7,7 +6,7 @@ import Header from "../../Components/Mulecules/Header";
 
 const MainApp = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen ">
       <Header />
       <div className="flex-1">
         <Outlet />
