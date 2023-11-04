@@ -13,7 +13,7 @@ const Description = () => {
           Tujuan IPTIJ
         </h2>
 
-        <p className="text-sm md:text-lg  flex text-justify indent-4">
+        <p className="text-base md:text-lg text-center lg:text-justify">
           IPTIJ (Ikatan Persaudaran Trainee Indonesia di Jepang) merupakan
           komunitas yang telah ada selama 18 tahun dijepang yang dibentuk untuk
           memfasilitasi dan memperkuat hubungan antara para trainee atau peserta
