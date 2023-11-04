@@ -27,7 +27,11 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="bg-[rgb(20,53,89)]  text-gray-200 font-semibold box-border flex dark:dark ">
+    <div
+      className={` text-gray-200 font-semibold box-border flex  ${
+        isChecked ? "  dark " : "bg-[rgb(20,53,89)]"
+      }`}
+    >
       {/* logo */}
       <div className="mx-4 md:mx-20 w-full items-center flex   ">
         <img
