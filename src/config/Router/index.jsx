@@ -6,7 +6,6 @@ import JadwalSholat from "../../pages/waktuSholat";
 import Page404 from "../../pages/Page404";
 import MainApp from "../../pages/mainApp";
 import IslamNews from "../../pages/islamNews";
-import Chat from "../../pages/chat";
 
 const RouterApp = () => {
   return (
@@ -18,7 +17,6 @@ const RouterApp = () => {
           <Route path="/news" element={<IslamNews />} />
           <Route path="/newsindo" element={<NewsIndo />} />
           <Route path="/waktuSholatjepang" element={<JadwalSholat />} />
-          <Route path="/chat" element={<Chat />} />
           <Route path="/*" element={<Page404 />} />
         </Route>
       </Routes>

@@ -25,14 +25,13 @@ const Chat = () => {
         <div>besok jalan yuu...?</div>
         <div>kemana tu..</div>
       </div>
-      <div className="footer  bg-white h-20 flex items-center ">
+      <div className="bg-white h-20 flex items-center ">
         <input
           type="text"
           placeholder="write message"
           className="border border-cyan-600 h-10 text-start p-2 rounded-md w-full"
         />
         <button className="text-white ml-4 bg-blue-600 px-3 py-2 rounded-md text-2xl ">
-          {" "}
           <RiSendPlaneLine />
         </button>
       </div>
