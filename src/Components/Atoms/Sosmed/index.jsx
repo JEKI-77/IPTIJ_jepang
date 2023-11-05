@@ -12,7 +12,7 @@ const Sosmed = () => {
         <a href="https://www.facebook.com/iptij.official">
           <li>{<FaFacebookF />}</li>
         </a>
-        <a href="https://www.instagram.com/iptij.store/">
+        <a href="https://instagram.com/iptij.official?igshid=ejA4dGhwaW5nc2Vv">
           <li>{<FaInstagram />}</li>
         </a>
         <a href="mailto:iptijofficial22@gmail.com">
