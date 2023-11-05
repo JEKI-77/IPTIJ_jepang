@@ -82,25 +82,22 @@ const Header = () => {
         </ul>
       </nav>
       <div className="flex md:hidden items-center justify-center  ">
-        <DarkMode isChecked={isChecked} handleToggle={handleToggle} />
         <Sosmed />
       </div>
 
       {/* navbar toggle */}
       <div
-        className="text-3xl absolute ml-[85%] m-auto md:hidden flex justify-end mt-5 cursor-pointer z-[999] text-white "
+        className="text-3xl absolute ml-[85%] m-auto md:hidden flex justify-end mt-5 cursor-pointer z-[999] text-white flex-col "
         onClick={() => setOpen(!open)}
       >
         <HiMiniBars3 />
+        <DarkMode isChecked={isChecked} handleToggle={handleToggle} />
       </div>
 
       {/* navbar desktop */}
       <div className=" md:flex hidden items-center justify-end md:m-4 w-full gap-20 md:mr-20  ">
         <nav className="flex justify-center items-center">
           <ul className="md:flex gap-3 ">
-            <li>
-              <DarkMode isChecked={isChecked} handleToggle={handleToggle} />
-            </li>
             <li>
               <Link className="hover" to="/">
                 Home
@@ -132,6 +129,7 @@ const Header = () => {
 
         <div className="md:flex hidden ">
           <Sosmed />
+          <DarkMode isChecked={isChecked} handleToggle={handleToggle} />
         </div>
       </div>
     </div>

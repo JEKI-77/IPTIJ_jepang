@@ -25,19 +25,19 @@ const Banner = () => {
           // onSlideChange={() => console.log("")}
         >
           <SwiperSlide>
-            <div className="flex m-auto justify-center mt-4  ">
+            <div className="flex m-auto justify-center mt-4 ">
               <img
-                className="w-full h-[20em] md:w-[50%] md:h-[400px] object-fill md:object-fill   rounded-xl"
-                src={update1}
+                className="w-full h-[18em] md:w-[50%] md:h-[400px] object-fill md:object-fill   rounded-xl"
+                src={update2}
                 alt="bannerBg"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex m-auto justify-center mt-4 ">
+            <div className="flex m-auto justify-center mt-4  ">
               <img
-                className="w-full h-[18em] md:w-[50%] md:h-[400px] object-fill md:object-fill   rounded-xl"
-                src={update2}
+                className="w-full h-[20em] md:w-[50%] md:h-[400px] object-fill md:object-fill   rounded-xl"
+                src={update1}
                 alt="bannerBg"
               />
             </div>

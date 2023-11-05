@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 
-const DarkMode = ({isChecked, handleToggle}) => {
+const DarkMode = ({ isChecked, handleToggle }) => {
   return (
     <div>
       {/* darkmode */}
-      <label className="flex flex-1 items-center space-x-2 cursor-pointer mr-4  ">
+      <label className="flex flex-1 items-center space-x-2 cursor-pointer mr-4 mt-1 md:mt-0  ">
         <div className="relative">
           <input
             type="checkbox"
@@ -13,12 +13,12 @@ const DarkMode = ({isChecked, handleToggle}) => {
             onChange={handleToggle}
           />
           <div
-            className={`w-10 h-5 rounded-full shadow-inner ${
+            className={`md:w-10 md:h-5 w-8 h-4 rounded-full shadow-inner ${
               isChecked ? " bg-black " : "bg-gray-400"
             }`}
           >
             <div
-              className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform ${
+              className={`md:w-5 md:h-5 w-4 h-4 bg-white rounded-full shadow-md transform transition-transform ${
                 isChecked ? "translate-x-6" : "translate-x-0 "
               }`}
             />
@@ -27,6 +27,6 @@ const DarkMode = ({isChecked, handleToggle}) => {
       </label>
     </div>
   );
-}
+};
 
 export default DarkMode;

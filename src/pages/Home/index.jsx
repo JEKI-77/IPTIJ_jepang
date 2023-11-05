@@ -7,12 +7,13 @@ import Quotes from "../../Components/Mulecules/Quotes";
 import Description from "../../Components/Mulecules/Description";
 import LinkDonasi from "../../Components/Mulecules/LinkDonasi";
 import Svg from "../../Components/Atoms/svg";
+import Whatsapp from "../../Components/Atoms/whatsUpIcon";
 
 const Home = () => {
   return (
     <div className="">
       <Helmet>
-        <title>IPTIJ - Kenshusei Jepang | Organisasi IPTIJ</title>
+        <title>IPTIJ - Kenshuusei Jepang</title>
         <meta
           name="description"
           content="Selamat datang di IPTIJ - Organisasi Kenshusei Jepang. Kami menyediakan berbagai informasi kenshusei Jepang."
@@ -35,8 +36,8 @@ const Home = () => {
         <AgendaCard />
         {/* Quote */}
         <Quotes />
+        <Whatsapp />
       </div>
-      
     </div>
   );
 };
