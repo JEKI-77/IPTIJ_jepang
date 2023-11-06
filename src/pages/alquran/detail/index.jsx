@@ -35,9 +35,9 @@ const Detail = () => {
       <ul>
         {isLoading ? (
           data?.map((info, index) => (
-            <div className="flex gap-4 justify-end" key={index}>
-              <li className="mb-8 text-xl text-end flex-col flex   ">
-                {info.ar}{" "}
+            <div className="flex gap-4 justify-end " key={index}>
+              <li className="mb-8 text-2xl  text-end flex-col flex   ">
+                <span className="leading-10 "> {info.ar} </span>
                 <span className="text-sm text-gray-600 mt-2">{info.idn}</span>
               </li>
               <li className="w-8 h-8 border-2 border-gray-400 rounded-full flex p-3 items-center justify-center">
