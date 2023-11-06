@@ -61,25 +61,25 @@ const Header = () => {
           onClick={() => setOpen(false)}
           className="gap-16 grid grid-cols-2 items-center -mt-52  "
         >
-          <li className="hover">
+          <li className="hover bg-white ">
             <Link to="/">
               <img className="w-14 h-14" src={HomeIcon} alt="" srcSet="" />
               <p className="text-[0.8em] text-center"> Home </p>
             </Link>
           </li>
-          <li className="hover">
+          <li className="hover  bg-white ">
             <Link to="/gallery">
               <img className="w-14 h-14" src={GalleryIcon} alt="" srcSet="" />
               <p className="text-[0.8em] text-center"> Gallery </p>
             </Link>
           </li>
-          <li className="hover">
+          <li className="hover  bg-white ">
             <Link to="/waktuSholatjepang">
               <img className="w-14 h-14" src={PrayTimeIcon} alt="" srcSet="" />
               <p className="text-[0.7em] text-center">Waktu Sholat</p>
             </Link>
           </li>
-          <li className="hover">
+          <li className="hover  bg-white ">
             <Link to="/news">
               <img className="w-14 h-14" src={NewsIcon} alt="" srcSet="" />
               <p className="text-[0.8em] text-center">News</p>

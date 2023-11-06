@@ -22,12 +22,12 @@ const Filter = () => {
   };
 
   return (
-    <div className=" mt-8 mb-14 -ml-52">
+    <div className=" mt-8 mb-4 -ml-52">
       <div className="relative ">
         <button
           id="dropdownDefaultButton"
           data-dropdown-toggle="dropdown"
-          className="text-white w-42 px-3 font-semibold  hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-whitefont-medium rounded-xl text-md py-[0.2em] text-center items-center flex bg-cyan-600  "
+          className="text-gray-200 w-42 px-3  font-semibold  hover:bg-slate-700 focus:ring-4 focus:outline-none focus:ring-whitefont-medium rounded-lg text-md  text-center items-center flex bg-slate-800  "
           type="button"
           onClick={toggleDropdown}
         >
