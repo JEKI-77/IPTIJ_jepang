@@ -4,6 +4,7 @@ import axios from "axios";
 import Card2 from "../../Components/Atoms/NewsCard/Card2";
 import Filter from "../../Components/Atoms/Filter";
 import { Helmet } from "react-helmet";
+import Loading from "../../Components/Atoms/Loading";
 
 const IslamNews = () => {
   const [data, setData] = useState([]);
@@ -60,7 +61,7 @@ const IslamNews = () => {
             </li>
           ))
         ) : (
-          <p> Loading .... </p>
+          <Loading />
         )}
       </ul>
     </div>

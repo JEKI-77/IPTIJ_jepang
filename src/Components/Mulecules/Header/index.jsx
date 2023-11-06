@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import iptijLogo from "../../../assets/images/logo_iptij.png";
 import { HiMiniBars3 } from "react-icons/hi2";
 // import { FiYoutube } from "react-icons/fi";
@@ -11,7 +12,7 @@ import GalleryIcon from "../../../assets/icon/Gallery.png";
 import PrayTimeIcon from "../../../assets/icon/prayTime.png";
 import NewsIcon from "../../../assets/icon/news.png";
 import AlquranIcon from "../../../assets/icon/al-quran.png";
-import CurrencyIcon from "../../../assets/icon/currency.png";
+// import CurrencyIcon from "../../../assets/icon/currency.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -55,11 +56,11 @@ const Header = () => {
           open
             ? "right-0 animate__animated animate__fadeInRight "
             : "right-[-100%] hidden duration-500"
-        }   bg-[rgb(20,53,89)] md:hidden flex items-center justify-center absolute w-full z-[999] h-screen   mt-[4.4em]`}
+        }   bg-[rgb(20,53,89)] md:hidden flex items-center justify-center absolute w-full z-[999] h-screen    mt-[4.4em]`}
       >
         <ul
           onClick={() => setOpen(false)}
-          className="gap-16 grid grid-cols-2 items-center -mt-52  "
+          className="gap-4 justify-center mt items-center flex flex-col -mt-20  "
         >
           <li className="hover bg-white ">
             <Link to="/">
@@ -73,10 +74,10 @@ const Header = () => {
               <p className="text-[0.8em] text-center"> Gallery </p>
             </Link>
           </li>
-          <li className="hover  bg-white ">
+          <li className="hover bg-white ">
             <Link to="/waktuSholatjepang">
               <img className="w-14 h-14" src={PrayTimeIcon} alt="" srcSet="" />
-              <p className="text-[0.7em] text-center">Waktu Sholat</p>
+              <p className="text-[0.7em] text-center">Shalat </p>
             </Link>
           </li>
           <li className="hover  bg-white ">
@@ -85,18 +86,18 @@ const Header = () => {
               <p className="text-[0.8em] text-center">News</p>
             </Link>
           </li>
-          <li className="hover  bg-white ">
+          <li className="hover  bg-white w-full">
             <Link to="/alquran">
-              <img className="w-14 h-14" src={AlquranIcon} alt="" srcSet="" />
+              <img className="w-14 h-14  " src={AlquranIcon} alt="" srcSet="" />
               <p className="text-[0.8em] text-center">Alquran</p>
             </Link>
           </li>
-          <li className="hover  bg-white ">
+          {/* <li className="hover  bg-white ">
             <Link to="currency">
               <img className="w-14 h-14" src={CurrencyIcon} alt="" srcSet="" />
               <p className="text-[0.8em] text-center">Currency</p>
             </Link>
-          </li>
+          </li> */}
           {/* <li>
             <Link className="hover" to="/team">
               Team
@@ -139,6 +140,11 @@ const Header = () => {
             <li>
               <Link className="hover" to="/news">
                 News
+              </Link>
+            </li>
+            <li>
+              <Link className="hover" to="/Alquran">
+                Qur'an
               </Link>
             </li>
 

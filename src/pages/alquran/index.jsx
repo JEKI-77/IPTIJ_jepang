@@ -2,6 +2,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
+import Loading from "../../Components/Atoms/Loading";
 
 const Alquran = () => {
   const [data, setData] = useState([]);
@@ -16,7 +17,6 @@ const Alquran = () => {
         // const numberAyat = response.data;
         // setNumber(numberAyat);
         setData(responseAPI);
-        console.log("nomor ayat", responseAPI);
         setIsLoading(true);
         // console.log("success", responseAPI);
       })
@@ -36,7 +36,7 @@ const Alquran = () => {
               className=" flex justify-between border shadow-sm mb-3 md:mb-0  rounded-xl cursor-pointer h-28 items-center  "
               key={index}
             >
-              <li className=" flex w-14 h-full bg-green-600 text-white font-semibold rounded-l-xl items-center justify-center ">
+              <li className=" flex w-14 h-full bg-slate-700 text-white font-semibold rounded-l-xl items-center justify-center ">
                 {info.nomor}
               </li>
               <li className="flex flex-col  text-start w-full ml-4">
@@ -53,7 +53,7 @@ const Alquran = () => {
             </div>
           ))
         ) : (
-          <p>Loading .... </p>
+          <Loading />
         )}
       </ul>
     </div>

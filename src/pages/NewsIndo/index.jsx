@@ -16,6 +16,7 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import Card2 from "../../Components/Atoms/NewsCard/Card2";
 import Filter from "../../Components/Atoms/Filter";
+import Loading from "../../Components/Atoms/Loading";
 
 const NewsIndo = () => {
   const [data, setData] = useState([]);
@@ -62,7 +63,7 @@ const NewsIndo = () => {
             </li>
           ))
         ) : (
-          <p> Loading .... </p>
+          <Loading />
         )}
       </ul>
     </div>

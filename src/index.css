@@ -9,7 +9,7 @@
 /* Other CSS rules go here */
 
 .hover {
-  @apply  md:text-gray-300 text-gray-800 rounded-2xl hover:bg-gray-200 md:hover:bg-transparent px-1 py-1  flex justify-center items-center;
+  @apply  md:text-gray-300 text-gray-800 rounded-2xl  hover:bg-gray-200 md:hover:bg-transparent px-2 py-2  flex justify-center items-center;
 }
 .imgStyle {
   @apply cursor-pointer hover:scale-125 duration-300 w-auto object-cover;

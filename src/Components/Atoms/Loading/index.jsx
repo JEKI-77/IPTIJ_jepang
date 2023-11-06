@@ -1,8 +1,8 @@
 import ReactLoading from "react-loading";
 
-const index = () => {
+const Loading = () => {
   return (
-    <span className="w-screen flex  justify-center items-center">
+    <span className="w-screen flex h-screen  justify-center items-center">
       <ReactLoading
         type={"cylon"}
         color={"black"}
@@ -13,4 +13,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Loading;
