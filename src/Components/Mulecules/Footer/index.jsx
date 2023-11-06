@@ -14,7 +14,7 @@ const Footer = () => {
             Alamat: 4 Chome-6-6 Meguro, Meguro City, Tokyo 153-0063, Jepang
           </p>
           {/* <p>No Hp: 08383833</p> */}
-          <p>Email: iptij@gmail.com</p>
+          <p>Email: iptijofficial22@gmail.com</p>
         </div>
       </div>
 
