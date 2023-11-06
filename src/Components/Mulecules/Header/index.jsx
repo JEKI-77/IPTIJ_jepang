@@ -10,8 +10,8 @@ import HomeIcon from "../../../assets/icon/home.png";
 import GalleryIcon from "../../../assets/icon/Gallery.png";
 import PrayTimeIcon from "../../../assets/icon/prayTime.png";
 import NewsIcon from "../../../assets/icon/news.png";
-import AlquranIcon from "../../../assets/icon/al-quran.png";
-import CurrencyIcon from "../../../assets/icon/currency.png";
+// import AlquranIcon from "../../../assets/icon/al-quran.png";
+// import CurrencyIcon from "../../../assets/icon/currency.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
