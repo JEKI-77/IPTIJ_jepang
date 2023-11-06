@@ -8,6 +8,7 @@ import MainApp from "../../pages/mainApp";
 import IslamNews from "../../pages/islamNews";
 import Alquran from "../../pages/alquran";
 import Currency from "../../pages/Currency";
+import Detail from "../../pages/alquran/detail";
 // import ChatApp from "../../pages/chat/chatApp";
 
 const RouterApp = () => {
@@ -22,6 +23,7 @@ const RouterApp = () => {
           <Route path="/waktuSholatjepang" element={<JadwalSholat />} />
           {/* <Route path="/chat" element={<ChatApp />} /> */}
           <Route path="/alquran" element={<Alquran />} />
+          <Route path="/detail/:id" element={<Detail />} />
           <Route path="/currency" element={<Currency />} />
           <Route path="/*" element={<Page404 />} />
         </Route>
