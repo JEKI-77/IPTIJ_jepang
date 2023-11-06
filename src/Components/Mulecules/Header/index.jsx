@@ -6,6 +6,12 @@ import Sosmed from "../../Atoms/Sosmed";
 import { Link } from "react-router-dom";
 import ReactGa from "react-ga";
 import DarkMode from "../Darkmode";
+import HomeIcon from "../../../assets/icon/home.png";
+import GalleryIcon from "../../../assets/icon/Gallery.png";
+import PrayTimeIcon from "../../../assets/icon/prayTime.png";
+import NewsIcon from "../../../assets/icon/news.png";
+import AlquranIcon from "../../../assets/icon/al-quran.png";
+import CurrencyIcon from "../../../assets/icon/currency.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -42,6 +48,7 @@ const Header = () => {
           srcSet=""
         />
       </div>
+
       {/* navbar mobile */}
       <nav
         className={`${
@@ -52,28 +59,44 @@ const Header = () => {
       >
         <ul
           onClick={() => setOpen(false)}
-          className="gap-16 flex flex-col justify-center items-center -mt-52  "
+          className="gap-16 grid grid-cols-2 items-center -mt-52  "
         >
-          <li>
-            <Link className="hover" to="/">
-              Home
+          <li className="hover">
+            <Link to="/">
+              <img className="w-14 h-14" src={HomeIcon} alt="" srcSet="" />
+              <p className="text-[0.8em] text-center"> Home </p>
             </Link>
           </li>
-          <li>
-            <Link className="hover" to="/gallery">
-              Gallery
+          <li className="hover">
+            <Link to="/gallery">
+              <img className="w-14 h-14" src={GalleryIcon} alt="" srcSet="" />
+              <p className="text-[0.8em] text-center"> Gallery </p>
             </Link>
           </li>
-          <li>
-            <Link className="hover" to="/waktuSholatjepang">
-              Waktu Sholat
+          <li className="hover">
+            <Link to="/waktuSholatjepang">
+              <img className="w-14 h-14" src={PrayTimeIcon} alt="" srcSet="" />
+              <p className="text-[0.7em] text-center">Waktu Sholat</p>
             </Link>
           </li>
-          <li>
-            <Link className="hover" to="/news">
-              News
+          <li className="hover">
+            <Link to="/news">
+              <img className="w-14 h-14" src={NewsIcon} alt="" srcSet="" />
+              <p className="text-[0.8em] text-center">News</p>
             </Link>
           </li>
+          {/* <li className="hover">
+            <Link to="">
+              <img className="w-14 h-14" src={AlquranIcon} alt="" srcSet="" />
+              <p className="text-[0.8em] text-center">Alquran</p>
+            </Link>
+          </li>
+          <li className="hover">
+            <Link to="">
+              <img className="w-14 h-14" src={CurrencyIcon} alt="" srcSet="" />
+              <p className="text-[0.8em] text-center">Currency</p>
+            </Link>
+          </li> */}
           {/* <li>
             <Link className="hover" to="/team">
               Team

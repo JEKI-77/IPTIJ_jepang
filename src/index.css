@@ -9,7 +9,7 @@
 /* Other CSS rules go here */
 
 .hover {
-  @apply hover:bg-cyan-600 hover:text-white px-3 py-2 rounded-xl;
+  @apply  text-black rounded-2xl hover:bg-gray-200 bg-white px-1 py-1  flex justify-center items-center;
 }
 .imgStyle {
   @apply cursor-pointer hover:scale-125 duration-300 w-auto object-cover;
