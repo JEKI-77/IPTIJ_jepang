@@ -10,8 +10,8 @@ import HomeIcon from "../../../assets/icon/home.png";
 import GalleryIcon from "../../../assets/icon/Gallery.png";
 import PrayTimeIcon from "../../../assets/icon/prayTime.png";
 import NewsIcon from "../../../assets/icon/news.png";
-// import AlquranIcon from "../../../assets/icon/al-quran.png";
-// import CurrencyIcon from "../../../assets/icon/currency.png";
+import AlquranIcon from "../../../assets/icon/al-quran.png";
+import CurrencyIcon from "../../../assets/icon/currency.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -85,18 +85,18 @@ const Header = () => {
               <p className="text-[0.8em] text-center">News</p>
             </Link>
           </li>
-          {/* <li className="hover">
-            <Link to="">
+          <li className="hover  bg-white ">
+            <Link to="/alquran">
               <img className="w-14 h-14" src={AlquranIcon} alt="" srcSet="" />
               <p className="text-[0.8em] text-center">Alquran</p>
             </Link>
           </li>
-          <li className="hover">
-            <Link to="">
+          <li className="hover  bg-white ">
+            <Link to="currency">
               <img className="w-14 h-14" src={CurrencyIcon} alt="" srcSet="" />
               <p className="text-[0.8em] text-center">Currency</p>
             </Link>
-          </li> */}
+          </li>
           {/* <li>
             <Link className="hover" to="/team">
               Team
