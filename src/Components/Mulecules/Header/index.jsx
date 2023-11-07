@@ -11,7 +11,7 @@ import HomeIcon from "../../../assets/icon/home.png";
 import GalleryIcon from "../../../assets/icon/Gallery.png";
 import PrayTimeIcon from "../../../assets/icon/prayTime.png";
 import NewsIcon from "../../../assets/icon/news.png";
-import AlquranIcon from "../../../assets/icon/al-quran.png";
+import AlquranIcon from "../../../assets/icon/quran.png";
 // import CurrencyIcon from "../../../assets/icon/currency.png";
 
 const Header = () => {
@@ -56,11 +56,11 @@ const Header = () => {
           open
             ? "right-0 animate__animated animate__fadeInRight "
             : "right-[-100%] hidden duration-500"
-        }   bg-[rgb(20,53,89)] md:hidden flex items-center justify-center absolute w-full z-[999] h-screen    mt-[4.4em]`}
+        }   bg-[rgb(20,53,89)] md:hidden flex items-center justify-center absolute w-full z-[999] h-screen mt-[4.4em]`}
       >
         <ul
           onClick={() => setOpen(false)}
-          className="gap-4 justify-center mt items-center flex flex-col -mt-20  "
+          className="gap-4 justify-center items-center flex flex-col -mt-24  "
         >
           <li className="hover bg-white ">
             <Link to="/">
@@ -88,7 +88,7 @@ const Header = () => {
           </li>
           <li className="hover  bg-white w-full">
             <Link to="/alquran">
-              <img className="w-14 h-14  " src={AlquranIcon} alt="" srcSet="" />
+              <img className="w-14 h-14 " src={AlquranIcon} alt="" srcSet="" />
               <p className="text-[0.8em] text-center">Alquran</p>
             </Link>
           </li>
@@ -106,6 +106,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="flex md:hidden items-center justify-center  ">
+        <DarkMode isChecked={isChecked} handleToggle={handleToggle} />
         <Sosmed />
       </div>
 
@@ -115,7 +116,6 @@ const Header = () => {
         onClick={() => setOpen(!open)}
       >
         <HiMiniBars3 />
-        <DarkMode isChecked={isChecked} handleToggle={handleToggle} />
       </div>
 
       {/* navbar desktop */}

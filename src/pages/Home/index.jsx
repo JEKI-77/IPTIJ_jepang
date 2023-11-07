@@ -16,25 +16,15 @@ const Home = () => {
         <title>IPTIJ - Kenshuusei Jepang</title>
         <meta
           name="description"
-          content="Selamat datang di IPTIJ - Organisasi Kenshusei Jepang. Kami menyediakan berbagai informasi kenshusei Jepang."
+          content="iptij - Ikatan Persaudaraan Trainee Indonesia di Jepang."
         />
       </Helmet>
-
       <Banner />
       <Svg />
-
       <div className="md:w-[80%] m-auto -mt-24 md:mt-0" id="gallery">
-        {/* <div className=" items-center flex justify-center">
-          <img className=" hidden w-[50%] shadow-lg" src={""} alt="" />
-        </div> */}
-
-        {/* decription */}
         <Description />
-
         <LinkDonasi />
-        {/* Agenda */}
         <AgendaCard />
-        {/* Quote */}
         <Quotes />
         <Whatsapp />
       </div>
