@@ -8,9 +8,9 @@ const TranslateSelect = ({ language, changeLanguage }) => {
         defaultValue={language}
         onChange={changeLanguage}
       >
-        <option value="en">English</option>
         <option value="id">Indonesian</option>
         <option value="ja">Japanese</option>
+        <option value="en">English</option>
       </select>
     </div>
   );

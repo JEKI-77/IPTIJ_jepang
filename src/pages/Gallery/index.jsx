@@ -13,8 +13,10 @@ import imgGallery11 from "../../assets/imagesIptij/img11.jpg";
 import imgGallery12 from "../../assets/imagesIptij/img12.jpg";
 import Svg from "../../Components/Atoms/svg";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 const Gallery = () => {
+  const {t} = useTranslation()
   return (
     <>
       <Helmet>
@@ -30,7 +32,7 @@ const Gallery = () => {
       <div className="md:grid-cols-12 grid grid-cols-8 w-[95%] md:w-[80%]  gap-2 m-auto mb-4  ">
         <div className="lg:col-span-12 w-full col-span-8"></div>
         <div className="lg:col-span-12 col-span-8 mt-8  animate__animated  animate__fadeInDown">
-          <p className="text-center text-3xl font-semibold">Gallery</p>
+          <p className="text-center text-3xl font-semibold">{t("Gallery")}</p>
           <hr className="mb-4 border-orange-400 col-span-12 w-[50%] m-auto" />
         </div>
         {/* grid image */}

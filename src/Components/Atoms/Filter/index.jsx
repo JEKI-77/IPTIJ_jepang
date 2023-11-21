@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "react-dropdown/style.css";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Filter = () => {
   // const handleNavigate = () => {
@@ -14,6 +15,7 @@ const Filter = () => {
   };
 
   const navigateTo = useNavigate();
+  const { t } = useTranslation();
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -31,7 +33,7 @@ const Filter = () => {
           type="button"
           onClick={toggleDropdown}
         >
-          Pilih Kategori
+          {t("filter.pilihKategori")}
           <svg
             className="w-2.5 h-2.5 ml-2.5"
             aria-hidden="true"
@@ -61,25 +63,16 @@ const Filter = () => {
                   onClick={BeritaIslamNavigate}
                   className="block px-4 py-2 hover:bg-gray-100 text-md  "
                 >
-                  Berita Islami
+                  {t("filter.kajian")}
                 </a>
               </li>
-              {/* <li>
-                <a
-                  href="#"
-                  onClick={handleNavigate}
-                  className="block px-4 py-2 hover:bg-gray-100 text-md  "
-                >
-                  Japang
-                </a>
-              </li> */}
               <li>
                 <a
                   href="#"
                   onClick={handleNavigateIndo}
-                  className="block px-4 py-2 hover:bg-gray-100 text-md  "
+                  className="block px-4 py-2 hover:bg-gray-100 text-md   "
                 >
-                  Indonesia
+                  {t("filter.beritaIndo")}
                 </a>
               </li>
             </ul>

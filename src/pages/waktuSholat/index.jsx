@@ -5,8 +5,10 @@ import SearchBar from "../../Components/Atoms/Search";
 import { FaSearch } from "react-icons/fa";
 import dayjs from "dayjs";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 const JadwalSholat = () => {
+  const { t } = useTranslation();
   const [data, setData] = useState([]);
   const [city, setCity] = useState("Tokyo");
   const [search, setSearch] = useState("");
@@ -52,7 +54,7 @@ const JadwalSholat = () => {
         />
       </Helmet>
       <h2 className="text-2xl font-semibold   text-center ">
-        Waktu sholat Jepang
+        {t("waktuSholat")}
       </h2>
       <div className=" font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
         <span>{date.date}</span>
@@ -68,7 +70,8 @@ const JadwalSholat = () => {
       <div className="flex gap-3 flex-col">
         <div className=" mt-4 text-center">
           <h1 className="text-xl">
-            <span className="font-semibold"> Kota</span> : {city || "Tokyo"}
+            <span className="font-semibold"> {t("kota")}</span> :{" "}
+            {city || "Tokyo"}
           </h1>
         </div>
         <div className="bg-slate-50 gap-9 flex  rounded-full px-4 py-3 shadow-md text-gray-800  ">
