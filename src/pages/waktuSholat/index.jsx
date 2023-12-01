@@ -6,6 +6,8 @@ import { FaSearch } from "react-icons/fa";
 import dayjs from "dayjs";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
+import imgMekah from "../../assets/images/praytime/mekah.jpg";
+import imgMasjid from "../../assets/images/praytime/masjid.jpeg";
 
 const JadwalSholat = () => {
   const { t } = useTranslation();
@@ -45,7 +47,7 @@ const JadwalSholat = () => {
   };
 
   return (
-    <div className="w-[80%] md:w-[30%] m-auto mb-8 mt-8">
+    <div className=" md:w-[30%] m-auto mb-8">
       <Helmet>
         <title>IPTIJ | Waktu Sholat Jepang</title>
         <meta
@@ -53,12 +55,18 @@ const JadwalSholat = () => {
           content="Halaman waktu sholat jepang"
         />
       </Helmet>
-      <h2 className="text-2xl font-semibold   text-center ">
-        {t("waktuSholat")}
-      </h2>
-      <div className=" font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
-        <span>{date.date}</span>
-      </div>
+      {/* image */}
+        <img className="w-ful rounded-b-2xl  " src={imgMasjid} alt="mekah" />
+        <div className="-mt-52">
+          {/* title */}
+          <h2 className="text-2xl font-semibold text-gray-200 text-center ">
+            {t("waktuSholat")}
+          </h2>
+          <div className=" text-gray-200 font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
+            <span>{date.date}</span>
+          </div>
+        </div>
+
 
       <SearchBar
         icon={<FaSearch />}
@@ -67,10 +75,10 @@ const JadwalSholat = () => {
         title="Cari"
       />
 
-      <div className="flex gap-3 flex-col">
-        <div className=" mt-4 text-center">
-          <h1 className="text-xl">
-            <span className="font-semibold"> {t("kota")}</span> :{" "}
+      <div className="flex gap-3 flex-col w-[80%] mt-4 m-auto">
+        <div className=" mt-4 text-center ">
+          <h1 className="text-xl text-start text-gray-200 ">
+            <span className="font-semibold "> {t("kota")}</span> :{" "}
             {city || "Tokyo"}
           </h1>
         </div>
