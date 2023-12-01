@@ -130,7 +130,7 @@ const resources = {
       berita: "今日のイスラムニュース",
       filter: {
         kajian: "イスラム研究",
-        beritaIndo: "インドネシアのニュース",
+        beritaIndo: "今日のインドネシアニュース",
         pilihKategori: " カテゴリーを選択",
       },
     },

@@ -17,8 +17,10 @@ import "swiper/css/effect-coverflow";
 import Card2 from "../../Components/Atoms/NewsCard/Card2";
 import Filter from "../../Components/Atoms/Filter";
 import Loading from "../../Components/Atoms/Loading";
+import { useTranslation } from "react-i18next";
 
 const NewsIndo = () => {
+  const { t } = useTranslation();
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
@@ -46,7 +48,7 @@ const NewsIndo = () => {
       <Filter />
 
       <div className="w-full text-start   ">
-        <h2 className="text-xl m-4 ">Berita Indonesia Hari Ini</h2>
+        <h2 className="text-xl m-4 ">{t("filter.beritaIndo")}</h2>
       </div>
       <ul className=" grid md:grid-cols-2 gap-4">
         {Array.isArray(data) && data.length > 0 ? (

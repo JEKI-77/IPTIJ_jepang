@@ -14,24 +14,26 @@ const Footer = () => {
           {t("footer.kontak")}
         </h2>
         <div className="text-gray-400 text-md ">
-          <p className="text-[0.9em] md:text-[1em]">
-          {t("footer.alamat")}
-          </p>
+          <p className="text-[0.9em] md:text-[1em]  ">{t("footer.alamat")}</p>
           {/* <p>No Hp: 08383833</p> */}
           <p>{t("footer.email")}</p>
         </div>
       </div>
 
-      <div className="gap-2 mt-8 col-span-2 md:col-span-2 m-auto ">
-        <h2 className="md:text-xl text-lg text-gray-300 mb-4">{t("footer.tentangKami")}</h2>
+      <div className="gap-2 mt-8 col-span-2 md:col-span-2 m-auto  ">
+        <h2 className="md:text-xl text-lg  text-gray-300 mb-4">
+          {t("footer.tentangKami")}
+        </h2>
         <div className="text-gray-400  text-md ">
-          <p>{t("footer.anggota")}</p>
-          <p>{t("footer.aktivitas")}</p>
+          <p className="text-center">{t("footer.anggota")}</p>
+          <p className="text-center">{t("footer.aktivitas")}</p>
         </div>
       </div>
 
       <div className="mt-8 gap-4  col-span-4 md:col-span-2 m-auto ">
-        <h2 className="text-xl text-center text-gray-300 mb-4">{t("footer.sosialMedia")}</h2>
+        <h2 className="text-xl text-center text-gray-300 mb-4">
+          {t("footer.sosialMedia")}
+        </h2>
         <div className=" text-gray-300 text-center ml-20">
           <Sosmed />
         </div>
@@ -39,10 +41,10 @@ const Footer = () => {
 
       <div className="md:mt-8 mt-4 gap-4 col-span-4 md:col-span-4  w-[90%] m-auto ">
         <h2 className="text-center text-xl text-gray-300 m-4 ">
-        {t("footer.buletinkami")}
+          {t("footer.buletinkami")}
         </h2>
         <p className="text-gray-400 text-center m-2 text-sm md:text-md">
-        {t("footer.info")}
+          {t("footer.info")}
         </p>
         <SearchBar
           icon={<BsSend />}
