@@ -3,7 +3,7 @@
 
 const SearchBar = ({ placeholder, onChange, onClick, icon }) => {
   return (
-    <div className="flex w-60 md:w-[100%] justify-center  ">
+    <div className="flex w-60 md:w-[40%] ml-4 justify-center  ">
       <input
         onChange={onChange}
         className=" md:py-[0.3em] px-[3em] md:px-[5em] text-black relative text-start   rounded-full w-[100%] flex justify-center items-center border border-gray-300 text-xl "

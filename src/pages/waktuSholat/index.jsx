@@ -47,7 +47,7 @@ const JadwalSholat = () => {
   };
 
   return (
-    <div className=" md:w-[30%] m-auto mb-8">
+    <div className=" md:w-[80%]  m-auto mb-8">
       <Helmet>
         <title>IPTIJ | Waktu Sholat Jepang</title>
         <meta
@@ -56,7 +56,7 @@ const JadwalSholat = () => {
         />
       </Helmet>
       {/* image */}
-        <img className="w-ful rounded-b-2xl  " src={imgMasjid} alt="mekah" />
+        <img className="w-full md:h-80 rounded-b-2xl -mt-[0.6px] object-cover " src={imgMasjid} alt="mekah" />
         <div className="-mt-52">
           {/* title */}
           <h2 className="text-2xl font-semibold text-gray-200 text-center ">
