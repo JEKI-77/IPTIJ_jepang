@@ -83,7 +83,7 @@ const Header = () => {
         </span>
         <ul
           onClick={() => setOpen(false)}
-          className="gap-4 justify-center items-center flex flex-col -mt-20  "
+          className="gap-8 grid w-[80%] grid-cols-3 -mt-48"
         >
           <li className="hover bg-white ">
             <Link to="/">
@@ -159,7 +159,7 @@ const Header = () => {
                 {t("Quran")}
               </Link>
             </li>
-          </ul>
+          </ul>{" "}
         </nav>
 
         <div className="md:flex hidden ">
