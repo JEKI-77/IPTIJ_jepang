@@ -37,7 +37,7 @@ const resources = {
         sosialMedia: "Sosial Media",
         buletinkami: "Our Newslatter",
         info: "Dapatkan Informasi Terbaru Kami",
-        masukanEmail: "Masukan Email Kamu",
+        masukanEmail: "Masukan Email",
       },
       kota: "kota",
       berita: "kajian Islam Hari Ini",

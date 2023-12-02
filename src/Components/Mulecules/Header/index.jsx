@@ -83,7 +83,7 @@ const Header = () => {
         </span>
         <ul
           onClick={() => setOpen(false)}
-          className="gap-8 grid w-[80%] grid-cols-3 -mt-48"
+          className="gap-8 grid grid-cols-3 -mt-48"
         >
           <li className="hover bg-white ">
             <Link to="/">
@@ -97,7 +97,7 @@ const Header = () => {
               <p className="text-[0.8em] text-center"> {t("Gallery")} </p>
             </Link>
           </li>
-          <li className="hover bg-white ">
+          <li className="hover bg-white z-[999]">
             <Link to="/waktuSholatjepang">
               <img className="w-14 h-14" src={PrayTimeIcon} alt="" srcSet="" />
               <p className="text-[0.7em] text-center">{t("waktuSholat")} </p>

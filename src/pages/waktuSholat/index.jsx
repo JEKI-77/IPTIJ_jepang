@@ -72,7 +72,7 @@ const JadwalSholat = () => {
         icon={<FaSearch />}
         onChange={cityHandler}
         onClick={onClickHandler}
-        title="Cari"
+        placeholder="cari kota"
       />
 
       <div className="flex gap-3 flex-col w-[80%] mt-4 m-auto">
