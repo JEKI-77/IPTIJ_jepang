@@ -49,7 +49,6 @@ const Header = () => {
     ReactGa.pageview(window.location.pathname + window.location.search);
   }, []);
 
-
   return (
     <div
       className={` text-gray-200 font-semibold box-border flex  ${
@@ -131,15 +130,15 @@ const Header = () => {
       </div>
 
       {/* navbar desktop */}
-      <div className=" md:flex hidden items-center justify-end md:m-4 w-full gap-20 md:mr-20  ">
+      <div className=" md:flex hidden items-center justify-end md:m-4 w-full gap-20 md:mr-20 h-14  ">
         <nav className="flex justify-center items-center ">
           <ul className="md:flex gap-3 ">
-            <li className="whitespace-nowrap">
+            <li>
               <Link className="hover" to="/">
                 {t("home")}
               </Link>
             </li>
-            <li className="whitespace-nowrap">
+            <li className=" mr-6">
               <Link className="hover" to="/gallery">
                 {t("Gallery")}
               </Link>
@@ -149,12 +148,12 @@ const Header = () => {
                 {t("waktuSholat")}
               </Link>
             </li>
-            <li className="whitespace-nowrap">
+            <li className="ml-6">
               <Link className="hover" to="/news">
                 {t("news")}
               </Link>
             </li>
-            <li className="whitespace-nowrap">
+            <li>
               <Link className="hover" to="/Alquran">
                 {t("Quran")}
               </Link>

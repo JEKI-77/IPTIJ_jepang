@@ -14,13 +14,13 @@ const SearchBar = ({
       <input
         onKeyUp={onKeyPress}
         onChange={onChange}
-        className=" md:py-[0.3em] px-[1em] md:px-[2em] text-black relative text-start w-60  rounded-full  flex justify-center items-center border border-gray-300 text-md "
+        className=" md:py-[0.3em] px-[1em] md:px-[2em] text-black relative text-start w-60  rounded-full md:text-sm  flex justify-center items-center border border-gray-300 text-md "
         type="text"
         placeholder={placeholder}
       />
       <div
         onClick={onClick}
-        className="absolute ml-[10em] md:ml-[8em] mt-1 md:mt-2 text-xl md:text-2xl text-gray-600 cursor-pointer  "
+        className="absolute ml-[10em] md:ml-[7.2em] mt-1  text-xl md:text-2xl text-gray-600 cursor-pointer  "
       >
         {icon}
       </div>
