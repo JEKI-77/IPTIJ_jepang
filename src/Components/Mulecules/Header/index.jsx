@@ -41,6 +41,7 @@ const Header = () => {
       : document.documentElement.classList.add("dark");
   };
 
+  //tracking
   const TRAKING_ID = "G-JT6Q77YK8E";
   ReactGa.initialize(TRAKING_ID);
 
@@ -48,7 +49,6 @@ const Header = () => {
     ReactGa.pageview(window.location.pathname + window.location.search);
   }, []);
 
-  //translate
 
   return (
     <div

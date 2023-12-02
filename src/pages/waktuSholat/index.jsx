@@ -38,12 +38,17 @@ const JadwalSholat = () => {
   const cityHandler = (e) => {
     const value = e.target.value;
     setSearch(value);
-    console.log(value);
   };
 
   const onClickHandler = () => {
     setCity(search);
-    console.log("result", city);
+  };
+
+  const handleKeyPress = (e) => {
+    e.preventDefault();
+    if (e.key === "Enter") {
+      setCity(search);
+    }
   };
 
   return (
@@ -56,19 +61,23 @@ const JadwalSholat = () => {
         />
       </Helmet>
       {/* image */}
-        <img className="w-full md:h-80 rounded-b-2xl -mt-[0.6px] object-cover " src={imgMasjid} alt="mekah" />
-        <div className="-mt-52">
-          {/* title */}
-          <h2 className="text-2xl font-semibold text-gray-200 text-center ">
-            {t("waktuSholat")}
-          </h2>
-          <div className=" text-gray-200 font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
-            <span>{date.date}</span>
-          </div>
+      <img
+        className="w-full md:h-80 rounded-b-2xl -mt-[0.6px] object-cover "
+        src={imgMasjid}
+        alt="mekah"
+      />
+      <div className="-mt-52">
+        {/* title */}
+        <h2 className="text-2xl font-semibold text-gray-200 text-center ">
+          {t("waktuSholat")}
+        </h2>
+        <div className=" text-gray-200 font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
+          <span>{date.date}</span>
         </div>
-
+      </div>
 
       <SearchBar
+        onKeyPress={handleKeyPress}
         icon={<FaSearch />}
         onChange={cityHandler}
         onClick={onClickHandler}

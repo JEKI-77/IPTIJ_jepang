@@ -1,11 +1,18 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line react/prop-types
 
-const SearchBar = ({ placeholder, onChange, onClick, icon, ...rest }) => {
+const SearchBar = ({
+  placeholder,
+  onChange,
+  onClick,
+  icon,
+  onKeyPress,
+  
+}) => {
   return (
     <div className="flex w-60 md:w-[40%] ml-4 justify-center ">
       <input
-        style={{ ...rest }}
+        onKeyUp={onKeyPress}
         onChange={onChange}
         className=" md:py-[0.3em] px-[1em] md:px-[2em] text-black relative text-start w-60  rounded-full  flex justify-center items-center border border-gray-300 text-md "
         type="text"
