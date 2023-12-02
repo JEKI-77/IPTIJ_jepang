@@ -7,10 +7,10 @@ const SearchBar = ({
   onClick,
   icon,
   onKeyPress,
-  
+
 }) => {
   return (
-    <div className="flex w-60 md:w-[40%] ml-4 justify-center ">
+    <div className="flex w-60 md:w-[40%] ml-4 md:ml-20 justify-center ">
       <input
         onKeyUp={onKeyPress}
         onChange={onChange}

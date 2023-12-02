@@ -62,11 +62,11 @@ const JadwalSholat = () => {
       </Helmet>
       {/* image */}
       <img
-        className="w-full md:h-80 rounded-b-2xl -mt-[0.6px] object-cover "
+        className="w-full md:w-[80%] m-auto md:h-80 rounded-b-2xl -mt-[0.6px] object-cover  "
         src={imgMasjid}
         alt="mekah"
       />
-      <div className="-mt-52">
+      <div className="-mt-48 md:-mt-72">
         {/* title */}
         <h2 className="text-2xl font-semibold text-gray-200 text-center ">
           {t("waktuSholat")}
@@ -84,7 +84,7 @@ const JadwalSholat = () => {
         placeholder="cari kota"
       />
 
-      <div className="flex gap-3 flex-col w-[80%] mt-4 m-auto">
+      <div className="flex gap-3 flex-col w-[80%] md:w-[40%] mt-2 md:mt-24 m-auto">
         <div className=" mt-4 text-center ">
           <h1 className="text-xl text-start text-gray-200 ">
             <span className="font-semibold "> {t("kota")}</span> :{" "}
