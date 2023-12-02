@@ -46,13 +46,13 @@ const Footer = () => {
         <p className="text-gray-400 text-center m-2 text-sm md:text-md">
           {t("footer.info")}
         </p>
-       <div className="w-full flex justify-center items-center">
-       <SearchBar
-          icon={<BsSend />}
-          title="Kirim"
-          placeholder={t("footer.masukanEmail")}
-        />
-       </div>
+        <div className="w-full -ml-2 flex justify-center items-center">
+          <SearchBar
+            icon={<BsSend />}
+            title="Kirim"
+            placeholder={t("footer.masukanEmail")}
+          />
+        </div>
       </div>
 
       {/* copyright */}
