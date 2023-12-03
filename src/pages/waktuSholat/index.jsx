@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import imgMasjid from "../../assets/images/praytime/masjid.jpeg";
 import { indonesianDate, indonesianName } from "../../utils/jadwal-sholat";
 import { coords } from "../../constants/locations";
-
+import { citiesInJapan } from "../../data/prefecture";
 
 const JadwalSholat = () => {
   const { t } = useTranslation();
@@ -17,6 +17,7 @@ const JadwalSholat = () => {
   const [city, setCity] = useState("Tokyo");
   const [search, setSearch] = useState("");
   const [hijriah, setHijriah] = useState("");
+  const [MsgNotFound, setMsgNotFound] = useState("");
 
   // Memformat tanggal
   let d = new Date();
@@ -176,18 +177,29 @@ const JadwalSholat = () => {
   }, [city]);
 
   const cityHandler = (e) => {
-    const value = e.target.value;
+    const value = e.target.value.toLowerCase();
     setSearch(value);
+    setMsgNotFound("");
   };
 
   const onClickHandler = () => {
-    setCity(search);
+    if (!citiesInJapan.some((city) => city.toLowerCase() === search)) {
+      setMsgNotFound("Kota Tidak ditemukan");
+    } else {
+      setCity(search);
+      setSearch("");
+    }
   };
 
   const handleKeyPress = (e) => {
     e.preventDefault();
     if (e.key === "Enter") {
-      setCity(search);
+      if (!citiesInJapan.some((city) => city.toLowerCase() === search)) {
+        setMsgNotFound(`Kota Tidak ditemukan`);
+      } else {
+        setCity(search);
+        setSearch("");
+      }
     }
   };
 
@@ -240,7 +252,7 @@ const JadwalSholat = () => {
         <div className=" mt-4 text-center ">
           <h1 className="text-xl text-start text-gray-200 ">
             <span className="font-semibold "> {t("kota")}</span> :{" "}
-            {city || "Tokyo"}
+            {search ? MsgNotFound : city}
           </h1>
         </div>
         <div className="bg-slate-50 gap-9 flex  rounded-full px-4 py-2 shadow-md text-gray-800  ">
@@ -263,7 +275,6 @@ const JadwalSholat = () => {
           <span className=" font-semibold ml-1">Isya</span> {data.Isha}
         </div>
       </div>
-     
     </div>
   );
 };
