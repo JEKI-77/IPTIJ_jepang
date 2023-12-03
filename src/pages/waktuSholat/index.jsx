@@ -11,6 +11,7 @@ import imgMasjid from "../../assets/images/praytime/masjid.jpeg";
 import { indonesianDate, indonesianName } from "../../utils/jadwal-sholat";
 import { coords } from "../../constants/locations";
 
+
 const JadwalSholat = () => {
   const { t } = useTranslation();
   const [data, setData] = useState([]);
@@ -220,10 +221,16 @@ const JadwalSholat = () => {
       </div>
       {/* countdown */}
       <div className=" w-[90%] -mt-4 bg-red-300 flex mx-4 mb-4 text-gray-200 text-sm gap-2">
-       <div>
-       Berikutnya <strong className="text-2xl flex item-center">{next.countDown}</strong> menuju waktu{" "}
-        <strong className="bg-orange-500 text-white font-bold px-3 rounded-lg">{indonesianName(next.name)}</strong>
-       </div>
+        <div>
+          Berikutnya{" "}
+          <strong className="text-2xl flex item-center">
+            {next.countDown}
+          </strong>{" "}
+          menuju waktu{" "}
+          <strong className="bg-orange-500 text-white font-bold px-3 rounded-lg">
+            {indonesianName(next.name)}
+          </strong>
+        </div>
       </div>
       <SearchBar
         onKeyPress={handleKeyPress}
@@ -233,8 +240,6 @@ const JadwalSholat = () => {
         placeholder="cari kota"
       />
 
-     
-
       <div className="flex gap-3 flex-col w-[80%] md:w-[40%] mt-2 md:mt-24 m-auto">
         <div className=" mt-4 text-center ">
           <h1 className="text-xl text-start text-gray-200 ">
@@ -242,23 +247,23 @@ const JadwalSholat = () => {
             {city || "Tokyo"}
           </h1>
         </div>
-        <div className="bg-slate-50 gap-9 flex  rounded-full px-4 py-3 shadow-md text-gray-800  ">
+        <div className="bg-slate-50 gap-9 flex  rounded-full px-4 py-2 shadow-md text-gray-800  ">
           <span className=" font-semibold">Subuh </span>{" "}
           {data ? data.Fajr : <p>loading...</p>}
         </div>
-        <div className="bg-slate-50 gap-12 flex  rounded-full px-4 py-3 shadow-md text-gray-800   ">
+        <div className="bg-slate-50 gap-12 flex  rounded-full px-4 py-2 shadow-md text-gray-800   ">
           <span className=" font-semibold">Fajar </span> {data.Sunrise}
         </div>
-        <div className="bg-slate-50 gap-8 flex  rounded-full px-4 py-3 shadow-md text-gray-800    ">
+        <div className="bg-slate-50 gap-8 flex  rounded-full px-4 py-2 shadow-md text-gray-800    ">
           <span className=" font-semibold"> Dzuhur</span> {data.Dhuhr}
         </div>
-        <div className="bg-slate-50 gap-11 flex  rounded-full px-4 py-3 shadow-md text-gray-800    ">
+        <div className="bg-slate-50 gap-11 flex  rounded-full px-4 py-2 shadow-md text-gray-800    ">
           <span className=" font-semibold">Ashar</span> {data.Asr}
         </div>
-        <div className="bg-slate-50 gap-9 flex  rounded-full px-4 py-3 shadow-md  text-gray-800   ">
+        <div className="bg-slate-50 gap-9 flex  rounded-full px-4 py-2 shadow-md  text-gray-800   ">
           <span className=" font-semibold">Magrib</span> {data.Maghrib}
         </div>
-        <div className="bg-slate-50 gap-14 flex  rounded-full px-4 py-3 shadow-md text-gray-800   ">
+        <div className="bg-slate-50 gap-14 flex  rounded-full px-4 py-2 shadow-md text-gray-800   ">
           <span className=" font-semibold">Isya</span> {data.Isha}
         </div>
       </div>
