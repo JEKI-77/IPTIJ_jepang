@@ -206,7 +206,7 @@ const JadwalSholat = () => {
       </Helmet>
       {/* image */}
       <img
-        className="w-full md:w-[80%] m-auto h-72 md:h-80 rounded-b-2xl -mt-[0.6px] object-cover  "
+        className="w-full md:w-[80%] m-auto h-72 md:h-80 rounded-b-2xl -mt-[0.6px] object-fill "
         src={imgMasjid}
         alt="mekah"
       />
@@ -220,7 +220,7 @@ const JadwalSholat = () => {
         </div>
       </div>
       {/* countdown */}
-      <div className=" w-[90%] -mt-4 bg-red-300 flex mx-4 mb-4 text-gray-200 text-sm gap-2">
+      <div className=" w-[90%] -mt-4 md:ml-[15%] flex mx-4 mb-4 text-gray-200 text-sm gap-2">
         <div>
           Berikutnya{" "}
           <strong className="text-2xl flex item-center">
@@ -240,7 +240,7 @@ const JadwalSholat = () => {
         placeholder="cari kota"
       />
 
-      <div className="flex gap-3 flex-col w-[80%] md:w-[40%] mt-2 md:mt-24 m-auto">
+      <div className="flex gap-3 flex-col w-[80%] md:w-[40%] mt-2 md:mt-8 m-auto">
         <div className=" mt-4 text-center ">
           <h1 className="text-xl text-start text-gray-200 ">
             <span className="font-semibold "> {t("kota")}</span> :{" "}
@@ -255,7 +255,7 @@ const JadwalSholat = () => {
           <span className=" font-semibold">Fajar </span> {data.Sunrise}
         </div>
         <div className="bg-slate-50 gap-8 flex  rounded-full px-4 py-2 shadow-md text-gray-800    ">
-          <span className=" font-semibold"> Dzuhur</span> {data.Dhuhr}
+          <span className=" font-semibold "> Dzuhur</span> {data.Dhuhr}
         </div>
         <div className="bg-slate-50 gap-11 flex  rounded-full px-4 py-2 shadow-md text-gray-800    ">
           <span className=" font-semibold">Ashar</span> {data.Asr}
@@ -264,7 +264,7 @@ const JadwalSholat = () => {
           <span className=" font-semibold">Magrib</span> {data.Maghrib}
         </div>
         <div className="bg-slate-50 gap-14 flex  rounded-full px-4 py-2 shadow-md text-gray-800   ">
-          <span className=" font-semibold">Isya</span> {data.Isha}
+          <span className=" font-semibold ml-1">Isya</span> {data.Isha}
         </div>
       </div>
     </div>
