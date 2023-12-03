@@ -6,7 +6,6 @@ import { FaSearch } from "react-icons/fa";
 import dayjs from "dayjs";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
-import imgMekah from "../../assets/images/praytime/mekah.jpg";
 import imgMasjid from "../../assets/images/praytime/masjid.jpeg";
 import { indonesianDate, indonesianName } from "../../utils/jadwal-sholat";
 import { coords } from "../../constants/locations";
@@ -17,7 +16,6 @@ const JadwalSholat = () => {
   const [data, setData] = useState([]);
   const [city, setCity] = useState("Tokyo");
   const [search, setSearch] = useState("");
-  const [date, setDate] = useState("");
   const [hijriah, setHijriah] = useState("");
 
   // Memformat tanggal
@@ -168,10 +166,8 @@ const JadwalSholat = () => {
       )
       .then((res) => {
         const responseApi = res.data.data.timings;
-        const date = res.data.data.date.gregorian;
         const hijriahDate = res.data.data.date.hijri;
         setHijriah(hijriahDate);
-        setDate(date);
         setData(responseApi);
       })
       .catch((err) => {
@@ -216,7 +212,7 @@ const JadwalSholat = () => {
           {t("waktuSholat")}
         </h2>
         <div className=" text-gray-200 font-semibold mb-8 text-sm  gap-4 flex justify-center items-center">
-          <span>{date.date}</span>
+          <span>{tanggal}</span>
         </div>
       </div>
       {/* countdown */}
@@ -267,6 +263,7 @@ const JadwalSholat = () => {
           <span className=" font-semibold ml-1">Isya</span> {data.Isha}
         </div>
       </div>
+     
     </div>
   );
 };
