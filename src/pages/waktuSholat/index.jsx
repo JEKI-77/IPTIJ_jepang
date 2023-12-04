@@ -230,11 +230,11 @@ const JadwalSholat = () => {
       {/* countdown */}
       <div className=" w-[90%] -mt-4 md:ml-[15%] flex mx-4 mb-4 text-gray-200 text-sm gap-2">
         <div>
-          Berikutnya{" "}
+          Berikutnya
           <strong className="text-2xl flex item-center">
             {next.countDown}
-          </strong>{" "}
-          menuju waktu{" "}
+          </strong>
+          menuju waktu
           <strong className="bg-orange-500 text-white font-bold px-3 rounded-lg">
             {indonesianName(next.name)}
           </strong>
@@ -251,12 +251,12 @@ const JadwalSholat = () => {
       <div className="flex gap-3 flex-col w-[80%] md:w-[40%] mt-2 md:mt-8 m-auto">
         <div className=" mt-4 text-center ">
           <h1 className="text-xl text-start text-gray-200 ">
-            <span className="font-semibold "> {t("kota")}</span> :{" "}
+            <span className="font-semibold "> {t("kota")}</span> :
             {search ? MsgNotFound : city}
           </h1>
         </div>
         <div className="bg-slate-50 gap-9 flex  rounded-full px-4 py-2 shadow-md text-gray-800  ">
-          <span className=" font-semibold">Subuh </span>{" "}
+          <span className=" font-semibold">Subuh </span>
           {data ? data.Fajr : <p>loading...</p>}
         </div>
         <div className="bg-slate-50 gap-12 flex  rounded-full px-4 py-2 shadow-md text-gray-800   ">

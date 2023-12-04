@@ -12,12 +12,12 @@
   @apply md:text-gray-300 text-gray-800 rounded-2xl  hover:bg-gray-200 md:hover:bg-transparent px-2 py-2 w-20 h-24 m-auto flex justify-center items-center;
 }
 .imgStyle {
-  @apply cursor-pointer hover:scale-125 duration-300 w-auto object-cover;
+  @apply cursor-pointer hover:scale-125 duration-300 w-auto object-cover h-60  md:h-full;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .box {
-  @apply overflow-hidden  ease-out;
+  @apply overflow-hidden  ease-out rounded-xl ;
 }
 
 .dark {
